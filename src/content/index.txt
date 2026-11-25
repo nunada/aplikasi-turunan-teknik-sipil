@@ -1,0 +1,21 @@
+### Langkah menyelesaikan soal optimisasi terapan
+
+- **Pahami soal:** apa yang diketahui, dan besaran apa yang dimaksimumkan atau diminimumkan.
+- **Gambar sketsa** dan beri nama variabel.
+- **Susun fungsi tujuan** $Q$, lalu pakai persamaan kendala agar $Q$ menjadi fungsi satu variabel.
+- **Tentukan domain** yang masuk akal secara fisik.
+- **Cari titik kritis:** $Q'(x)=0$ atau $Q'(x)$ tidak ada.
+- **Pastikan jenis ekstrem** dengan salah satu uji di bawah.
+- **Jawab dalam konteks soal**, lengkap dengan satuan.
+
+### Alat uji ekstrem
+
+- **Metode interval tertutup:** pada $[a,b]$, bandingkan $Q(a)$, $Q(b)$, dan nilai $Q$ di semua titik kritis.
+- **Uji turunan pertama:** jika $Q'$ berubah dari $-$ ke $+$ sekali saja pada seluruh domain, titik itu minimum mutlak (dan sebaliknya untuk maksimum).
+- **Uji turunan kedua:** $Q''(c)>0$ menandakan minimum, $Q''(c)<0$ menandakan maksimum.
+
+### Laju yang berkaitan dan kinematika
+
+Untuk laju yang berkaitan: tulis persamaan yang berlaku **setiap saat**, turunkan terhadap $t$, baru masukkan nilai sesaat. Untuk gerak lurus:
+
+$$v=\frac{dx}{dt},\qquad a=\frac{dv}{dt}=\frac{d^2x}{dt^2},\qquad \text{laju}=|v|.$$

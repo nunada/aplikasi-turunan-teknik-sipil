@@ -1,0 +1,22 @@
+P1 | 2*x+5 ; 5 ; 10 ; t ; x ; pt@5 ; posisi
+P2 | x*x-7*x+6 ; 0 ; 8 ; t ; x ; lmin@3.5 ; posisi
+P3 | x*x+5*x+10 ; 1 ; 6 ; t ; x ; pt@1 ; posisi
+P4 | -2*x**3+2*x*x+16*x-1 ; 0 ; 4 ; t ; x ; lmax@2 ; posisi
+P5 | x**3-9*x*x+15*x+3 ; 2 ; 8 ; t ; x ; lmin@5 ; posisi
+P6 | 3*cos(4*x) ; 0 ; pi ; t ; x ; pt@pi/4,pi/2 ; posisi
+P7 | 1/x ; 1 ; 8 ; t ; x ; pt@1 ; posisi
+P8 | x+4/x ; 1 ; 8 ; t ; x ; lmin@2 ; posisi
+P9 | (x-4)/x**2 ; 2 ; 24 ; t ; x ; lmax@8 ; posisi
+P10 | (x-1)**2*sqrt(x) ; 1 ; 4 ; t ; x ; pt@1 ; posisi
+P11 | x**3-9*x*x+24*x+1 ; 0 ; 6 ; t ; x ; lmax@2 ; posisi
+P11 | 3*x*x-18*x+24 ; 0 ; 6 ; t ; v ; min@3 ; kecepatan
+P12 | 2-15*x+9*x*x-x**3 ; 0 ; 6 ; t ; x ; lmin@1 ; posisi
+P12 | -3*x*x+18*x-15 ; 0 ; 6 ; t ; v ; max@3 ; kecepatan
+P13 | x*sin(x) ; 0 ; 9 ; t ; x ; pt@2.0288,4.9132,7.9787 ; posisi
+P13 | 2*cos(x)-x*sin(x) ; 0 ; 9 ; t ; a ; pt@0.731,3.853,6.436 ; percepatan (tanda: a = 1)
+P14 | 3*x**4-16*x**3+18*x*x+2 ; 0 ; 4 ; t ; x ; min@3 ; posisi
+P14 | 12*x*(x-1)*(x-3) ; 0 ; 4 ; t ; v ; max@4 ; kecepatan
+P15 | (14*x**3-101*x*x+132*x)/45+2 ; 0 ; 6 ; t ; x ; min@4.029 ; posisi
+P15 | (42*x*x-202*x+132)/45 ; 0 ; 6 ; t ; v ; max@6 ; kecepatan
+P18 | abs(12*(x-1)*(x-3)*(x-4)) ; 0 ; 2 ; t ; laju ; max@0 ; laju
+P25 | 3*x*x-2*x**3 ; 0 ; 1 ; x/D ; y/h ; pt@0.5 ; lintasan

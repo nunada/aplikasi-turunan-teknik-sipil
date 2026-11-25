@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Aplikasi Turunan · Teknik Sipil</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<header><span class="brand">Aplikasi Turunan · Teknik Sipil</span><nav><a href="index.html" class=on>Beranda</a><a href="hass.html">Hass</a><a href="stewart.html">Stewart</a><a href="trim-optimasi.html">Trim 4.7</a><a href="trim-gerak.html">Trim 4.8</a><a href="trim-laju.html">Trim 4.9</a></nav></header>
+<main>
+<h1>Aplikasi Turunan untuk Mahasiswa S1 Teknik Sipil</h1><p class='book'>308 soal dengan penyelesaian yang dapat dibuka-tutup.</p><div class='grid'><a class="buku" href="hass.html"><b>§4.6 Applied Optimization</b><span>Hass, Heil &amp; Weir — Thomas&#x27; Calculus: Early Transcendentals (SI), ed. 15</span><em>5 contoh · 67 latihan</em></a><a class="buku" href="stewart.html"><b>§4.7 Optimization Problems</b><span>Stewart, Clegg &amp; Watson — Calculus: Early Transcendentals, ed. 9</span><em>5 contoh · 76 latihan · 5 proyek</em></a><a class="buku" href="trim-optimasi.html"><b>§4.7 Absolute Maxima and Minima</b><span>Trim — Calculus for Engineers, ed. 4</span><em>9 contoh · 71 latihan · 1 proyek</em></a><a class="buku" href="trim-gerak.html"><b>§4.8 Velocity and Acceleration</b><span>Trim — Calculus for Engineers, ed. 4</span><em>3 contoh · 25 latihan</em></a><a class="buku" href="trim-laju.html"><b>§4.9 Related Rates</b><span>Trim — Calculus for Engineers, ed. 4</span><em>5 contoh · 35 latihan · 1 proyek</em></a></div><h4>Langkah menyelesaikan soal optimisasi terapan</h4>
+<ul><li><strong>Pahami soal:</strong> apa yang diketahui, dan besaran apa yang dimaksimumkan atau diminimumkan.</li><li><strong>Gambar sketsa</strong> dan beri nama variabel.</li><li><strong>Susun fungsi tujuan</strong> $Q$, lalu pakai persamaan kendala agar $Q$ menjadi fungsi satu variabel.</li><li><strong>Tentukan domain</strong> yang masuk akal secara fisik.</li><li><strong>Cari titik kritis:</strong> $Q'(x)=0$ atau $Q'(x)$ tidak ada.</li><li><strong>Pastikan jenis ekstrem</strong> dengan salah satu uji di bawah.</li><li><strong>Jawab dalam konteks soal</strong>, lengkap dengan satuan.</li></ul>
+<h4>Alat uji ekstrem</h4>
+<ul><li><strong>Metode interval tertutup:</strong> pada $[a,b]$, bandingkan $Q(a)$, $Q(b)$, dan nilai $Q$ di semua titik kritis.</li><li><strong>Uji turunan pertama:</strong> jika $Q'$ berubah dari $-$ ke $+$ sekali saja pada seluruh domain, titik itu minimum mutlak (dan sebaliknya untuk maksimum).</li><li><strong>Uji turunan kedua:</strong> $Q''(c)&gt;0$ menandakan minimum, $Q''(c)&lt;0$ menandakan maksimum.</li></ul>
+<h4>Laju yang berkaitan dan kinematika</h4>
+<p>Untuk laju yang berkaitan: tulis persamaan yang berlaku <strong>setiap saat</strong>, turunkan terhadap $t$, baru masukkan nilai sesaat. Untuk gerak lurus:</p>
+<p>$$v=\frac{dx}{dt},\qquad a=\frac{dv}{dt}=\frac{d^2x}{dt^2},\qquad \text{laju}=|v|.$$</p>
+</main>
+<footer>Soal diringkas dengan kata-kata sendiri untuk keperluan belajar; penyelesaian dan gambar dibuat ulang.
+Teks asli dan hak cipta tetap milik penulis serta penerbit masing-masing buku.</footer>
+</body>
+</html>
