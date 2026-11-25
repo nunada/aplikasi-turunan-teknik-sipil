@@ -1,9 +1,0 @@
-Dilewati karena tidak berkaitan langsung dengan teknik sipil:
-
-- Contoh 5 (laba produksi MP3, ekonomi).
-- Latihan 57 (reaksi kimia timah).
-- Latihan 59, 60, 63, 66 (harga jual, tur wisata, titik impas, tarif motel).
-- Latihan 62 dan 64 (biaya produksi rata-rata, ekonomi mikro).
-- Latihan 67 dan 68 (biologi: obat dan batuk).
-
-Bagian §4.7 Newton's Method di akhir berkas PDF hanya berupa pengantar tanpa contoh maupun latihan.

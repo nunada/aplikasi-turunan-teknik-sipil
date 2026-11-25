@@ -31,17 +31,17 @@ $A'<0$ di kiri dan $A'>0$ di kanan $r=\sqrt[3]{500/\pi}$, jadi titik itu minimum
 **Cara implisit:** dari $A'=4\pi r+2\pi h+2\pi rh'=0$ dan $2rh+r^2h'=0$ diperoleh langsung $h=2r$.
 
 @@ C3 | Contoh 3 | Titik pada parabola yang terdekat | lintasan | 339
-Tentukan titik pada parabola $y^2=2x$ yang terdekat dengan $(1;\,4)$.
+Tentukan titik pada parabola $y^2=2x$ yang terdekat dengan $(1; 4)$.
 
 {{fig:s_c3}}
 ===
-Titik pada parabola: $(y^2/2,\;y)$. Minimumkan kuadrat jaraknya:
+Titik pada parabola: $(y^2/2, y)$. Minimumkan kuadrat jaraknya:
 
 $$f(y)=\left(\tfrac12y^2-1\right)^2+(y-4)^2,\qquad f'(y)=y^3-8.$$
 
 $f'$ berubah dari negatif ke positif di $y=2$.
 
-**Jawab:** titik $(2;\,2)$ dengan jarak $\sqrt5$.
+**Jawab:** titik $(2; 2)$ dengan jarak $\sqrt5$.
 
 @@ C4 | Contoh 4 | Menyeberangi sungai secepatnya | lintasan | 340
 Dari titik $A$ di tepi sungai selebar 3 km, seseorang ingin ke $B$ di tepi seberang, 8 km ke hilir. Ia mendayung 6 km/jam dan berlari 8 km/jam (arus diabaikan). Di mana ia harus mendarat?
@@ -149,7 +149,7 @@ Contoh coba-coba ($5x+2y=300$): $x=10$ memberi $1.250$; $x=30$ memberi $2.250$; 
 
 Model: $A=xy$ dengan $y=150-2{,}5x$, $0\le x\le60$.
 
-$$A'=150-5x=0\Rightarrow x=30,\;y=75.$$
+$$A'=150-5x=0\Rightarrow x=30, y=75.$$
 
 **Jawab:** $2.250\ \text{m}^2$.
 
@@ -281,24 +281,24 @@ Tentukan titik pada garis $y=2x+3$ yang terdekat ke titik asal.
 ===
 $D^2=x^2+(2x+3)^2$, turunan $10x+12=0$.
 
-**Jawab:** $\left(-\tfrac65;\,\tfrac35\right)$.
+**Jawab:** $\left(-\tfrac65; \tfrac35\right)$.
 
 @@ P26 | Latihan 26 | Titik kurva akar terdekat ke (3, 0) | lintasan | 343
-Tentukan titik pada $y=\sqrt x$ yang terdekat ke $(3;\,0)$.
+Tentukan titik pada $y=\sqrt x$ yang terdekat ke $(3; 0)$.
 ===
 $D^2=(x-3)^2+x$, turunan $2x-5=0$.
 
-**Jawab:** $\left(\tfrac52;\,\sqrt{5/2}\right)$.
+**Jawab:** $\left(\tfrac52; \sqrt{5/2}\right)$.
 
 @@ P27 | Latihan 27 | Titik elips terjauh | lintasan | 343
-Tentukan titik pada elips $4x^2+y^2=4$ yang terjauh dari $(1;\,0)$.
+Tentukan titik pada elips $4x^2+y^2=4$ yang terjauh dari $(1; 0)$.
 ===
 $D^2=(x-1)^2+4-4x^2=-3x^2-2x+5$, $-1\le x\le1$. Turunan $-6x-2=0\Rightarrow x=-\tfrac13$.
 
 **Jawab:** $\left(-\tfrac13,\pm\dfrac{4\sqrt2}{3}\right)$, jarak $\dfrac{4}{\sqrt3}$.
 
 @@ P28 | Latihan 28 | Titik pada kurva sinus (numerik) | lintasan | 344
-Tentukan, teliti dua desimal, titik pada $y=\sin x$ yang terdekat ke $(4;\,2)$.
+Tentukan, teliti dua desimal, titik pada $y=\sin x$ yang terdekat ke $(4; 2)$.
 ===
 $f=(x-4)^2+(\sin x-2)^2$. Titik kritis memenuhi
 
@@ -306,14 +306,14 @@ $$(x-4)+(\sin x-2)\cos x=0.$$
 
 Metode Newton atau grafik memberi $x\approx2{,}65$.
 
-**Jawab:** sekitar $(2{,}65;\;0{,}47)$.
+**Jawab:** sekitar $(2{,}65; 0{,}47)$.
 
 @@ P29 | Latihan 29 | Persegi panjang dalam lingkaran | geometri | 344
 Tentukan dimensi persegi panjang terluas di dalam lingkaran berjari-jari $r$.
 ===
 Sudut $(x,y)$ dengan $x^2+y^2=r^2$: $A=4x\sqrt{r^2-x^2}$, $A'=0\Rightarrow x=r/\sqrt2=y$.
 
-**Jawab:** persegi bersisi $\sqrt2\,r$.
+**Jawab:** persegi bersisi $\sqrt2\thinspace r$.
 
 @@ P30 | Latihan 30 | Persegi panjang dalam elips | geometri | 344
 Tentukan luas persegi panjang terbesar di dalam elips $x^2/a^2+y^2/b^2=1$.
@@ -345,7 +345,7 @@ $$A'=\cos t+\cos2t=0\Rightarrow t=\frac\pi3.$$
 @@ P33 | Latihan 33 | Segitiga sama kaki dalam lingkaran | geometri | 344
 Tentukan dimensi segitiga sama kaki terluas di dalam lingkaran berjari-jari $r$.
 ===
-Alas berada $y$ di bawah pusat: $A=\sqrt{r^2-y^2}\,(r+y)$. $A'=0\iff r^2-ry-2y^2=0\Rightarrow y=r/2$.
+Alas berada $y$ di bawah pusat: $A=\sqrt{r^2-y^2}\thinspace (r+y)$. $A'=0\iff r^2-ry-2y^2=0\Rightarrow y=r/2$.
 
 **Jawab:** segitiga **sama sisi** (alas $\sqrt3r$, tinggi $\tfrac32r$).
 
@@ -354,7 +354,7 @@ Dua sisi sama dari segitiga sama kaki panjangnya $a$. Tentukan sisi ketiga agar 
 ===
 $A=\tfrac12a^2\sin\theta$ maksimum saat $\theta=90^\circ$.
 
-**Jawab:** $\sqrt2\,a$.
+**Jawab:** $\sqrt2\thinspace a$.
 
 @@ P35 | Latihan 35 | Batas luas segitiga | geometri | 344
 Satu sisi segitiga $a$ dan sisi lain $2a$. Tunjukkan luas terbesar yang mungkin $a^2$.

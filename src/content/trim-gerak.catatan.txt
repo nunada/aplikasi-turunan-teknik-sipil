@@ -1,5 +1,0 @@
-Seluruh contoh dan latihan §4.8 dimuat.
-
-Contoh pengantar subbab (partikel $x=t^3-27t^2+168t+20$) adalah uraian teori: partikel berhenti sesaat di $t=4$ ($x=324$) dan $t=14$ ($x=-176$), dan percepatan berganti tanda di $t=9$.
-
-§4.10 (rangkaian LCR) di akhir berkas PDF tidak dimuat karena membahas teknik elektro.

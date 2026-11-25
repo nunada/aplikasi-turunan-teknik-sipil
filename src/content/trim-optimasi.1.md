@@ -5,7 +5,7 @@ Tentukan maksimum dan minimum mutlak $f(x)=\dfrac{x^3-2x^2+x+20}{x^2+5}$ pada $0
 ===
 $f$ kontinu pada interval tertutup, jadi kedua ekstrem ada.
 
-$$f'(x)=\frac{x^4+14x^2-60x+5}{(x^2+5)^2}=0\Rightarrow x\approx0{,}0850;\,2{,}7188.$$
+$$f'(x)=\frac{x^4+14x^2-60x+5}{(x^2+5)^2}=0\Rightarrow x\approx0{,}0850; 2{,}7188.$$
 
 | $x$ | 0 | 0,0850 | 2,7188 | 6 |
 | $f(x)$ | 4 | 4,008 | 2,262 | 4,146 |
@@ -75,7 +75,7 @@ $$t'=\frac{x}{3\sqrt{x^2+36}}-\frac15=0\Rightarrow25x^2=9(x^2+36)\Rightarrow x=4
 
 $t(0)=3{,}8$; $t(4{,}5)=3{,}4$; $t(9)\approx3{,}6$ jam. Mendarat $4{,}5$ km dari pondok.
 
-Jika pondok 4 km: $x=4{,}5$ di luar $[0;\,4]$. $t(0)=2{,}8$ dan $t(4)\approx2{,}40$, jadi **dayung langsung ke pondok**.
+Jika pondok 4 km: $x=4{,}5$ di luar $[0; 4]$. $t(0)=2{,}8$ dan $t(4)\approx2{,}40$, jadi **dayung langsung ke pondok**.
 
 @@ C26 | Contoh 4.26 | Balok terkuat dari gelondongan | struktur | 282
 Kekuatan balok persegi panjang sebanding dengan lebar kali kuadrat tinggi. Tentukan dimensi balok terkuat dari gelondongan berjari-jari $R$.
@@ -135,7 +135,7 @@ $$\bar t=\frac{2D}{v_1}\sqrt{1-\left(\frac{v_1}{v_2}\right)^2}+\frac{s}{v_2}.$$
 
 Ini garis lurus $\bar t=ms+b$. Ukur beberapa pasangan $(s_i,\bar t_i)$ **pada jarak yang cukup jauh sehingga gelombang refraksi tiba lebih dahulu** (pada jarak pendek, gelombang langsung di lapisan tanah dapat tiba lebih dahulu), tarik garis terbaik, lalu
 
-$$v_2=\frac1m,\qquad D=\frac{b\,v_1}{2\sqrt{1-(v_1/v_2)^2}}.$$
+$$v_2=\frac1m,\qquad D=\frac{b\thinspace v_1}{2\sqrt{1-(v_1/v_2)^2}}.$$
 
 {{fig:t_l5c}}
 
@@ -165,7 +165,7 @@ $f'=1-1/x^2=0\Rightarrow x=1$. $f(\tfrac12)=2{,}5$, $f(1)=2$, $f(5)=5{,}2$.
 @@ P4 | Latihan 4 | Fungsi trigonometri | dasar | 287
 Tentukan ekstrem mutlak $f(x)=x-2\sin x$, $0\le x\le4\pi$.
 ===
-$f'=1-2\cos x=0\Rightarrow x=\dfrac\pi3;\,\dfrac{5\pi}3;\,\dfrac{7\pi}3;\,\dfrac{11\pi}3$. Bandingkan juga $f(0)=0$ dan $f(4\pi)=4\pi$.
+$f'=1-2\cos x=0\Rightarrow x=\dfrac\pi3; \dfrac{5\pi}3; \dfrac{7\pi}3; \dfrac{11\pi}3$. Bandingkan juga $f(0)=0$ dan $f(4\pi)=4\pi$.
 
 **Jawab:** minimum $\dfrac\pi3-\sqrt3\approx-0{,}685$; maksimum $\dfrac{11\pi}{3}+\sqrt3\approx13{,}25$.
 
@@ -216,7 +216,7 @@ Gunakan Teorema 4.2 (fungsi kontinu pada interval tertutup mencapai ekstrem mutl
 @@ P11 | Latihan 11 | Lendutan maksimum balok jepit-sendi | struktur | 287
 Balok seragam panjang $L$ terjepit di satu ujung dan bertumpu sederhana di ujung lain:
 
-$$(48EI)\,y=-mg(2x^4-5Lx^3+3L^2x^2).$$
+$$(48EI)\thinspace y=-mg(2x^4-5Lx^3+3L^2x^2).$$
 
 Seberapa jauh dari jepitan lendutan maksimum terjadi?
 
@@ -306,20 +306,20 @@ $A=(x+5)\left(\dfrac{150}{x}+7{,}5\right)$, $A'=7{,}5-\dfrac{750}{x^2}=0\Rightar
 **Jawab:** halaman $15\times22{,}5$ cm.
 
 @@ P23 | Latihan 23 | Titik hiperbola terdekat | lintasan | 288
-Tentukan titik pada $y^2-x^2=9$ yang terdekat dengan $(4;\,0)$.
+Tentukan titik pada $y^2-x^2=9$ yang terdekat dengan $(4; 0)$.
 ===
 $D^2=(x-4)^2+x^2+9$, turunan $4x-8=0$.
 
 **Jawab:** $(2,\pm\sqrt{13})$.
 
 @@ P24 | Latihan 24 | Titik parabola terdekat | lintasan | 288
-Tentukan titik pada $y=x^2$ yang terdekat dengan $(-2;\,5)$.
+Tentukan titik pada $y=x^2$ yang terdekat dengan $(-2; 5)$.
 ===
 $D^2=(x+2)^2+(x^2-5)^2$, turunan $2(2x^3-9x+2)=2(x-2)(2x^2+4x-1)=0$.
 
 Akar: $2$, $-1\pm\dfrac{\sqrt6}{2}$. Nilai $D^2$ terkecil di $x=-1-\dfrac{\sqrt6}{2}\approx-2{,}225$.
 
-**Jawab:** sekitar $(-2{,}225;\;4{,}949)$.
+**Jawab:** sekitar $(-2{,}225; 4{,}949)$.
 
 @@ P25 | Latihan 25 | Tinggi lampu untuk penerangan tepi maksimum | struktur | 288
 Lampu di atas pusat daerah lingkaran berjari-jari $r$. Penerangan di tepi sebanding dengan $\cos\theta$ dan berbanding terbalik dengan $d^2$. Tinggi $h$ berapa yang optimum?
@@ -331,18 +331,18 @@ $$I=\frac{k\cos\theta}{d^2}=\frac{kh}{(r^2+h^2)^{3/2}},\quad I'\propto r^2-2h^2=
 **Jawab:** $h=\dfrac{r}{\sqrt2}$.
 
 @@ P26 | Latihan 26 | Segitiga terkecil melalui titik (2, 5) | geometri | 288
-Dari semua ruas garis antara sumbu positif yang melalui $(2;\,5)$, tentukan yang membentuk segitiga terkecil.
+Dari semua ruas garis antara sumbu positif yang melalui $(2; 5)$, tentukan yang membentuk segitiga terkecil.
 ===
 $\dfrac2a+\dfrac5b=1$, $A=\dfrac{5a^2}{2(a-2)}$, $A'=0\Rightarrow a=4$, $b=10$.
 
-**Jawab:** ruas dari $(4;\,0)$ ke $(0;\,10)$; luas $20$.
+**Jawab:** ruas dari $(4; 0)$ ke $(0; 10)$; luas $20$.
 
 @@ P27 | Latihan 27 | Saluran pelimpah trapesium | air | 288
 Lembaran logam selebar 1 m ditekuk dua kali menjadi saluran trapesium sama kaki dengan $AB=BC=CD=\tfrac13$ m. Sudut $\theta$ berapa memberi aliran maksimum?
 
 {{fig:t_p27}}
 ===
-$$A=\tfrac19\sin\theta\,(1+\cos\theta),\quad A'=\tfrac19(\cos\theta+\cos2\theta)=0.$$
+$$A=\tfrac19\sin\theta\thinspace (1+\cos\theta),\quad A'=\tfrac19(\cos\theta+\cos2\theta)=0.$$
 
 **Jawab:** $\theta=\dfrac\pi3$.
 
@@ -360,7 +360,7 @@ $T=\dfrac{\sqrt{36+x^2}}{14}+\dfrac{d-x}{50}$, $T'=0\Rightarrow50x=14\sqrt{36+x^
 
 (a) Masuk jalan $1{,}75$ km dari $P$ ke arah $Q$.
 
-(b) $1{,}75>1$, dan $T$ turun pada $[0;\,1]$: **langsung menuju $Q$**.
+(b) $1{,}75>1$, dan $T$ turun pada $[0; 1]$: **langsung menuju $Q$**.
 
 @@ P33 | Latihan 33 | Persegi panjang dalam lingkaran | geometri | 288
 Tentukan luas persegi panjang terbesar di dalam lingkaran berjari-jari $r$.

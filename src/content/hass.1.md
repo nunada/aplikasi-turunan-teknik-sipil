@@ -24,7 +24,7 @@ Dengan $r,h$ dalam cm: kendala $\pi r^2h=1.000$, tujuan $A=2\pi r^2+2\pi rh$. Su
 
 $$A(r)=2\pi r^2+\frac{2.000}{r},\qquad r>0.$$
 
-$$A'(r)=4\pi r-\frac{2.000}{r^2}=0\;\Rightarrow\; r=\sqrt[3]{\frac{500}{\pi}}\approx 5{,}42\text{ cm}.$$
+$$A'(r)=4\pi r-\frac{2.000}{r^2}=0\thickspace \Rightarrow\thickspace  r=\sqrt[3]{\frac{500}{\pi}}\approx 5{,}42\text{ cm}.$$
 
 Karena $A''(r)=4\pi+4.000/r^3>0$ untuk semua $r>0$, titik ini minimum mutlak. Tingginya $h=1.000/(\pi r^2)=2r\approx 10{,}84$ cm.
 
@@ -41,7 +41,7 @@ Sudut kanan atas $(x,\sqrt{4-x^2})$, sehingga
 
 $$A(x)=2x\sqrt{4-x^2},\qquad 0\le x\le 2.$$
 
-$$A'(x)=2\sqrt{4-x^2}-\frac{2x^2}{\sqrt{4-x^2}}=\frac{8-4x^2}{\sqrt{4-x^2}}=0\;\Rightarrow\;x=\sqrt2.$$
+$$A'(x)=2\sqrt{4-x^2}-\frac{2x^2}{\sqrt{4-x^2}}=\frac{8-4x^2}{\sqrt{4-x^2}}=0\thickspace \Rightarrow\thickspace x=\sqrt2.$$
 
 $A(0)=0$, $A(\sqrt2)=4$, $A(2)=0$.
 
@@ -73,7 +73,7 @@ Jika dikirim tiap $x$ hari, pesanan $5x$ unit dan stok rata-rata $5x/2$. Biaya p
 
 $$c(x)=\frac{5.000}{x}+25x,\qquad x>0.$$
 
-$$c'(x)=-\frac{5.000}{x^2}+25=0\;\Rightarrow\;x=\sqrt{200}\approx14{,}14,\qquad c''(x)=\frac{10.000}{x^3}>0.$$
+$$c'(x)=-\frac{5.000}{x^2}+25=0\thickspace \Rightarrow\thickspace x=\sqrt{200}\approx14{,}14,\qquad c''(x)=\frac{10.000}{x^3}>0.$$
 
 $c(\sqrt{200})=500\sqrt2\approx 707{,}11$ dolar/hari.
 
@@ -99,7 +99,7 @@ Persegi panjang dilukis di dalam segitiga siku-siku sama kaki dengan sisi miring
 
 {{fig:h_p3}}
 ===
-(a) Garis $AB$ melalui $(1;\,0)$ dan $(0;\,1)$: $y=1-x$.
+(a) Garis $AB$ melalui $(1; 0)$ dan $(0; 1)$: $y=1-x$.
 
 (b) $A(x)=2x(1-x)$, $0\le x\le1$.
 
@@ -136,7 +136,7 @@ Ruas garis sepanjang 20 satuan dari $(a,0)$ ke $(0,b)$ memotong sudut kuadran pe
 ===
 $a^2+b^2=400$, $A=\tfrac12 a\sqrt{400-a^2}$. Maksimumkan $f(a)=A^2=\tfrac14(400a^2-a^4)$:
 
-$$f'(a)=\tfrac14(800a-4a^3)=0\;\Rightarrow\;a^2=200.$$
+$$f'(a)=\tfrac14(800a-4a^3)=0\thickspace \Rightarrow\thickspace a^2=200.$$
 
 Maka $b^2=400-200=200$, sehingga $a=b=10\sqrt2$ (luas $100$). $\blacksquare$
 
@@ -147,7 +147,7 @@ Lahan persegi panjang dibatasi sungai di satu sisi dan pagar listrik tunggal di 
 ===
 $A(x)=x(800-2x)$, $0\le x\le400$. $A'=800-4x=0\Rightarrow x=200$.
 
-**Jawab:** $200$ m (tegak lurus sungai) $\times\,400$ m; luas $80.000\ \text{m}^2$.
+**Jawab:** $200$ m (tegak lurus sungai) $\times\thinspace 400$ m; luas $80.000\ \text{m}^2$.
 
 @@ P8 | Latihan 8 | Pagar terpendek untuk lahan terbagi dua | struktur | 282
 Lahan persegi panjang $216\ \text{m}^2$ dipagari dan dibagi dua sama besar dengan pagar sejajar salah satu sisi. Tentukan dimensi luar dengan total pagar terpendek.
@@ -156,7 +156,7 @@ Lahan persegi panjang $216\ \text{m}^2$ dipagari dan dibagi dua sama besar denga
 ===
 Dimensi $x\times y$ dengan pagar pembagi sejajar $y$: $F=2x+3y$, $xy=216$.
 
-$$F(x)=2x+\frac{648}{x},\quad F'=2-\frac{648}{x^2}=0\Rightarrow x=18,\;y=12.$$
+$$F(x)=2x+\frac{648}{x},\quad F'=2-\frac{648}{x^2}=0\Rightarrow x=18, y=12.$$
 
 **Jawab:** $18\times12$ m dengan total pagar $72$ m.
 
@@ -165,7 +165,7 @@ Rancang tangki baja $4\ \text{m}^3$ beralas persegi, tanpa tutup, dari pelat tip
 ===
 (a) Alas $x$, tinggi $h=4/x^2$. Luas pelat:
 
-$$S(x)=x^2+4xh=x^2+\frac{16}{x},\quad S'=2x-\frac{16}{x^2}=0\Rightarrow x=2,\;h=1.$$
+$$S(x)=x^2+4xh=x^2+\frac{16}{x},\quad S'=2x-\frac{16}{x^2}=0\Rightarrow x=2, h=1.$$
 
 **Jawab:** alas $2\times2$ m, tinggi $1$ m ($S=12\ \text{m}^2$).
 
@@ -278,7 +278,7 @@ Persegi panjang dilukis di bawah lengkung $y=4\cos(0{,}5x)$, $-\pi\le x\le\pi$. 
 ===
 $A(x)=8x\cos(x/2)$, $0\le x\le\pi$.
 
-$$A'=8\cos\frac x2-4x\sin\frac x2=0\iff u\tan u=1,\;u=\frac x2.$$
+$$A'=8\cos\frac x2-4x\sin\frac x2=0\iff u\tan u=1, u=\frac x2.$$
 
 Secara numerik (Newton) $u\approx0{,}8603$, jadi $x\approx1{,}7207$.
 
@@ -345,7 +345,7 @@ Silo (tanpa lantai) berbentuk silinder beratap setengah bola. Biaya per satuan l
 ===
 $V=\pi r^2h+\tfrac23\pi r^3\Rightarrow h=\dfrac{V}{\pi r^2}-\dfrac{2r}{3}$. Dengan $c$ = biaya dinding per satuan luas:
 
-$$C(r)=c\,(2\pi rh)+2c\,(2\pi r^2)=c\left(\frac{2V}{r}+\frac{8\pi r^2}{3}\right).$$
+$$C(r)=c\thinspace (2\pi rh)+2c\thinspace (2\pi r^2)=c\left(\frac{2V}{r}+\frac{8\pi r^2}{3}\right).$$
 
 $$C'=0\Rightarrow r=\left(\frac{3V}{8\pi}\right)^{1/3},\qquad h=\frac{8r}{3}-\frac{2r}{3}=2r.$$
 
@@ -356,7 +356,7 @@ Talang pada gambar memiliki alas 1 ft, dua dinding 1 ft, panjang 20 ft. Hanya su
 
 {{fig:h_p24}}
 ===
-Luas penampang $=\cos\theta\,(1+\sin\theta)$, $0\le\theta<\pi/2$, dan $V=20A$.
+Luas penampang $=\cos\theta\thinspace (1+\sin\theta)$, $0\le\theta<\pi/2$, dan $V=20A$.
 
 $$A'=-\sin\theta(1+\sin\theta)+\cos^2\theta=-(2\sin\theta-1)(\sin\theta+1)=0\Rightarrow\theta=\frac{\pi}{6}.$$
 
@@ -367,7 +367,7 @@ Salah satu sudut kertas $21{,}6\times28$ cm diletakkan pada tepi panjang di sebe
 
 {{fig:h_p25}}
 ===
-(a) Tempatkan $A=(0;\,0)$, $P=(x;\,0)$, $R=(0;\,y)$. $Q$ adalah bayangan $A$ terhadap garis $PR$, absisnya $\dfrac{2xy^2}{x^2+y^2}=21{,}6$. Diperoleh $y^2=\dfrac{21{,}6x^2}{2x-21{,}6}$, sehingga
+(a) Tempatkan $A=(0; 0)$, $P=(x; 0)$, $R=(0; y)$. $Q$ adalah bayangan $A$ terhadap garis $PR$, absisnya $\dfrac{2xy^2}{x^2+y^2}=21{,}6$. Diperoleh $y^2=\dfrac{21{,}6x^2}{2x-21{,}6}$, sehingga
 
 $$L^2=x^2+y^2=\frac{2x^3}{2x-21{,}6}.$$
 
@@ -382,7 +382,7 @@ Persegi panjang $x\times y$ berkeliling 36 cm. (a) Digulung menjadi selimut sili
 ===
 $y=18-x$.
 
-(a) $V=\pi\left(\dfrac{x}{2\pi}\right)^2y=\dfrac{x^2(18-x)}{4\pi}$; $V'\propto36x-3x^2=0\Rightarrow x=12,\;y=6$.
+(a) $V=\pi\left(\dfrac{x}{2\pi}\right)^2y=\dfrac{x^2(18-x)}{4\pi}$; $V'\propto36x-3x^2=0\Rightarrow x=12, y=6$.
 
 (b) $V=\pi x^2(18-x)$; turunannya nol di titik yang sama: $x=12$, $y=6$.
 

@@ -10,7 +10,7 @@ $V'=27-\tfrac34x^2=0\Rightarrow x=6$. $V(0)=V(\sqrt{108})=0$, $V(6)=108$.
 **Jawab:** $6\times6\times3$ inci.
 
 @@ C2 | Contoh 2 | Titik parabola terdekat | lintasan | 221
-Titik mana pada $y=4-x^2$ yang paling dekat ke $(0;\,2)$?
+Titik mana pada $y=4-x^2$ yang paling dekat ke $(0; 2)$?
 
 {{fig:lo_c2}}
 ===
@@ -101,14 +101,14 @@ Dua bilangan positif berjumlah $S$ dengan hasil kali maksimum.
 $P=x(S-x)$, $P'=0\Rightarrow x=S/2$. Keduanya $S/2$.
 
 @@ P6 | Latihan 6 | Hasil kali 185 | dasar | 224
-Hasil kali 185, jumlah minimum.
+Hasil kali dua bilangan **positif** adalah 185. Tentukan kedua bilangan agar jumlahnya minimum.
 ===
-$f=x+185/x$, $f'=0\Rightarrow x=\sqrt{185}$. Keduanya $\sqrt{185}$.
+$f=x+185/x$ dengan $x>0$, $f'=0\Rightarrow x=\sqrt{185}$ ($f''>0$). Keduanya $\sqrt{185}$.
 
 @@ P7 | Latihan 7 | Hasil kali 147 | dasar | 224
-Hasil kali 147; bilangan pertama ditambah tiga kali bilangan kedua minimum.
+Hasil kali dua bilangan **positif** adalah 147. Tentukan keduanya agar bilangan pertama ditambah tiga kali bilangan kedua minimum.
 ===
-$f=a+441/a\Rightarrow a=21$, $b=7$.
+$b=147/a$ dengan $a>0$: $f=a+441/a$, $f'=0\Rightarrow a=21$, $b=7$.
 
 @@ P8 | Latihan 8 | Kuadrat ditambah bilangan | dasar | 224
 $a^2+b=54$ dan $ab$ maksimum ($a,b>0$).
@@ -116,12 +116,12 @@ $a^2+b=54$ dan $ab$ maksimum ($a,b>0$).
 $P=a(54-a^2)$, $P'=54-3a^2=0\Rightarrow a=3\sqrt2$, $b=36$.
 
 @@ P9 | Latihan 9 | Satu ditambah dua kali | dasar | 224
-$a+2b=108$ dan $ab$ maksimum.
+Dua bilangan **positif** memenuhi $a+2b=108$. Tentukan keduanya agar $ab$ maksimum.
 ===
 $P=b(108-2b)\Rightarrow b=27$, $a=54$.
 
 @@ P10 | Latihan 10 | Pangkat tiga ditambah bilangan | dasar | 224
-$a^3+b=500$ dan $ab$ maksimum.
+Dua bilangan **positif** memenuhi $a^3+b=500$. Tentukan keduanya agar $ab$ maksimum.
 ===
 $P=a(500-a^3)$, $P'=500-4a^3=0\Rightarrow a=5$, $b=375$.
 
@@ -146,26 +146,26 @@ Persegi panjang berluas $A$ dengan keliling minimum.
 $2x+2A/x$ minimum di $x=\sqrt A$: persegi bersisi $\sqrt A$.
 
 @@ P15 | Latihan 15 | Parabola dan titik (0, 3) | lintasan | 224
-Titik pada $y=x^2$ terdekat ke $(0;\,3)$.
+Titik pada $y=x^2$ terdekat ke $(0; 3)$.
 ===
 $f=x^2+(x^2-3)^2$, $f'=2x(2x^2-5)$.
 
 **Jawab:** $\left(\pm\sqrt{5/2},\ \tfrac52\right)$.
 
 @@ P16 | Latihan 16 | Parabola dan titik (0, −1) | lintasan | 224
-Titik pada $y=x^2-2$ terdekat ke $(0;\,-1)$.
+Titik pada $y=x^2-2$ terdekat ke $(0; -1)$.
 ===
 $f=x^2+(x^2-1)^2$, $f'=2x(2x^2-1)$.
 
 **Jawab:** $\left(\pm\tfrac{1}{\sqrt2},\ -\tfrac32\right)$.
 
 @@ P17 | Latihan 17 | Kurva akar dan titik (4, 0) | lintasan | 224
-Titik pada $f(x)=\sqrt x$ terdekat ke $(4;\,0)$.
+Titik pada $f(x)=\sqrt x$ terdekat ke $(4; 0)$.
 ===
 $(x-4)^2+x$ minimum di $x=\tfrac72$: $\left(\tfrac72,\ \sqrt{7/2}\right)$.
 
 @@ P18 | Latihan 18 | Kurva akar dan titik (12, 0) | lintasan | 224
-Titik pada $f(x)=\sqrt{x-8}$ terdekat ke $(12;\,0)$.
+Titik pada $f(x)=\sqrt{x-8}$ terdekat ke $(12; 0)$.
 ===
 $(x-12)^2+x-8$ minimum di $x=\tfrac{23}{2}$: $\left(\tfrac{23}{2},\ \sqrt{7/2}\right)$.
 
@@ -216,7 +216,7 @@ Persegi panjang dibatasi sumbu koordinat dan $y=(6-x)/2$. Ukuran untuk luas maks
 $A=x\dfrac{6-x}{2}\Rightarrow x=3$, $y=\tfrac32$.
 
 @@ P25 | Latihan 25 | Garis melalui (1, 2) | geometri | 225
-Segitiga siku-siku di kuadran I dibentuk garis melalui $(1;\,2)$. (a) Nyatakan sisi miring $L$ dalam intersep-$x$. (b) Perkirakan $x$ untuk $L$ minimum. (c) Titik sudut untuk luas minimum.
+Segitiga siku-siku di kuadran I dibentuk garis melalui $(1; 2)$. (a) Nyatakan sisi miring $L$ dalam intersep-$x$. (b) Perkirakan $x$ untuk $L$ minimum. (c) Titik sudut untuk luas minimum.
 
 {{fig:lo_p25}}
 ===
@@ -224,16 +224,16 @@ Segitiga siku-siku di kuadran I dibentuk garis melalui $(1;\,2)$. (a) Nyatakan s
 
 (b) Turunan nol saat $(x-1)^3=4$: $x=1+\sqrt[3]4\approx2{,}59$.
 
-(c) $A=\dfrac{x^2}{x-1}$ minimum di $x=2$: titik $(0;\,0)$, $(2;\,0)$, $(0;\,4)$.
+(c) $A=\dfrac{x^2}{x-1}$ minimum di $x=2$: titik $(0; 0)$, $(2; 0)$, $(0; 4)$.
 
 @@ P26 | Latihan 26 | Segitiga sama kaki dalam lingkaran | geometri | 225
 Tentukan luas segitiga sama kaki terbesar dalam lingkaran berjari-jari 6: (a) dengan $h$, (b) dengan $\alpha$, (c) jenis segitiganya.
 
 {{fig:lo_p26}}
 ===
-(a) $A=\sqrt{36-h^2}\,(6+h)$, $A'=0\Rightarrow h=3$, $A=27\sqrt3$.
+(a) $A=\sqrt{36-h^2}\thinspace (6+h)$, $A'=0\Rightarrow h=3$, $A=27\sqrt3$.
 
-(b) $A=36\sin2\alpha\,(1+\cos2\alpha)$, maksimum di $\alpha=30^\circ$.
+(b) $A=36\sin2\alpha\thinspace (1+\cos2\alpha)$, maksimum di $\alpha=30^\circ$.
 
 (c) **Sama sisi.**
 
@@ -249,7 +249,7 @@ $A=2x\sqrt{25-x^2}$, maksimum di $x=\dfrac{5}{\sqrt2}$.
 @@ P28 | Latihan 28 | Persegi panjang dalam setengah lingkaran r | geometri | 225
 Ulangi latihan 27 untuk jari-jari $r$.
 ===
-**Jawab:** $\sqrt2\,r\times\dfrac{r}{\sqrt2}$.
+**Jawab:** $\sqrt2\thinspace r\times\dfrac{r}{\sqrt2}$.
 
 @@ P29 | Latihan 29 | Ruang olahraga dan lintasan 200 m | geometri | 225
 Ruang berbentuk persegi panjang dengan setengah lingkaran di dua ujung, dikelilingi lintasan 200 m. Selesaikan secara numerik dan analitis agar luas persegi panjang maksimum.
@@ -341,7 +341,7 @@ $P=8\cos\dfrac\theta2+4\sin\theta$, $P'=4\left(\cos\theta-\sin\dfrac\theta2\righ
 **Jawab:** $6\sqrt3\approx10{,}39$.
 
 @@ P40 | Latihan 40 | Segitiga singgung terkecil | geometri | 226
-Garis singgung $y=16-x^2$ di $(2;\,12)$: tentukan luas segitiga di kuadran I, lalu titik singgung yang memberi luas terkecil.
+Garis singgung $y=16-x^2$ di $(2; 12)$: tentukan luas segitiga di kuadran I, lalu titik singgung yang memberi luas terkecil.
 
 {{fig:lo_p40}}
 ===
@@ -388,13 +388,13 @@ $$T=\frac{\sqrt{x^2+d_1^2}}{v_1}+\frac{\sqrt{(a-x)^2+d_2^2}}{v_2}.$$
 $T'=\dfrac{\sin\theta_1}{v_1}-\dfrac{\sin\theta_2}{v_2}=0$, dan $T''>0$. $\blacksquare$
 
 @@ P45 | Latihan 45 | Jarak titik asal ke kurva | lintasan | 227
-$f(x)=2-2\sin x$ pada $[0;\,\pi/2]$. (a) Jarak ke titik potong sumbu. (b) Fungsi jarak $d$. (c) Minimumnya.
+$f(x)=2-2\sin x$ pada $[0; \pi/2]$. (a) Jarak ke titik potong sumbu. (b) Fungsi jarak $d$. (c) Minimumnya.
 ===
-(a) Ke $(0;\,2)$: $2$. Ke $(\pi/2;\,0)$: $\pi/2\approx1{,}57$.
+(a) Ke $(0; 2)$: $2$. Ke $(\pi/2; 0)$: $\pi/2\approx1{,}57$.
 
 (b) $d=\sqrt{x^2+(2-2\sin x)^2}$.
 
-(c) Turunan nol saat $x=4\cos x\,(1-\sin x)$, numerik $x\approx0{,}797$, $d_{\min}\approx0{,}980$.
+(c) Turunan nol saat $x=4\cos x\thinspace (1-\sin x)$, numerik $x\approx0{,}797$, $d_{\min}\approx0{,}980$.
 
 @@ P46 | Latihan 46 | Hukum Snell | lintasan | 227
 Tunjukkan pembiasan menurut Snell setara dengan latihan 44.
@@ -422,10 +422,10 @@ Penampang saluran trapesium sama kaki dengan tiga sisi 8 ft. Tentukan sudut $\th
 | $\theta$ | 10° | 20° | 30° | 40° | 50° | 60° | 70° |
 | $A$ | 22,1 | 42,5 | 59,7 | 72,7 | 80,5 | 83,1 | 80,7 |
 
-(c) $A=64\sin\theta\,(1+\cos\theta)$. (d) $A'=64(\cos\theta+\cos2\theta)=0\Rightarrow\theta=60^\circ$, $A=48\sqrt3\approx83{,}1\ \text{ft}^2$. (e) Grafik di bawah.
+(c) $A=64\sin\theta\thinspace (1+\cos\theta)$. (d) $A'=64(\cos\theta+\cos2\theta)=0\Rightarrow\theta=60^\circ$, $A=48\sqrt3\approx83{,}1\ \text{ft}^2$. (e) Grafik di bawah.
 
 @@ P51 | Latihan 51 | Jalur induk: jumlah kuadrat | biaya | 228
-Pusat distribusi di titik asal melayani titik $(4;\,1)$, $(5;\,6)$, $(10;\,3)$ (mil) lewat jalur induk $y=mx$. Minimumkan $S_1=(4m-1)^2+(5m-6)^2+(10m-3)^2$.
+Pusat distribusi di titik asal melayani titik $(4; 1)$, $(5; 6)$, $(10; 3)$ (mil) lewat jalur induk $y=mx$. Minimumkan $S_1=(4m-1)^2+(5m-6)^2+(10m-3)^2$.
 
 {{fig:lo_p51}}
 ===
@@ -436,14 +436,14 @@ $S_1'=2(141m-64)=0\Rightarrow m=\dfrac{64}{141}\approx0{,}454$.
 @@ P52 | Latihan 52 | Jalur induk: jumlah nilai mutlak | biaya | 228
 Minimumkan $S_2=|4m-1|+|5m-6|+|10m-3|$.
 ===
-$S_2$ linear sepotong-sepotong; cukup periksa titik patah $m=0{,}25;\,0{,}3;\,1{,}2$: nilainya $5{,}25$; $4{,}7$; $12{,}8$.
+$S_2$ linear sepotong-sepotong; cukup periksa titik patah $m=0{,}25; 0{,}3; 1{,}2$: nilainya $5{,}25$; $4{,}7$; $12{,}8$.
 
 **Jawab:** $y=0{,}3x$ dengan jumlah $4{,}7$ mil.
 
 @@ P53 | Latihan 53 | Jalur induk: jarak tegak lurus | biaya | 228
 Minimumkan $S_3=\dfrac{|4m-1|+|5m-6|+|10m-3|}{\sqrt{m^2+1}}$.
 ===
-Pada $[0{,}25;\,0{,}3]$ fungsi turun, pada $[0{,}3;\,1{,}2]$ naik (turunan sebanding $9-2m>0$); di luar interval itu nilainya lebih besar.
+Pada $[0{,}25; 0{,}3]$ fungsi turun, pada $[0{,}3; 1{,}2]$ naik (turunan sebanding $9-2m>0$); di luar interval itu nilainya lebih besar.
 
 **Jawab:** $m=0{,}3$, $y=0{,}3x$, $S_3\approx4{,}50$ mil.
 
@@ -461,23 +461,23 @@ Setengah panjang lengan $x$, setengah lebar $\sqrt{r^2-x^2}$:
 (c) Keduanya memberi $x=r\cos\theta\approx0{,}851r$ dan $A_{\max}=2(\sqrt5-1)r^2\approx2{,}47r^2$.
 
 @@ P55 | Latihan 55 | Parabola mendatar | lintasan | 228
-Titik pada $16x=y^2$ terdekat ke $(6;\,0)$.
+Titik pada $16x=y^2$ terdekat ke $(6; 0)$.
 ===
 $d^2=(x-6)^2+16x=x^2+4x+36$ naik untuk $x\ge0$.
 
-**Jawab:** titik $(0;\,0)$, jarak $6$.
+**Jawab:** titik $(0; 0)$, jarak $6$.
 
 @@ P56 | Latihan 56 | Perhatikan domain | lintasan | 228
-Titik pada $x=\sqrt{10y}$ terdekat ke $(0;\,4)$.
+Titik pada $x=\sqrt{10y}$ terdekat ke $(0; 4)$.
 ===
 $y=x^2/10$ dengan $x\ge0$. Turunan $d^2$ adalah $\dfrac{2x}{5}+\dfrac{x^3}{25}>0$ untuk $x>0$.
 
-**Jawab:** titik $(0;\,0)$, jarak $4$.
+**Jawab:** titik $(0; 0)$, jarak $4$.
 
 @@ P57 | Latihan 57 | Soal Putnam: maksimum berkendala | dasar | 228
 Tentukan maksimum $f(x)=x^3-3x$ untuk $x$ yang memenuhi $x^4+36\le13x^2$.
 ===
-Kendala $(x^2-4)(x^2-9)\le0$, yaitu $x\in[-3;\,-2]\cup[2;\,3]$. $f'=3x^2-3>0$ di sana.
+Kendala $(x^2-4)(x^2-9)\le0$, yaitu $x\in[-3; -2]\cup[2; 3]$. $f'=3x^2-3>0$ di sana.
 
 **Jawab:** $f(3)=18$.
 

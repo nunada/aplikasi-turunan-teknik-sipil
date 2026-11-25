@@ -1,3 +1,0 @@
-Satuan mengikuti buku (kaki/ft, inci, mil, atau meter).
-
-Dilewati karena tidak berkaitan langsung dengan teknik sipil: latihan 49 (laba bank) dan 50 (grafik laba iklan).

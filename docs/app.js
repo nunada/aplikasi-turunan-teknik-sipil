@@ -39,7 +39,7 @@ window.addEventListener("DOMContentLoaded", () => {
       c.hidden = !ok;
       if (ok) n++;
     }
-    for (const s of document.querySelectorAll("main section:not(.catatan)")) {
+    for (const s of document.querySelectorAll("main section")) {
       s.hidden = !s.querySelector(".soal:not([hidden])");
     }
     hitung.textContent = n + " soal";

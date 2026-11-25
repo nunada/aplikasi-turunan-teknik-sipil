@@ -1,5 +1,0 @@
-Dilewati karena tidak berkaitan langsung dengan teknik sipil: latihan 11 (berat astronot), 39 (resistor paralel), dan 42 (otak ikan), serta proyek terapan tentang kehilangan darah saat operasi.
-
-Pada Contoh 4 di buku tercetak $dy/dt=-700$; nilai yang benar sesuai soal adalah $-100$ km/jam.
-
-Optimisasi terapan dari buku ini (§4.7) ada di halaman Stewart 4.7.

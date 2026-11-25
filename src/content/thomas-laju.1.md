@@ -16,7 +16,7 @@ Balon udara naik tegak. Pengukur jarak berada 150 m dari titik lepas landas. Saa
 
 {{fig:th_c2}}
 ===
-$y=150\tan\theta$, sehingga $\dfrac{dy}{dt}=150\sec^2\theta\,\dfrac{d\theta}{dt}$.
+$y=150\tan\theta$, sehingga $\dfrac{dy}{dt}=150\sec^2\theta\thinspace \dfrac{d\theta}{dt}$.
 
 **Jawab:** $\dfrac{dy}{dt}=150(2)(0{,}14)=42$ m/menit.
 
@@ -29,29 +29,29 @@ Mobil polisi mendekati persimpangan siku dari utara dengan laju 100 km/jam. Saat
 ===
 $s^2=x^2+y^2$ memberi $s\dot s=x\dot x+y\dot y$, dengan $s=1$ dan $\dot y=-100$:
 
-$$30=0{,}8\,\dot x+0{,}6(-100).$$
+$$30=0{,}8\thinspace \dot x+0{,}6(-100).$$
 
 **Jawab:** $\dot x=112{,}5$ km/jam.
 
 @@ C4 | Contoh 4 | Perpotongan garis singgung lingkaran | gerak | 209
-Partikel $P$ bergerak searah jarum jam dengan laju tetap pada lingkaran berjari-jari 10 m, dari $(0;\,10)$ ke $(10;\,0)$ selama 30 s. Garis singgung di $P$ memotong sumbu-$x$ di $Q$. Seberapa cepat $Q$ bergerak saat berjarak 20 m dari pusat?
+Partikel $P$ bergerak searah jarum jam dengan laju tetap pada lingkaran berjari-jari 10 m, dari $(0; 10)$ ke $(10; 0)$ selama 30 s. Garis singgung di $P$ memotong sumbu-$x$ di $Q$. Seberapa cepat $Q$ bergerak saat berjarak 20 m dari pusat?
 
 {{fig:th_c4}}
 ===
 $x\cos\theta=10$ dengan $\dot\theta=-\pi$ rad/menit. Turunkan:
 
-$$\dot x\cos\theta-x\sin\theta\,\dot\theta=0.$$
+$$\dot x\cos\theta-x\sin\theta\thinspace \dot\theta=0.$$
 
 Saat $x=20$: $\cos\theta=\tfrac12$, $\sin\theta=\tfrac{\sqrt3}{2}$.
 
-**Jawab:** $\dot x=-20\sqrt3\,\pi\approx-108{,}8$ m/menit, yaitu mendekati pusat sekitar 109 m/menit.
+**Jawab:** $\dot x=-20\sqrt3\thinspace \pi\approx-108{,}8$ m/menit, yaitu mendekati pusat sekitar 109 m/menit.
 
 @@ C5 | Contoh 5 | Pesawat dipantau radar | gerak | 209–210
 Pesawat terbang pada ketinggian tetap 10.000 m menuju sebuah pulau. Saat pertama terdeteksi, sudut elevasi dari radar $30^\circ$ dan radar berputar ke atas $\tfrac13$ derajat per detik. Berapa laju pesawat dalam km/jam?
 
 {{fig:th_c5}}
 ===
-Dalam kilometer $x=10\cot\theta$, sehingga $\dot x=-10\csc^2\theta\,\dot\theta$, dengan $\csc^2 30^\circ=4$ dan
+Dalam kilometer $x=10\cot\theta$, sehingga $\dot x=-10\csc^2\theta\thinspace \dot\theta$, dengan $\csc^2 30^\circ=4$ dan
 
 $$\dot\theta=\tfrac13\cdot\frac{\pi}{180}\cdot3.600\ \text{rad/jam}.$$
 
@@ -66,7 +66,7 @@ Dengan $O$ tepat di bawah katrol setinggi tangan, katrol 6 m di atas $O$:
 
 $$6-h+z=13{,}5,\qquad 6^2+x^2=z^2\ \Rightarrow\ 36+x^2=(7{,}5+h)^2.$$
 
-$$\dot h=\frac{x\,\dot x}{7{,}5+h}.$$
+$$\dot h=\frac{x\thinspace \dot x}{7{,}5+h}.$$
 
 Saat $x=6{,}3$, $7{,}5+h=8{,}7$.
 
@@ -137,12 +137,12 @@ $12x\dot x=72\Rightarrow\dot x=2$; $\dot V=3x^2\dot x=54\ \text{cm}^3$/s.
 @@ P13 | Latihan 13 | Volume silinder | volume | 211
 $V=\pi r^2h$. Hubungkan $dV/dt$ jika (a) $r$ tetap, (b) $h$ tetap, (c) keduanya berubah.
 ===
-(a) $\dot V=\pi r^2\dot h$. (b) $\dot V=2\pi rh\,\dot r$. (c) $\dot V=\pi r^2\dot h+2\pi rh\,\dot r$.
+(a) $\dot V=\pi r^2\dot h$. (b) $\dot V=2\pi rh\thinspace \dot r$. (c) $\dot V=\pi r^2\dot h+2\pi rh\thinspace \dot r$.
 
 @@ P14 | Latihan 14 | Volume kerucut | volume | 211
 $V=\tfrac13\pi r^2h$. Jawab pertanyaan yang sama dengan latihan 13.
 ===
-(a) $\dot V=\tfrac13\pi r^2\dot h$. (b) $\dot V=\tfrac23\pi rh\,\dot r$. (c) $\dot V=\tfrac13\pi r^2\dot h+\tfrac23\pi rh\,\dot r$.
+(a) $\dot V=\tfrac13\pi r^2\dot h$. (b) $\dot V=\tfrac23\pi rh\thinspace \dot r$. (c) $\dot V=\tfrac13\pi r^2\dot h+\tfrac23\pi rh\thinspace \dot r$.
 
 @@ P17 | Latihan 17 | Jarak dua titik pada sumbu | laju | 211
 $s=\sqrt{x^2+y^2}$ jarak antara $(x,0)$ dan $(0,y)$. Hubungkan lajunya jika (a) $y$ tetap, (b) keduanya berubah, (c) $s$ tetap.
@@ -157,11 +157,11 @@ $s=\sqrt{x^2+y^2+z^2}$. Hubungkan lajunya jika (a) semua berubah, (b) $x$ tetap,
 @@ P19 | Latihan 19 | Luas segitiga dengan sudut apit | geometri | 211
 $A=\tfrac12ab\sin\theta$. Hubungkan $dA/dt$ jika (a) $a,b$ tetap, (b) hanya $b$ tetap, (c) semua berubah.
 ===
-(a) $\dot A=\tfrac12ab\cos\theta\,\dot\theta$.
+(a) $\dot A=\tfrac12ab\cos\theta\thinspace \dot\theta$.
 
-(b) $\dot A=\tfrac12ab\cos\theta\,\dot\theta+\tfrac12b\sin\theta\,\dot a$.
+(b) $\dot A=\tfrac12ab\cos\theta\thinspace \dot\theta+\tfrac12b\sin\theta\thinspace \dot a$.
 
-(c) $\dot A=\tfrac12ab\cos\theta\,\dot\theta+\tfrac12b\sin\theta\,\dot a+\tfrac12a\sin\theta\,\dot b$.
+(c) $\dot A=\tfrac12ab\cos\theta\thinspace \dot\theta+\tfrac12b\sin\theta\thinspace \dot a+\tfrac12a\sin\theta\thinspace \dot b$.
 
 @@ P20 | Latihan 20 | Pelat logam dipanaskan | struktur | 211
 Jari-jari pelat lingkaran bertambah 0,01 cm/menit karena pemanasan. Seberapa cepat luasnya bertambah saat jari-jari 50 cm?
@@ -246,7 +246,7 @@ Air keluar $6\ \text{m}^3$/menit dari kolam setengah bola berjari-jari 13 m, $V=
 @@ P30 | Latihan 30 | Tetes kabut membesar | volume | 212
 Tetes berbentuk bola menyerap uap dengan laju sebanding luas permukaannya. Tunjukkan jari-jarinya bertambah dengan laju tetap.
 ===
-$\dot V=kS$ berarti $4\pi r^2\dot r=k\,4\pi r^2$, sehingga $\dot r=k$ (tetap). $\blacksquare$
+$\dot V=kS$ berarti $4\pi r^2\dot r=k\thinspace 4\pi r^2$, sehingga $\dot r=k$ (tetap). $\blacksquare$
 
 @@ P31 | Latihan 31 | Balon helium | volume | 212
 Balon bola diisi $100\pi\ \text{m}^3$/menit. Saat jari-jari 5 m, tentukan laju jari-jari dan laju luas permukaan.
@@ -286,7 +286,7 @@ Partikel bergerak pada $y=x^2$ (kuadran I) dengan $\dot x=10$ m/s. Tentukan laju
 $\tan\theta=y/x=x$, sehingga $\dot\theta=\dfrac{\dot x}{1+x^2}=1$ rad/s.
 
 @@ P37 | Latihan 37 | Jarak ke titik asal | gerak | 213
-$\dot x=-1$ m/s, $\dot y=-5$ m/s. Tentukan laju perubahan jarak ke titik asal di $(5;\,12)$.
+$\dot x=-1$ m/s, $\dot y=-5$ m/s. Tentukan laju perubahan jarak ke titik asal di $(5; 12)$.
 ===
 $\dot D=\dfrac{5(-1)+12(-5)}{13}=-5$ m/s.
 
@@ -295,7 +295,7 @@ Kamera berada 40 m dari lintasan; mobil melaju 80 m/s. Tentukan laju sudut kamer
 
 {{fig:th_p38}}
 ===
-Dengan $x=40\tan\theta$: $|\dot\theta|=\dfrac{40\,|\dot x|}{40^2+x^2}$.
+Dengan $x=40\tan\theta$: $|\dot\theta|=\dfrac{40\thinspace |\dot x|}{40^2+x^2}$.
 
 Tepat di depan ($x=0$): $2$ rad/s. Setelah 0,5 s ($x=40$): $1$ rad/s.
 
@@ -313,7 +313,7 @@ Bayangan gedung 24 m panjangnya 18 m. Sudut matahari terhadap tanah bertambah $0
 
 {{fig:th_p40}}
 ===
-$x=24\cot\theta$, $\dot x=-24\csc^2\theta\,\dot\theta$ dengan $\csc^2\theta=1+\left(\tfrac{18}{24}\right)^2=\tfrac{25}{16}$ dan $\dot\theta=0{,}27\pi/180$.
+$x=24\cot\theta$, $\dot x=-24\csc^2\theta\thinspace \dot\theta$ dengan $\csc^2\theta=1+\left(\tfrac{18}{24}\right)^2=\tfrac{25}{16}$ dan $\dot\theta=0{,}27\pi/180$.
 
 **Jawab:** memendek $\approx17{,}7$ cm/menit.
 
@@ -347,7 +347,7 @@ Dua kapal menjauhi titik $O$ pada rute bersudut $120^\circ$, $A$ 14 knot dan $B$
 ===
 $d^2=a^2+b^2+ab\Rightarrow d=7$.
 
-$$2d\dot d=2a\dot a+2b\dot b+\dot a\,b+a\,\dot b=413.$$
+$$2d\dot d=2a\dot a+2b\dot b+\dot a\thinspace b+a\thinspace \dot b=413.$$
 
 **Jawab:** $\dot d=29{,}5$ knot.
 
@@ -370,6 +370,6 @@ Mercusuar 1 km lepas pantai berputar 3 kali per menit. Seberapa cepat titik soro
 
 {{fig:th_p47}}
 ===
-$x=\tan\theta$, $\dot x=\sec^2\theta\,\dot\theta=(2)(6\pi)$.
+$x=\tan\theta$, $\dot x=\sec^2\theta\thinspace \dot\theta=(2)(6\pi)$.
 
 **Jawab:** $12\pi\approx37{,}7$ km/menit.

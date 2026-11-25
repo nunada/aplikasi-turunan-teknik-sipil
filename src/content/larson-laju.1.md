@@ -27,7 +27,7 @@ Roket naik dengan $s=50t^2$ ft. Kamera di tanah 2.000 ft dari landasan. Tentukan
 
 {{fig:lr_c5}}
 ===
-$\tan\theta=s/2.000$, $\dot\theta=\dfrac{2.000\,\dot s}{s^2+2.000^2}$ dengan $s=5.000$, $\dot s=1.000$.
+$\tan\theta=s/2.000$, $\dot\theta=\dfrac{2.000\thinspace \dot s}{s^2+2.000^2}$ dengan $s=5.000$, $\dot s=1.000$.
 
 **Jawab:** $\dot\theta=\dfrac{2}{29}$ rad/s.
 
@@ -38,7 +38,7 @@ Batang penghubung 7 inci dipasang pada engkol berjari-jari 3 inci yang berputar 
 ===
 Aturan kosinus: $49=9+x^2-6x\cos\theta$. Turunkan dengan $\dot\theta=400\pi$:
 
-$$\dot x=\frac{6x\sin\theta}{6\cos\theta-2x}\,\dot\theta.$$
+$$\dot x=\frac{6x\sin\theta}{6\cos\theta-2x}\thinspace \dot\theta.$$
 
 Saat $\theta=\pi/3$, $x=8$.
 
@@ -73,27 +73,27 @@ $xy=4$. (a) $\dot y$ saat $x=8$, $\dot x=10$. (b) $\dot x$ saat $x=1$, $\dot y=-
 $y\dot x+x\dot y=0$. (a) $-\tfrac58$. (b) $\tfrac32$.
 
 @@ P6 | Latihan 6 | Lingkaran | dasar | 157
-$x^2+y^2=25$. (a) $\dot y$ di $(3;\,4)$, $\dot x=8$. (b) $\dot x$ di $(4;\,3)$, $\dot y=-2$.
+$x^2+y^2=25$. (a) $\dot y$ di $(3; 4)$, $\dot x=8$. (b) $\dot x$ di $(4; 3)$, $\dot y=-2$.
 ===
 $x\dot x+y\dot y=0$. (a) $-6$. (b) $\tfrac32$.
 
 @@ P7 | Latihan 7 | Titik pada parabola | gerak | 157
-$y=2x^2+1$, $\dot x=2$ cm/s. Tentukan $\dot y$ di $x=-1;\,0;\,1$.
+$y=2x^2+1$, $\dot x=2$ cm/s. Tentukan $\dot y$ di $x=-1; 0; 1$.
 ===
 $\dot y=4x\dot x=8x$: $-8$, $0$, $8$ cm/s.
 
 @@ P8 | Latihan 8 | Titik pada kurva rasional | gerak | 157
-$y=\dfrac{1}{1+x^2}$, $\dot x=6$ inci/s. Tentukan $\dot y$ di $x=-2;\,0;\,2$.
+$y=\dfrac{1}{1+x^2}$, $\dot x=6$ inci/s. Tentukan $\dot y$ di $x=-2; 0; 2$.
 ===
 $\dot y=-\dfrac{12x}{(1+x^2)^2}$: $\tfrac{24}{25}$, $0$, $-\tfrac{24}{25}$ inci/s.
 
 @@ P9 | Latihan 9 | Titik pada kurva tangen | gerak | 157
-$y=\tan x$, $\dot x=3$ ft/s. Tentukan $\dot y$ di $x=-\pi/3;\,-\pi/4;\,0$.
+$y=\tan x$, $\dot x=3$ ft/s. Tentukan $\dot y$ di $x=-\pi/3; -\pi/4; 0$.
 ===
 $\dot y=3\sec^2x$: $12$, $6$, $3$ ft/s.
 
 @@ P10 | Latihan 10 | Titik pada kurva kosinus | gerak | 157
-$y=\cos x$, $\dot x=4$ cm/s. Tentukan $\dot y$ di $x=\pi/6;\,\pi/4;\,\pi/3$.
+$y=\cos x$, $\dot x=4$ cm/s. Tentukan $\dot y$ di $x=\pi/6; \pi/4; \pi/3$.
 ===
 $\dot y=-4\sin x$: $-2$, $-2\sqrt2$, $-2\sqrt3$ cm/s.
 
@@ -141,7 +141,7 @@ Volume minyak bertambah $150\ \text{inci}^3$/s. Tinggi silinder sekitar sepuluh 
 ===
 Soal ini dimaksudkan memakai $r=h/10$, sehingga $V=\dfrac{\pi h^3}{100}$:
 
-$$\dot h=\frac{100\,\dot V}{3\pi h^2}=\frac{200}{49\pi}\approx1{,}30\ \text{inci/s}.$$
+$$\dot h=\frac{100\thinspace \dot V}{3\pi h^2}=\frac{200}{49\pi}\approx1{,}30\ \text{inci/s}.$$
 
 **Catatan:** untuk wadah silinder tegak yang nyata, jari-jari minyak tetap sehingga $\dot h=\dot V/(\pi r^2)$ konstan. Redaksi soal perlu diperjelas bila dipakai sebagai tugas.
 
@@ -152,7 +152,7 @@ Kolam panjang 12 m, lebar 6 m, dalam 1 m di ujung dangkal dan 3 m di ujung dalam
 ===
 Untuk kedalaman $h\le2$, penampang air segitiga dengan panjang $6h$: $V=\tfrac12h(6h)(6)=18h^2$.
 
-(a) Volume kolam $144\ \text{m}^3$; terisi $18/144=12{,}5\%$.
+(a) Volume kolam $144\ \text{m}^3$; terisi $\dfrac{18}{144}=0{,}125$, yaitu 12,5%.
 
 (b) $36h\dot h=\tfrac14\Rightarrow\dot h=\dfrac{1}{144}$ m/menit.
 
@@ -258,26 +258,26 @@ Ujung batang 1 m berada di $(x,0)$ dan $(0,y)$ dengan $x(t)=\tfrac12\sin(\pi t/6
 ===
 (a) $12$ s. (b) $y=\sqrt{1-x^2}$ minimum saat $|x|=\tfrac12$: $y=\dfrac{\sqrt3}{2}$.
 
-(c) $|\dot x|=\dfrac{\pi\sqrt3}{24}$, $|\dot y|=\dfrac{x}{y}|\dot x|=\dfrac{\sqrt5\,\pi}{120}\approx0{,}059$ m/s.
+(c) $|\dot x|=\dfrac{\pi\sqrt3}{24}$, $|\dot y|=\dfrac{x}{y}|\dot x|=\dfrac{\sqrt5\thinspace \pi}{120}\approx0{,}059$ m/s.
 
 @@ P32 | Latihan 32 | Batang mesin, gerak lain | gerak | 159
 Ulangi latihan 31 untuk $x(t)=\tfrac35\sin\pi t$, bagian (c) di $x=\tfrac3{10}$.
 ===
 (a) $2$ s. (b) $y_{\min}=\tfrac45$.
 
-(c) $|\dot x|=\dfrac{3\sqrt3\,\pi}{10}$, $y=\dfrac{\sqrt{91}}{10}$, $|\dot y|=\dfrac{9\sqrt3\,\pi}{10\sqrt{91}}\approx0{,}51$ m/s.
+(c) $|\dot x|=\dfrac{3\sqrt3\thinspace \pi}{10}$, $y=\dfrac{\sqrt{91}}{10}$, $|\dot y|=\dfrac{9\sqrt3\thinspace \pi}{10\sqrt{91}}\approx0{,}51$ m/s.
 
 @@ P33 | Latihan 33 | Tetes hujan menguap | volume | 159
 Tetes bola menguap dengan laju sebanding luas permukaannya. Tunjukkan jari-jarinya berkurang dengan laju tetap.
 ===
-$4\pi r^2\dot r=-k\,4\pi r^2\Rightarrow\dot r=-k$. $\blacksquare$
+$4\pi r^2\dot r=-k\thinspace 4\pi r^2\Rightarrow\dot r=-k$. $\blacksquare$
 
 @@ P34 | Latihan 34 | Tanda laju dari grafik | dasar | 159
 Dari kedua grafik, tentukan (a) tanda $dy/dt$ bila $dx/dt<0$; (b) tanda $dx/dt$ bila $dy/dt>0$.
 
 {{fig:lr_p34a lr_p34b}}
 ===
-Berlaku $\dot y=f'(x)\,\dot x$.
+Berlaku $\dot y=f'(x)\thinspace \dot x$.
 
 (i) $f$ turun ($f'<0$): (a) $\dot y>0$; (b) $\dot x<0$.
 
@@ -303,7 +303,7 @@ $\dot h=275\sin18^\circ\approx85{,}0$ mil/jam.
 @@ P40 | Latihan 40 | Sudut elevasi balon | gerak | 159
 Balon naik 4 m/s dari titik 50 m dari pengamat. Tentukan laju sudut elevasi saat tinggi 50 m.
 ===
-$\dot\theta=\dfrac{50\,\dot h}{50^2+h^2}=\dfrac{200}{5.000}=0{,}04$ rad/s.
+$\dot\theta=\dfrac{50\thinspace \dot h}{50^2+h^2}=\dfrac{200}{5.000}=0{,}04$ rad/s.
 
 @@ P41 | Latihan 41 | Menggulung tali pancing | gerak | 160
 Ujung joran 10 ft di atas air. Tali digulung 1 ft/s. Tentukan laju sudut tali terhadap air saat panjang tali 25 ft.
@@ -326,7 +326,7 @@ Mobil 50 ft dari gudang panjang; lampunya berputar 30 putaran/menit. Tentukan la
 
 {{fig:lr_p43}}
 ===
-$x=50\tan\theta$, $\dot x=50\sec^2\theta\,(60\pi)=\dfrac{3.000\pi}{\cos^2\theta}$ ft/menit: $\approx12.566$; $37.699$; $80.569$ ft/menit.
+$x=50\tan\theta$, $\dot x=50\sec^2\theta\thinspace (60\pi)=\dfrac{3.000\pi}{\cos^2\theta}$ ft/menit: $\approx12.566$; $37.699$; $80.569$ ft/menit.
 
 @@ P44 | Latihan 44 | Titik pada roda berputar | gerak | 160
 Roda berjari-jari 30 cm berputar 10 putaran/s. (a) $dx/dt$ sebagai fungsi $\theta$. (b) Grafik. (c) Kapan $|dx/dt|$ terbesar dan terkecil? (d) Nilai di $30^\circ$ dan $60^\circ$.
@@ -341,14 +341,16 @@ Roda berjari-jari 30 cm berputar 10 putaran/s. (a) $dx/dt$ sebagai fungsi $\thet
 
 (c) Terbesar di $\theta=90^\circ,270^\circ$; terkecil (nol) di $0^\circ,180^\circ$.
 
-(d) $-300\pi$ dan $-300\sqrt3\,\pi$ cm/s.
+(d) $-300\pi$ dan $-300\sqrt3\thinspace \pi$ cm/s.
 
 @@ P45 | Latihan 45 | Segitiga sama kaki | geometri | 160
-Dua sisi sama panjang $s$ dengan sudut apit $\theta$. (a) Tunjukkan $A=\tfrac12s^2\sin\theta$. (b) $\dot\theta=\tfrac12$ rad/menit; laju luas saat $\theta=\pi/6$ dan $\pi/3$.
+Panjang kedua sisi yang sama, $s$, **tetap**, sedangkan sudut apitnya $\theta$ berubah. (a) Tunjukkan $A=\tfrac12s^2\sin\theta$. (b) $\dot\theta=\tfrac12$ rad/menit; laju luas saat $\theta=\pi/6$ dan $\pi/3$.
 ===
 (a) Alas $s$, tinggi $s\sin\theta$, jadi $A=\tfrac12s^2\sin\theta$.
 
-(b) $\dot A=\dfrac{s^2\cos\theta}{4}$: $\dfrac{\sqrt3}{8}s^2$ dan $\dfrac{s^2}{8}$.
+(b) Karena $s$ tetap ($\dot s=0$): $\dot A=\tfrac12s^2\cos\theta\thinspace \dot\theta=\dfrac{s^2\cos\theta}{4}$, sehingga lajunya $\dfrac{\sqrt3}{8}s^2$ dan $\dfrac{s^2}{8}$ (satuan luas per menit).
+
+**Catatan:** jika $s$ ikut berubah, turunannya memuat suku tambahan $s\thinspace \dot s\sin\theta$.
 
 @@ P46 | Latihan 46 | Kamera pengawas koridor | struktur | 160
 Kamera 50 ft di atas lantai menyapu koridor 100 ft dengan pusat fokus bergerak $|dx/dt|=2$ ft/s. Buat model laju putarnya.

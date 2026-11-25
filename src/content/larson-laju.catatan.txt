@@ -1,5 +1,0 @@
-Satuan mengikuti buku (kaki/ft, inci, mil, atau meter).
-
-Halaman 151–155 pada berkas PDF edisi 12 tampil kosong, sehingga Contoh 1–5 diambil dari edisi 11 (2018) di folder yang sama. Contoh 6 edisi 12 sama dengan edisi 11, tetapi Contoh 1–5 sebaiknya dicocokkan dengan buku edisi 12 yang utuh.
-
-Dilewati karena tidak berkaitan langsung dengan teknik sipil: latihan 37 dan 38 (listrik) serta latihan 47 (data program makan siang sekolah).

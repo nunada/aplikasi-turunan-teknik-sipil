@@ -39,7 +39,7 @@ Orang berjalan lurus 1 m/s. Lampu sorot di tanah 6 m dari jalur terus mengarah k
 
 {{fig:sw_c5}}
 ===
-$x=6\tan\theta$, $\dot\theta=\tfrac16\cos^2\theta\,\dot x$. Panjang sorot $7{,}5$ m sehingga $\cos\theta=\tfrac45$.
+$x=6\tan\theta$, $\dot\theta=\tfrac16\cos^2\theta\thinspace \dot x$. Panjang sorot $7{,}5$ m sehingga $\cos\theta=\tfrac45$.
 
 **Jawab:** $\dot\theta=\dfrac{8}{75}\approx0{,}107$ rad/s.
 
@@ -81,24 +81,24 @@ $\dot h=\dfrac{\dot V}{25\pi}=\dfrac{3}{25\pi}\approx0{,}038$ m/menit.
 @@ P8 | Latihan 8 | Luas segitiga dengan sudut apit | geometri | 251
 $A=\tfrac12ab\sin\theta$. (a) $a=2$, $b=3$, $\dot\theta=0{,}2$ rad/menit. (b) Tambahkan $\dot b=1{,}5$ cm/menit. (c) Tambahkan pula $\dot a=2{,}5$ cm/menit. Hitung $\dot A$ saat $\theta=\pi/3$ (satuan cm, menit).
 ===
-(a) $\tfrac12ab\cos\theta\,\dot\theta=0{,}3\ \text{cm}^2$/menit.
+(a) $\tfrac12ab\cos\theta\thinspace \dot\theta=0{,}3\ \text{cm}^2$/menit.
 
 (b) $0{,}3+\tfrac12a\dot b\sin\theta\approx1{,}60\ \text{cm}^2$/menit.
 
-(c) $1{,}599+\tfrac12\dot a\,b\sin\theta\approx4{,}85\ \text{cm}^2$/menit.
+(c) $1{,}599+\tfrac12\dot a\thinspace b\sin\theta\approx4{,}85\ \text{cm}^2$/menit.
 
 @@ P9 | Latihan 9 | Titik pada elips | dasar | 251
-$4x^2+9y^2=25$. (a) $\dot y=\tfrac13$, tentukan $\dot x$ di $(2;\,1)$. (b) $\dot x=3$, tentukan $\dot y$ di $(-2;\,1)$.
+$4x^2+9y^2=25$. (a) $\dot y=\tfrac13$, tentukan $\dot x$ di $(2; 1)$. (b) $\dot x=3$, tentukan $\dot y$ di $(-2; 1)$.
 ===
 $8x\dot x+18y\dot y=0$. (a) $\dot x=-\tfrac38$. (b) $\dot y=\tfrac83$.
 
 @@ P10 | Latihan 10 | Titik pada bola | dasar | 251
-$x^2+y^2+z^2=9$, $\dot x=5$, $\dot y=4$. Tentukan $\dot z$ di $(2;\,2;\,1)$.
+$x^2+y^2+z^2=9$, $\dot x=5$, $\dot y=4$. Tentukan $\dot z$ di $(2; 2; 1)$.
 ===
 $x\dot x+y\dot y+z\dot z=0\Rightarrow\dot z=-18$.
 
 @@ P12 | Latihan 12 | Partikel pada hiperbola | gerak | 251
-Partikel pada $xy=8$. Di $(4;\,2)$, $\dot y=-3$ cm/s. Tentukan $\dot x$.
+Partikel pada $xy=8$. Di $(4; 2)$, $\dot y=-3$ cm/s. Tentukan $\dot x$.
 ===
 $y\dot x+x\dot y=0\Rightarrow\dot x=6$ cm/s.
 
@@ -182,11 +182,11 @@ $r=h/3$, $V=\dfrac{\pi h^3}{27}$, $\dot V=\dfrac{\pi h^2}{9}\dot h=\dfrac{800.00
 **Jawab:** debit masuk $=\dot V+10.000\approx289.253\ \text{cm}^3$/menit.
 
 @@ P26 | Latihan 26 | Partikel pada kurva sinus | gerak | 252
-Partikel pada $y=2\sin(\pi x/2)$. Di $(\tfrac13;\,1)$, $\dot x=\sqrt{10}$ cm/s. Tentukan laju jarak ke titik asal.
+Partikel pada $y=2\sin(\pi x/2)$. Di $(\tfrac13; 1)$, $\dot x=\sqrt{10}$ cm/s. Tentukan laju jarak ke titik asal.
 ===
-$\dot y=\pi\cos(\pi x/2)\,\dot x=\dfrac{\sqrt3}{2}\pi\sqrt{10}$, $D=\dfrac{\sqrt{10}}{3}$.
+$\dot y=\pi\cos(\pi x/2)\thinspace \dot x=\dfrac{\sqrt3}{2}\pi\sqrt{10}$, $D=\dfrac{\sqrt{10}}{3}$.
 
-$$\dot D=\frac{x\dot x+y\dot y}{D}=1+\frac{3\sqrt3\,\pi}{2}\approx9{,}16\ \text{cm/s}.$$
+$$\dot D=\frac{x\dot x+y\dot y}{D}=1+\frac{3\sqrt3\thinspace \pi}{2}\approx9{,}16\ \text{cm/s}.$$
 
 @@ P27 | Latihan 27 | Palung trapesium | air | 252
 Palung 10 m berpenampang trapesium sama kaki: lebar bawah 30 cm, atas 80 cm, tinggi 50 cm. Diisi $0{,}2\ \text{m}^3$/menit. Seberapa cepat air naik saat kedalaman 30 cm?
@@ -273,7 +273,7 @@ $d^2=a^2+b^2-ab$ dengan $a=60t$, $b=100t$: $d=t\sqrt{7.600}$.
 @@ P43 | Latihan 43 | Sisi ketiga segitiga | geometri | 253
 Dua sisi 12 m dan 15 m; sudut apit bertambah $2^\circ$/menit. Tentukan laju sisi ketiga saat sudut $60^\circ$.
 ===
-$c^2=369-360\cos\theta=189$, $c\dot c=180\sin\theta\,\dot\theta$ dengan $\dot\theta=\pi/90$.
+$c^2=369-360\cos\theta=189$, $c\dot c=180\sin\theta\thinspace \dot\theta$ dengan $\dot\theta=\pi/90$.
 
 **Jawab:** $\dot c=\dfrac{\pi}{\sqrt{63}}\approx0{,}396$ m/menit.
 
@@ -301,12 +301,12 @@ $x=3\tan\theta$, $\dot x=3\left(1+\tfrac19\right)(8\pi)=\dfrac{80\pi}{3}\approx8
 @@ P47 | Latihan 47 | Teleskop pelacak | gerak | 253–254
 Pesawat mendatar setinggi 5 km melintas di atas teleskop. Saat sudut elevasi $\pi/3$ dan berkurang $\pi/6$ rad/menit, berapa laju pesawat?
 ===
-$x=5\cot\theta$, $\dot x=-5\csc^2\theta\,\dot\theta=-5\left(\tfrac43\right)\left(-\tfrac\pi6\right)=\dfrac{10\pi}{9}$ km/menit $\approx209$ km/jam.
+$x=5\cot\theta$, $\dot x=-5\csc^2\theta\thinspace \dot\theta=-5\left(\tfrac43\right)\left(-\tfrac\pi6\right)=\dfrac{10\pi}{9}$ km/menit $\approx209$ km/jam.
 
 @@ P48 | Latihan 48 | Bianglala | gerak | 254
 Bianglala berjari-jari 10 m berputar sekali tiap 2 menit (titik terendah di permukaan tanah). Seberapa cepat penumpang naik saat 16 m di atas tanah?
 ===
-$y=10-10\cos\theta$, $\dot\theta=\pi$ rad/menit. Saat $y=16$, $\sin\theta=0{,}8$: $\dot y=10\sin\theta\,\dot\theta=8\pi\approx25{,}1$ m/menit.
+$y=10-10\cos\theta$, $\dot\theta=\pi$ rad/menit. Saat $y=16$, $\sin\theta=0{,}8$: $\dot y=10\sin\theta\thinspace \dot\theta=8\pi\approx25{,}1$ m/menit.
 
 @@ P49 | Latihan 49 | Pesawat menanjak | lintasan | 254
 Pesawat 300 km/jam melintas 1 km di atas radar sambil menanjak $30^\circ$. Tentukan laju jaraknya ke radar semenit kemudian.
@@ -323,7 +323,7 @@ Pelari 7 m/s di lintasan berjari-jari 100 m; temannya 200 m dari pusat. Tentukan
 ===
 $d^2=50.000-40.000\cos\theta$, $\dot\theta=0{,}07$. Saat $d=200$: $\cos\theta=\tfrac14$.
 
-$$\dot d=\frac{20.000\sin\theta\,\dot\theta}{d}=\pm\frac{7\sqrt{15}}{4}\approx\pm6{,}78\ \text{m/s},$$
+$$\dot d=\frac{20.000\sin\theta\thinspace \dot\theta}{d}=\pm\frac{7\sqrt{15}}{4}\approx\pm6{,}78\ \text{m/s},$$
 
 tanda bergantung arah lari.
 
@@ -332,9 +332,9 @@ Jarum menit 8 mm, jarum jam 4 mm. Seberapa cepat jarak kedua ujung berubah pada 
 ===
 $z^2=80-64\cos\theta$, $\theta=30^\circ$ mengecil dengan $\dot\theta=-\tfrac{11\pi}{6}$ rad/jam.
 
-$$\dot z=\frac{32\sin\theta\,\dot\theta}{z}\approx-18{,}6\ \text{mm/jam}.$$
+$$\dot z=\frac{32\sin\theta\thinspace \dot\theta}{z}\approx-18{,}6\ \text{mm/jam}.$$
 
 @@ P53 | Latihan 53 | Bola salju menggelinding | volume | 254
 $dV/dt$ sebanding luas permukaan. Tunjukkan $dr/dt$ tetap.
 ===
-$4\pi r^2\dot r=k\,4\pi r^2\Rightarrow\dot r=k$. $\blacksquare$
+$4\pi r^2\dot r=k\thinspace 4\pi r^2\Rightarrow\dot r=k$. $\blacksquare$

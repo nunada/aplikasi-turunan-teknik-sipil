@@ -54,7 +54,7 @@ $h=\dfrac{81}{\pi r^2}$, $S^2=\pi^2r^2(r^2+h^2)=\pi^2r^4+\dfrac{81^2}{r^2}$.
 
 Turunan nol: $r^6=\dfrac{81^2}{2\pi^2}$.
 
-**Jawab:** $r\approx2{,}63$ cm, $h=\sqrt2\,r\approx3{,}72$ cm.
+**Jawab:** $r\approx2{,}63$ cm, $h=\sqrt2\thinspace r\approx3{,}72$ cm.
 
 @@ P49 | Latihan 49 | Kerucut terbalik di dalam kerucut | volume | 345
 Kerucut setinggi $h$ berada dalam kerucut setinggi $H$ dengan puncaknya di pusat alas kerucut besar. Tunjukkan volume terbesar saat $h=H/3$.
@@ -134,12 +134,12 @@ Penerangan sebanding dengan kuat sumber dan berbanding terbalik dengan kuadrat j
 
 {{fig:s_p59}}
 ===
-$I=\dfrac{3k}{x^2}+\dfrac{k}{(4-x)^2}$, $I'=0\Rightarrow x=\sqrt[3]3\,(4-x)$.
+$I=\dfrac{3k}{x^2}+\dfrac{k}{(4-x)^2}$, $I'=0\Rightarrow x=\sqrt[3]3\thinspace (4-x)$.
 
 **Jawab:** $x=\dfrac{4\sqrt[3]3}{1+\sqrt[3]3}\approx2{,}36$ m dari sumber kuat.
 
 @@ P60 | Latihan 60 | Garis yang memotong luas terkecil | geometri | 346
-Tentukan persamaan garis melalui $(3;\,5)$ yang memotong luas terkecil dari kuadran pertama.
+Tentukan persamaan garis melalui $(3; 5)$ yang memotong luas terkecil dari kuadran pertama.
 ===
 Intersep $a,b$: $\dfrac3a+\dfrac5b=1\Rightarrow b=\dfrac{5a}{a-3}$. $A=\dfrac{5a^2}{2(a-3)}$, $A'=0\Rightarrow a=6$, $b=10$.
 
@@ -157,7 +157,7 @@ Di titik mana pada $y=1+40x^3-3x^5$ garis singgung memiliki gradien terbesar?
 ===
 $m=120x^2-15x^4$, $m'=60x(4-x^2)=0$. $m(\pm2)=240$ (maksimum).
 
-**Jawab:** $(2;\,225)$ dan $(-2;\,-223)$.
+**Jawab:** $(2; 225)$ dan $(-2; -223)$.
 
 @@ P63 | Latihan 63 | Ruas singgung terpendek hiperbola | geometri | 346
 Berapa panjang terpendek ruas garis singgung $y=3/x$ yang dipotong kuadran pertama?
@@ -349,13 +349,25 @@ Dua lampu identik berjarak 10 m. Titik $P$ berada pada garis sejajar sejauh $d$ 
 
 (b) $d=5$: titik kritis pada $0\le x\le10$ adalah $x=5$ serta $x\approx0{,}45$ dan $x\approx9{,}55$. Dua titik terakhir merupakan **maksimum lokal** ($I\approx0{,}0483k$). Untuk minimum mutlak, bandingkan titik tengah dengan kedua ujung: $I(5)=0{,}040k<I(0)=I(10)=0{,}048k$, sehingga minimum mutlak di $x=5$.
 
-(c) $d=10$: $I(0)=0{,}015k<I(5)=0{,}016k$; minimum di ujung.
+### Letak minimum untuk setiap $d>0$
 
-(d) Peralihan saat $I(0)=I(5)$:
+Misalkan $u=(x-5)^2$ dengan $0\le u\le25$, dan $c=25+d^2$. Maka
 
-$$\frac1{d^2}+\frac1{100+d^2}=\frac{2}{25+d^2}\Rightarrow d^2=50.$$
+$$\frac{I}{k}=\frac{2(u+c)}{(u+c)^2-100u},$$
 
-**Jawab:** $d=5\sqrt2\approx7{,}07$ m.
+$$\frac{d}{du}\left(\frac Ik\right)=\frac{2\left[100c-(u+c)^2\right]}{\left[(u+c)^2-100u\right]^2}.$$
+
+Pembilang $100c-(u+c)^2$ selalu turun terhadap $u$, sehingga tandanya berubah paling banyak sekali, dari positif ke negatif. Jadi setiap titik kritis interior terhadap $u$ merupakan **maksimum**. Akibatnya minimum mutlak selalu terjadi di $u=0$ (titik tengah, $x=5$) atau di $u=25$ (ujung, $x=0$ atau $x=10$).
+
+(c) $d=10$: cukup bandingkan $I(0)=I(10)=0{,}015k$ dengan $I(5)=0{,}016k$. Minimum mutlak ada di ujung, bukan di tengah.
+
+(d) Bandingkan nilai di ujung dan di tengah:
+
+$$I(0)-I(5)=\frac{50k\thinspace (50-d^2)}{d^2(d^2+25)(d^2+100)}.$$
+
+Untuk $d^2<50$ minimum ada di tengah, sedangkan untuk $d^2>50$ minimum ada di ujung.
+
+**Jawab:** peralihan terjadi pada $d=5\sqrt2\approx7{,}07$ m.
 
 @@ L1 | Proyek Kaleng 1 | Tutup dipotong dari persegi | volume | 349
 Volume $V$ tetap; selimut tanpa sisa, tetapi tutup dan alas dipotong dari persegi sisi $2r$. Tunjukkan bahan minimum saat $h/r=8/\pi$.
@@ -395,7 +407,7 @@ Gambarkan grafik $\sqrt[3]V/k$ sebagai fungsi $x=h/r$ dan jelaskan pengaruh ukur
 
 {{fig:s_can4}}
 ===
-Fungsi $g(x)=\sqrt[3]{\pi x}\,\dfrac{2\pi-x}{\pi x-4\sqrt3}$ turun dari tak hingga (saat $x\to4\sqrt3/\pi\approx2{,}21$) menuju $0$ (saat $x=2\pi$).
+Fungsi $g(x)=\sqrt[3]{\pi x}\thinspace \dfrac{2\pi-x}{\pi x-4\sqrt3}$ turun dari tak hingga (saat $x\to4\sqrt3/\pi\approx2{,}21$) menuju $0$ (saat $x=2\pi$).
 
 - Kaleng besar atau sambungan murah ($\sqrt[3]V/k$ besar): $h/r$ mendekati $2{,}21$.
 - Kaleng kecil atau sambungan mahal ($\sqrt[3]V/k$ kecil): $h/r$ jauh lebih besar, kaleng lebih langsing.

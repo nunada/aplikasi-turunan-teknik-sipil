@@ -41,7 +41,7 @@ Dua sumber berintensitas $I_1$ dan $I_2$ berjarak $d$. Di titik mana pada ruas p
 ===
 $x$ dari $I_1$: $E=k\left(\dfrac{I_1}{x^2}+\dfrac{I_2}{(d-x)^2}\right)$, $E'=0\Rightarrow\dfrac{I_1}{x^3}=\dfrac{I_2}{(d-x)^3}$.
 
-**Jawab:** $x=\dfrac{d\,\sqrt[3]{I_1}}{\sqrt[3]{I_1}+\sqrt[3]{I_2}}$.
+**Jawab:** $x=\dfrac{d\thinspace \sqrt[3]{I_1}}{\sqrt[3]{I_1}+\sqrt[3]{I_2}}$.
 
 @@ P47 | Latihan 47 | Proporsi jendela dua jenis kaca | struktur | 289
 Jendela persegi panjang beratap setengah lingkaran; kaca berwarna meneruskan setengah cahaya kaca bening; keliling tetap. Tentukan proporsi terbaik.
@@ -165,7 +165,7 @@ Ulangi latihan 20 jika alas $2b$ sedangkan tinggi tetap $2a$.
 ===
 $S=(2a-y)+2\sqrt{b^2+y^2}$, $S'=0\Rightarrow y=\dfrac{b}{\sqrt3}$.
 
-**Jawab:** $y=b/\sqrt3$ bila $b\le2\sqrt3a$; jika lebih besar, $S$ turun pada seluruh $[0;\,2a]$ sehingga $P=A$ ($y=2a$).
+**Jawab:** $y=b/\sqrt3$ bila $b\le2\sqrt3a$; jika lebih besar, $S$ turun pada seluruh $[0; 2a]$ sehingga $P=A$ ($y=2a$).
 
 @@ P59 | Latihan 59 | Laju truk berbiaya minimum | biaya | 290
 Untuk $80\le v\le100$ km/jam, konsumsi truk $f(v)=a-bv$ km/L ($b>0$). Upah sopir $w$ per jam, harga bahan bakar $p$ per liter. Tentukan laju anjuran.
@@ -174,7 +174,7 @@ Biaya per km: $c(v)=\dfrac wv+\dfrac{p}{a-bv}$,
 
 $$c'=-\frac{w}{v^2}+\frac{pb}{(a-bv)^2}=0\Rightarrow v^*=\frac{a\sqrt w}{b\sqrt w+\sqrt{pb}}.$$
 
-**Jawab:** pakai $v^*$ jika di $[80;\,100]$; jika $v^*<80$ pakai $80$, jika $v^*>100$ pakai $100$.
+**Jawab:** pakai $v^*$ jika di $[80; 100]$; jika $v^*<80$ pakai $80$, jika $v^*>100$ pakai $100$.
 
 @@ P60 | Latihan 60 | Rumus jarak titik ke garis | dasar | 290
 Buktikan rumus jarak titik $(x_0,y_0)$ ke garis dengan meminimumkan fungsi jarak.
@@ -198,7 +198,7 @@ Jari-jari $r$, tinggi $h$: $2arh+\tfrac12\pi br^2+\pi cr=A$. Substitusi $h$ ke c
 
 $$L(r)=\frac Aa-\frac{\pi c}{a}r-\frac{\pi(b-pa)}{2a}r^2,\qquad 0<r\le r_{\max}$$
 
-($r_{\max}$ saat $h=0$). Turunan keduanya bertanda $pa-b$, dan $L'(r)=-\dfrac\pi a\,[c+(b-pa)r]$.
+($r_{\max}$ saat $h=0$). Turunan keduanya bertanda $pa-b$, dan $L'(r)=-\dfrac\pi a\thinspace [c+(b-pa)r]$.
 
 - Jika $b\ge pa$: $L$ selalu turun. Cahaya mendekati $A/a$ saat $r\to0$ (jendela makin sempit dan tinggi), tetapi tidak pernah tercapai.
 - Jika $b<pa$: titik kritis $r=c/(pa-b)$ adalah **minimum**, sehingga maksimum ada di ujung: bandingkan $A/a$ (limit $r\to0$) dengan $L(r_{\max})=\tfrac12\pi pr_{\max}^2$.
@@ -206,7 +206,7 @@ $$L(r)=\frac Aa-\frac{\pi c}{a}r-\frac{\pi(b-pa)}{2a}r^2,\qquad 0<r\le r_{\max}$
 **Kesimpulan:** sebagaimana dirumuskan, tidak ada optimum di dalam domain; diperlukan batas lebar minimum atau tinggi maksimum agar desainnya praktis.
 
 @@ P62 | Latihan 62 | Titik elips terdekat | lintasan | 291
-Tentukan titik pada $4x^2+9y^2=36$ yang terdekat dengan $\left(4;\,\dfrac{13\sqrt5}{6}\right)$.
+Tentukan titik pada $4x^2+9y^2=36$ yang terdekat dengan $\left(4; \dfrac{13\sqrt5}{6}\right)$.
 ===
 $x=3\cos t$, $y=2\sin t$. Syarat turunan nol:
 
@@ -214,7 +214,7 @@ $$-10\sin t\cos t+24\sin t-\frac{26\sqrt5}{3}\cos t=0,$$
 
 dipenuhi oleh $\cos t=\tfrac23$, $\sin t=\tfrac{\sqrt5}{3}$.
 
-**Jawab:** $\left(2;\,\dfrac{2\sqrt5}{3}\right)$, jarak $\dfrac{\sqrt{61}}{2}$.
+**Jawab:** $\left(2; \dfrac{2\sqrt5}{3}\right)$, jarak $\dfrac{\sqrt{61}}{2}$.
 
 @@ P63 | Latihan 63 | Diagonal rangka layang-layang | struktur | 291
 Rangka layang-layang dengan sisi luar $a,a,b,b$ ($b>a$). Berapa panjang diagonal agar luas maksimum?
@@ -250,7 +250,7 @@ Lahan persegi $s\times s$: laba $a$/m² tanpa irigasi dan $b$/m² bila diairi; b
 ===
 Keuntungan: $P=as^2+(b-a)A_{\text{dalam}}(r)-c\pi r^2$. Untuk $r\le s/2$, $P$ naik. Untuk $s/2<r<s/\sqrt2$, $\dfrac{dA_{\text{dalam}}}{dr}=r(2\pi-8\alpha)$ dengan $\cos\alpha=\dfrac{s}{2r}$. Maka
 
-$$P'=r\,[(b-a)(2\pi-8\alpha)-2\pi c]=0\Rightarrow\alpha=\frac\pi4\left(1-\frac{c}{b-a}\right).$$
+$$P'=r\thinspace [(b-a)(2\pi-8\alpha)-2\pi c]=0\Rightarrow\alpha=\frac\pi4\left(1-\frac{c}{b-a}\right).$$
 
 **Jawab:** $r=\dfrac s2\sec\left[\dfrac\pi4\left(1-\dfrac{c}{b-a}\right)\right]$ (diasumsikan air di luar lahan tetap berbiaya).
 
@@ -307,7 +307,7 @@ $$R=\frac{k}{r_1^4}(X-Y\cot\theta)+\frac{k}{r_2^4}Y\csc\theta.$$
 
 (d) $R(\bar\theta)=\dfrac{kX}{r_1^4}+\dfrac{kY}{r_2^4}\sqrt{1-(r_2/r_1)^8}$, lebih kecil dari $R(\pi/2)=\dfrac{kX}{r_1^4}+\dfrac{kY}{r_2^4}$.
 
-(e) Satu-satunya titik kritis pada $(0;\,\pi/2)$, jadi minimum mutlak di sana, asalkan $D$ tetap berada di antara $A$ dan $E$, yaitu $X\ge Y\cot\bar\theta$.
+(e) Satu-satunya titik kritis pada $(0; \pi/2)$, jadi minimum mutlak di sana, asalkan $D$ tetap berada di antara $A$ dan $E$, yaitu $X\ge Y\cot\bar\theta$.
 
 @@ P72 | Latihan 72 | Silinder berluas permukaan maksimum dalam kerucut | volume | 292
 Kerucut berjari-jari $R$ dan tinggi $H$. Tentukan jari-jari silinder di dalamnya (tinggi positif) agar luas total (tutup, alas, selimut) maksimum.

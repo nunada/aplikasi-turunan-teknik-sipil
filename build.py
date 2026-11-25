@@ -245,8 +245,6 @@ def main():
         stats.append((page, short, book, sec, count))
         topics = sorted({p["topic"] for p in probs}, key=list(TOPICS).index)
         options = "".join(f'<option value="{t}">{TOPICS[t]}</option>' for t in topics)
-        note_path = SRC / "content" / f"{page}.catatan.txt"
-        note = render(note_path.read_text(encoding="utf-8"), used) if note_path.exists() else ""
         body = [f"<h1>{sec}</h1><p class='book'>{html.escape(book)}</p>",
                 f"""<div class="bar">
 <input id="q" type="search" placeholder="Cari soal…" aria-label="Cari soal">
@@ -262,8 +260,6 @@ def main():
             body.append(f"<section><h2>{heading}</h2><div class='chips'>{chips}</div>")
             body += [card(p, used) for p in group]
             body.append("</section>")
-        if note:
-            body.append(f"<section class='catatan'><h2>Soal yang tidak dimuat</h2>{note}</section>")
         (OUT / f"{page}.html").write_text(shell(f"{short} — {sec}", page, "\n".join(body)), encoding="utf-8")
 
     intro = render((SRC / "content" / "index.txt").read_text(encoding="utf-8"), used)

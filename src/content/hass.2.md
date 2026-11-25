@@ -14,7 +14,7 @@ Kemiringan $m=60+60x^2-20x^3-15x^4$ dan $m'=-60x(x+2)(x-1)$.
 
 $m(-2)=220$, $m(0)=60$, $m(1)=85$, dan $m\to-\infty$ untuk $x\to\pm\infty$.
 
-**Jawab:** titik $(-2;\,-264)$ dengan kemiringan $220$.
+**Jawab:** titik $(-2; -264)$ dengan kemiringan $220$.
 
 @@ P43 | Latihan 43 | Segitiga terkecil oleh garis singgung parabola | geometri | 285
 Di antara segitiga di kuadran pertama yang dibentuk sumbu koordinat dan garis singgung $y=3x-x^2$, berapa luas terkecil?
@@ -72,11 +72,11 @@ Posisi dua partikel: $s_1=\sin t$, $s_2=\sin(t+\pi/3)$. (a) Kapan bertemu pada $
 ===
 $s_1-s_2=-\cos(t+\pi/6)$.
 
-(a) $\cos(t+\pi/6)=0\Rightarrow t=\dfrac\pi3,\ \dfrac{4\pi}{3}$.
+(a) $\cos(t+\pi/6)=0$, sehingga kedua partikel bertemu pada $t=\dfrac\pi3$ s dan $t=\dfrac{4\pi}{3}$ s.
 
 (b) Jarak maksimum $1$ m.
 
-(c) Kecepatan relatif $v_1-v_2=\dfrac{d}{dt}(s_1-s_2)=\sin(t+\pi/6)$. Besarnya $|\sin(t+\pi/6)|$ maksimum, yaitu $1$ m/s, di $t=\dfrac\pi3;\,\dfrac{4\pi}{3}$, saat keduanya berpapasan.
+(c) Kecepatan relatif $v_1-v_2=\dfrac{d}{dt}(s_1-s_2)=\sin(t+\pi/6)$. Besarnya $|\sin(t+\pi/6)|$ maksimum, yaitu $1$ m/s, pada $t=\dfrac\pi3$ s dan $t=\dfrac{4\pi}{3}$ s, saat keduanya berpapasan.
 
 **Catatan:** jarak $D(t)=|\cos(t+\pi/6)|$ **tidak dapat diturunkan** di kedua waktu itu (grafiknya bersudut). Untuk $D\ne0$ berlaku $|D'(t)|=|\sin(t+\pi/6)|$, yang **mendekati** $1$ saat $t$ mendekati waktu pertemuan.
 
@@ -94,7 +94,7 @@ Jangkauan peluru $R=\dfrac{v_0^2}{g}\sin2\alpha$. Tentukan sudut $\alpha$ yang m
 
 {{fig:h_p50}}
 ===
-$R'(\alpha)=\dfrac{2v_0^2}{g}\cos2\alpha=0\Rightarrow\alpha=\dfrac\pi4$ pada $[0;\,\pi/2]$.
+$R'(\alpha)=\dfrac{2v_0^2}{g}\cos2\alpha=0\Rightarrow\alpha=\dfrac\pi4$ pada $[0; \pi/2]$.
 
 **Jawab:** $45^\circ$.
 
@@ -120,7 +120,7 @@ Kekakuan balok $S=kwd^3$. (a) Dimensi balok terkaku dari gelondongan berdiameter
 ===
 (a) Maksimumkan $S=kd^3\sqrt{900-d^2}$:
 
-$$S'=\frac{kd^2\,(3(900-d^2)-d^2)}{\sqrt{900-d^2}}=0\Rightarrow d^2=675.$$
+$$S'=\frac{kd^2\thinspace (3(900-d^2)-d^2)}{\sqrt{900-d^2}}=0\Rightarrow d^2=675.$$
 
 **Jawab:** $w=15$ cm, $d=15\sqrt3\approx26{,}0$ cm.
 
@@ -137,12 +137,12 @@ Posisi kereta $s=10\cos\pi t$ (cm), $0\le t\le4$. (a) Laju maksimum, kapan, di m
 ===
 $v=-10\pi\sin\pi t$, $a=-10\pi^2\cos\pi t$.
 
-(a) $|v|_{\max}=10\pi\approx31{,}4$ cm/s pada $t=0{,}5;\,1{,}5;\,2{,}5;\,3{,}5$ s, di $s=0$, saat itu $a=0$.
+(a) $|v|_{\max}=10\pi\approx31{,}4$ cm/s pada $t=0{,}5$ s, $1{,}5$ s, $2{,}5$ s, dan $3{,}5$ s, yaitu di $s=0$, saat itu $a=0$.
 
-(b) $|a|_{\max}=10\pi^2\approx98{,}7$ cm/s² di $s=\pm10$ cm ($t=0;\,1;\,2;\,3;\,4$); laju nol.
+(b) $|a|_{\max}=10\pi^2\approx98{,}7$ cm/s² di $s=\pm10$ cm (pada $t=0$ s, $1$ s, $2$ s, $3$ s, dan $4$ s); laju nol.
 
 @@ P54 | Latihan 54 | Dua massa pada pegas | gerak | 287
-$s_1=2\sin t$, $s_2=\sin2t$. (a) Kapan kedua massa berpapasan ($t>0$)? (b) Kapan jarak vertikalnya terbesar pada $[0;\,2\pi]$ dan berapa?
+$s_1=2\sin t$, $s_2=\sin2t$. (a) Kapan kedua massa berpapasan ($t>0$)? (b) Kapan jarak vertikalnya terbesar pada $[0; 2\pi]$ dan berapa?
 
 {{fig:h_p54}}
 ===
@@ -235,7 +235,7 @@ $D=f-g$ maksimum di titik dalam $c$ dan terdiferensialkan, sehingga $D'(c)=0$, y
 **Jawab:** kedua garis singgung **sejajar**.
 
 @@ P72 | Latihan 72 | Apakah fungsi trigonometri pernah negatif | dasar | 289
-$f(x)=3+4\cos x+\cos2x$. (a) Mengapa cukup meninjau $[0;\,2\pi]$? (b) Pernahkah $f<0$?
+$f(x)=3+4\cos x+\cos2x$. (a) Mengapa cukup meninjau $[0; 2\pi]$? (b) Pernahkah $f<0$?
 ===
 (a) $f$ berperiode $2\pi$.
 
@@ -260,7 +260,7 @@ $f(x)=3+4\cos x+\cos2x$. (a) Mengapa cukup meninjau $[0;\,2\pi]$? (b) Pernahkah 
 {{fig:h_p74}}
 
 @@ P75 | Latihan 75 | Jarak kurva akar ke sebuah titik | lintasan | 289
-(a) Seberapa dekat kurva $y=\sqrt x$ ke titik $(3/2;\,0)$? (b) Gambarkan grafik fungsi jarak.
+(a) Seberapa dekat kurva $y=\sqrt x$ ke titik $(3/2; 0)$? (b) Gambarkan grafik fungsi jarak.
 
 {{fig:h_p75}}
 ===
@@ -273,13 +273,13 @@ $f(x)=3+4\cos x+\cos2x$. (a) Mengapa cukup meninjau $[0;\,2\pi]$? (b) Pernahkah 
 Minimum $D(x)$ di $x=1$.
 
 @@ P76 | Latihan 76 | Jarak setengah lingkaran ke sebuah titik | lintasan | 289
-(a) Seberapa dekat $y=\sqrt{16-x^2}$ ke titik $(1;\,\sqrt3)$? (b) Gambarkan grafik fungsi jarak.
+(a) Seberapa dekat $y=\sqrt{16-x^2}$ ke titik $(1; \sqrt3)$? (b) Gambarkan grafik fungsi jarak.
 
 {{fig:h_p76}}
 ===
-(a) $D^2=(x-1)^2+(y-\sqrt3)^2=20-2x-2\sqrt3\,y$. Turunan nol saat $1+\sqrt3\,y'=0$ dengan $y'=-x/y$, jadi $y=\sqrt3x$, sehingga $x=2$.
+(a) $D^2=(x-1)^2+(y-\sqrt3)^2=20-2x-2\sqrt3\thinspace y$. Turunan nol saat $1+\sqrt3\thinspace y'=0$ dengan $y'=-x/y$, jadi $y=\sqrt3x$, sehingga $x=2$.
 
-**Jawab:** titik $(2;\,2\sqrt3)$, jarak minimum $2$.
+**Jawab:** titik $(2; 2\sqrt3)$, jarak minimum $2$.
 
 (b)
 

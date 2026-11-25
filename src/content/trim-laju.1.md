@@ -58,7 +58,7 @@ Batang $OB$ panjang $l$ berputar $\omega$ putaran per detik; batang $AB$ panjang
 ===
 Aturan kosinus: $L^2=l^2+x^2-2lx\cos\theta$. Turunkan dengan $\dot\theta=2\pi\omega$:
 
-$$\dot x=\frac{2\pi\omega\,lx\sin\theta}{l\cos\theta-x}.$$
+$$\dot x=\frac{2\pi\omega\thinspace lx\sin\theta}{l\cos\theta-x}.$$
 
 Laju maksimum saat $\ddot x=0$:
 
@@ -70,7 +70,7 @@ $$(l^2L^2-l^4)a^3+(lL^2+3l^3)a^2-(L^2+3l^2)a+l=0.$$
 
 Untuk $L=0{,}6$ m, $l=0{,}2$ m: $a\approx0{,}4620$, $x\approx0{,}6265$ m, $\theta\approx1{,}277$ rad.
 
-**Jawab:** laju maksimum $\approx1{,}325\,\omega$ m/s.
+**Jawab:** laju maksimum $\approx1{,}325\thinspace \omega$ m/s.
 
 @@ P1 | Latihan 1 | Balon lepas dari mobil | laju | 306
 Mobil terbuka melaju 100 km/jam. Balon helium terlepas dan naik tegak 10 m/s. Seberapa cepat anak di mobil dan balon berpisah 4 s kemudian?
@@ -177,7 +177,7 @@ Balon berupa silinder (jari-jari $r$, panjang $l$) dengan setengah bola di tiap 
 ===
 $V=\pi r^2l+\tfrac43\pi r^3$, $\dot l=2\dot r$:
 
-$$\dot V=\pi\dot r(2rl+6r^2)=704\pi\,\dot r=10.$$
+$$\dot V=\pi\dot r(2rl+6r^2)=704\pi\thinspace \dot r=10.$$
 
 **Jawab:** $\dot r=\dfrac{5}{352\pi}\approx0{,}0045$ cm/s.
 
@@ -197,7 +197,7 @@ $$\dot y=-\frac{(x-50)\dot x}{y}=\frac{10(x-50)}{\sqrt{2.500-(x-50)^2}}.$$
 @@ P15 | Latihan 15 | Dua kapal dari dermaga | lintasan | 307
 Kapal 1 berada 1 km di utara dermaga, bergerak arah N30°E 3 km/jam. Kapal 2 berada $\tfrac34$ km di timur dermaga, bergerak ke timur 7 km/jam. Seberapa cepat keduanya berpisah?
 ===
-Posisi relatif $(0{,}75;\,-1)$, jarak $1{,}25$. Kecepatan relatif $(7-1{,}5;\;-3\cos30^\circ)=(5{,}5;\,-2{,}598)$.
+Posisi relatif $(0{,}75; -1)$, jarak $1{,}25$. Kecepatan relatif $(7-1{,}5; -3\cos30^\circ)=(5{,}5; -2{,}598)$.
 
 $$\dot D=\frac{0{,}75(5{,}5)+(-1)(-2{,}598)}{1{,}25}.$$
 
@@ -212,7 +212,7 @@ $\dot\theta=\dfrac{10\pi}{9}$ rad/s (sudut di bawah $OQ$ membesar).
 
 $$d^2=r^2+100^2-200r\cos\theta,$$
 
-$$d\,\dot d=r\dot r-100\dot r\cos\theta+100r\sin\theta\,\dot\theta.$$
+$$d\thinspace \dot d=r\dot r-100\dot r\cos\theta+100r\sin\theta\thinspace \dot\theta.$$
 
 $d\approx93{,}2$ cm.
 
@@ -224,9 +224,9 @@ Delapan peluncur es membentuk "cambuk" berputar. Tunjukkan orang ketujuh bergera
 Anggap orang pertama sebagai poros dan jarak antarorang $d$. Semua berkecepatan sudut sama $\omega$, laju $v=\omega\times$ jarak ke poros: $v_7=6d\omega$, $v_4=3d\omega$. Jadi $v_7=2v_4$. $\blacksquare$
 
 @@ P18 | Latihan 18 | Partikel melingkar | gerak | 307
-Partikel mengelilingi lingkaran berjari-jari 5 cm berlawanan jarum jam 4 putaran per detik. Seberapa cepat ia menjauh dari $(5;\,6)$ saat di $(-3;\,4)$?
+Partikel mengelilingi lingkaran berjari-jari 5 cm berlawanan jarum jam 4 putaran per detik. Seberapa cepat ia menjauh dari $(5; 6)$ saat di $(-3; 4)$?
 ===
-$\omega=8\pi$, kecepatan $\omega(-y,x)=8\pi(-4;\,-3)$. Vektor dari $(5;\,6)$: $(-8;\,-2)$.
+$\omega=8\pi$, kecepatan $\omega(-y,x)=8\pi(-4; -3)$. Vektor dari $(5; 6)$: $(-8; -2)$.
 
 $$\dot D=\frac{(-8)(-32\pi)+(-2)(-24\pi)}{\sqrt{68}}.$$
 
@@ -244,18 +244,20 @@ $$\dot x_C=-\tfrac12(1)+\tfrac32(-2)=-3{,}5.$$
 **Jawab:** $3{,}5$ m/s ke kiri.
 
 @@ P20 | Latihan 20 | Normal hiperbola | laju | 307
-$P(x,y)$ pada $x^2-y^2=1$, $R$ proyeksinya pada sumbu-$x$, dan $Q(x_Q,0)$ titik potong garis normal dengan sumbu-$x$ ($x_Q$ adalah absis titik $Q$). (a) Tunjukkan $x_Q=2x$. (b) $x$ berkurang 3 satuan/waktu; laju luas segitiga $QPR$ saat $x=4$?
+$P(x,y)$ pada $x^2-y^2=1$, $R$ proyeksinya pada sumbu-$x$, dan $Q(x_Q,0)$ titik potong garis normal dengan sumbu-$x$ ($x_Q$ adalah absis titik $Q$). (a) Tunjukkan $x_Q=2x$ untuk $y\ne0$. (b) $x$ berkurang 3 satuan/waktu; laju luas segitiga $QPR$ saat $x=4$?
 ===
-(a) Gradien singgung $x/y$, normal $-y/x$. Dari $0-y=-\dfrac yx(x_Q-x)$ diperoleh $x_Q=2x$.
+(a) Untuk $y\ne0$: gradien singgung $x/y$, gradien normal $-y/x$. Dari $0-y=-\dfrac yx(x_Q-x)$, setelah dibagi $y\ne0$, diperoleh $x_Q=2x$.
 
-(b) $A=\tfrac12(x)(y)=\tfrac12x\sqrt{x^2-1}$, $\dfrac{dA}{dx}=\dfrac{2x^2-1}{2\sqrt{x^2-1}}$.
+Di titik $(\pm1,0)$ garis normal berimpit dengan sumbu-$x$, sehingga titik potong $Q$ tidak tunggal.
+
+(b) Alas $QR=|x_Q-x|=|x|$ dan tinggi $|y|$, sehingga $A=\tfrac12|xy|$, berlaku pada cabang atas maupun bawah. Untuk $x>1$: $A=\tfrac12x\sqrt{x^2-1}$, $\dfrac{dA}{dx}=\dfrac{2x^2-1}{2\sqrt{x^2-1}}$.
 
 **Jawab:** $\dot A=-\dfrac{93}{2\sqrt{15}}\approx-12{,}0$.
 
 @@ P21 | Latihan 21 | Penyaring kerucut ke silinder | air | 307
 Cairan mengalir dari penyaring kerucut (tinggi 24 cm, diameter 16 cm) ke silinder berdiameter 12 cm. Saat kedalaman di kerucut 12 cm, mukanya turun 1 cm/menit. Seberapa cepat muka di silinder naik?
 ===
-$r=h/3$, debit keluar $\pi\left(\dfrac{h}{3}\right)^2\cdot1=16\pi\ \text{cm}^3$/menit. Silinder: $36\pi\,\dot H=16\pi$.
+$r=h/3$, debit keluar $\pi\left(\dfrac{h}{3}\right)^2\cdot1=16\pi\ \text{cm}^3$/menit. Silinder: $36\pi\thinspace \dot H=16\pi$.
 
 **Jawab:** $\dfrac49$ cm/menit.
 
@@ -269,7 +271,7 @@ Kesebangunan: $x=\dfrac{10\cdot25}{4{,}905t^2}=\dfrac{250}{4{,}905t^2}$, $\dot x
 **Jawab:** $\approx101{,}9$ m/s menuju tiang.
 
 @@ P23 | Latihan 23 | Jarak ke titik tetap pada parabola | laju | 307
-Titik pada $y=x^2-3x$ dengan $\dot x=2$ m/s. Seberapa cepat jaraknya ke $(1;\,2)$ berubah di $(4;\,4)$?
+Titik pada $y=x^2-3x$ dengan $\dot x=2$ m/s. Seberapa cepat jaraknya ke $(1; 2)$ berubah di $(4; 4)$?
 ===
 $\dot y=(2x-3)\dot x=10$. $D=\sqrt{13}$ dan $\dot D=\dfrac{3(2)+2(10)}{\sqrt{13}}$.
 
@@ -311,7 +313,7 @@ Pada mekanisme Proyek 6 ditambahkan batang $AC$ dengan $C$ meluncur tegak. Nyata
 ===
 $(k-x)^2+y^2$ konstan, jadi $\dot y=\dfrac{(k-x)\dot x}{y}$. Dengan $\dot x$ dari Proyek 6:
 
-$$\dot y=\frac{2\pi\omega\,lx(k-x)\sin\theta}{y\,(l\cos\theta-x)}.$$
+$$\dot y=\frac{2\pi\omega\thinspace lx(k-x)\sin\theta}{y\thinspace (l\cos\theta-x)}.$$
 
 @@ P28 | Latihan 28 | Pesawat dan mobil | lintasan | 308
 Pesawat terbang ke utara 200 km/jam setinggi 1 km; mobil ke timur 100 km/jam. Saat pesawat melintasi jalan, mobil 2 km di timur titik di bawahnya. Laju berpisah 1 menit kemudian?
@@ -329,9 +331,9 @@ Bujur sangkar sisi 27 m. Bola dilempar dari titik 2 m dari base ketiga (pada gar
 
 {{fig:t_l29}}
 ===
-Bola di $(14{,}5;\,13{,}5)$, pelari di $(20{,}25;\,0)$. Kecepatan bola $\dfrac{35}{\sqrt{1.354}}(25;\,-27)\approx(23{,}78;\,-25{,}68)$.
+Bola di $(14{,}5; 13{,}5)$, pelari di $(20{,}25; 0)$. Kecepatan bola $\dfrac{35}{\sqrt{1.354}}(25; -27)\approx(23{,}78; -25{,}68)$.
 
-Posisi relatif $(-5{,}75;\,13{,}5)$, kecepatan relatif $(17{,}78;\,-25{,}68)$.
+Posisi relatif $(-5{,}75; 13{,}5)$, kecepatan relatif $(17{,}78; -25{,}68)$.
 
 **Jawab:** jarak berkurang $\approx30{,}6$ m/s.
 
@@ -340,7 +342,7 @@ Pedal berputar 1 putaran/s pada gir berjari-jari $R$; rantai memutar gir belakan
 
 {{fig:t_l30}}
 ===
-Laju rantai sama pada kedua gir: $2\pi R=r\,\omega_b\Rightarrow\omega_b=\dfrac{2\pi R}{r}$.
+Laju rantai sama pada kedua gir: $2\pi R=r\thinspace \omega_b\Rightarrow\omega_b=\dfrac{2\pi R}{r}$.
 
 **Jawab:** $v=\omega_b\bar R=\dfrac{2\pi R\bar R}{r}$ m/s.
 
@@ -351,7 +353,7 @@ Tangki setengah bola berjari-jari 3 m dengan lampu di tepi atas. Batu jatuh sepa
 ===
 Kedalaman batu $d$ (di sini $d=2$). Sudut di lampu $\alpha=\arctan\dfrac d3$; sudut pusat busur $=2\alpha$, jadi $s=6\arctan\dfrac d3$.
 
-$$\dot s=\frac{18}{9+d^2}\,\dot d=\frac{18}{13}(2).$$
+$$\dot s=\frac{18}{9+d^2}\thinspace \dot d=\frac{18}{13}(2).$$
 
 **Jawab:** $\dfrac{36}{13}\approx2{,}77$ m/s.
 
@@ -371,7 +373,7 @@ $$\frac{2\dot A}{A}=\frac{1{,}5}{6}+\frac12\left(\frac13+\frac12+1\right)=\frac7
 ===
 (a) $\left|\dot\theta\right|=\dfrac{2\pi}{60}-\dfrac{2\pi}{720}=\dfrac{11\pi}{360}$ rad/menit.
 
-(b) $z^2=156{,}25-150\cos\theta$, $z\dot z=75\sin\theta\,\dot\theta$. Pukul 3.00: $\theta=90^\circ$ mengecil, $z=12{,}5$. Ujung **mendekat** $\dfrac{11\pi}{60}\approx0{,}576$ cm/menit.
+(b) $z^2=156{,}25-150\cos\theta$, $z\dot z=75\sin\theta\thinspace \dot\theta$. Pukul 3.00: $\theta=90^\circ$ mengecil, $z=12{,}5$. Ujung **mendekat** $\dfrac{11\pi}{60}\approx0{,}576$ cm/menit.
 
 (c) Pukul 8.05: $\theta=147{,}5^\circ$ sedang membesar, $z\approx16{,}82$ cm, $\dot z\approx+0{,}230$ cm/menit. Kedua ujung jarum **saling menjauh** dengan laju $0{,}230$ cm/menit.
 
@@ -382,9 +384,9 @@ Pelari 4 m/s mengelilingi lintasan (lurus 100 m, setengah lingkaran jari-jari 30
 ===
 (a) Gerak tegak lurus garis pandang, jarak 30 m: $\dot\theta=\dfrac{4}{30}=\dfrac2{15}$ rad/s.
 
-(b) $B$ berada di busur kanan. Jarak $\rho$: $\rho^2-100\rho\cos30^\circ+1.600=0\Rightarrow\rho\approx59{,}88$ m, $B\approx(51{,}86;\,29{,}94)$. Kecepatan singgung $\approx(-3{,}99;\,0{,}25)$.
+(b) $B$ berada di busur kanan. Jarak $\rho$: $\rho^2-100\rho\cos30^\circ+1.600=0\Rightarrow\rho\approx59{,}88$ m, $B\approx(51{,}86; 29{,}94)$. Kecepatan singgung $\approx(-3{,}99; 0{,}25)$.
 
-$$\dot\theta=\frac{x\,v_y-y\,v_x}{\rho^2}\approx0{,}037\text{ rad/s}.$$
+$$\dot\theta=\frac{x\thinspace v_y-y\thinspace v_x}{\rho^2}\approx0{,}037\text{ rad/s}.$$
 
 @@ P35 | Latihan 35 | Bayangan pada dinding gedung sejajar jalan | laju | 309
 Orang 2 m berjalan di tepi jalan 10 m; lampu 8 m di tepi seberang. Gedung sejajar jalan 1 m di belakang orang. Ia menjauh 2 m/s. Seberapa cepat tinggi bayangan di dinding berubah saat 10 m dari titik di seberang lampu?
