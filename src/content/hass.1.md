@@ -1,5 +1,5 @@
 @@ C1 | Contoh 1 | Kotak tanpa tutup dari lembaran seng | volume | 277
-Dari selembar seng persegi 12 cm × 12 cm dipotong persegi kecil yang sama pada keempat sudutnya, lalu sisinya dilipat ke atas menjadi kotak tanpa tutup. Berapa sisi potongan agar volume kotak maksimum?
+Dari selembar seng persegi 12 cm × 12 cm dipotong persegi kecil yang sama pada keempat sudutnya, lalu sisinya dilipat ke atas menjadi kotak tanpa tutup. Berapa panjang sisi persegi yang harus dipotong agar volume kotak maksimum?
 
 {{fig:h_c1a h_c1b}}
 ===
@@ -20,13 +20,13 @@ Rancang kaleng silinder tegak (tertutup) bervolume 1 liter. Dimensi berapa yang 
 
 {{fig:h_c2}}
 ===
-Dengan $r,h$ dalam cm: kendala $\pi r^2h=1000$, tujuan $A=2\pi r^2+2\pi rh$. Substitusi $h=1000/(\pi r^2)$:
+Dengan $r,h$ dalam cm: kendala $\pi r^2h=1.000$, tujuan $A=2\pi r^2+2\pi rh$. Substitusi $h=1.000/(\pi r^2)$:
 
-$$A(r)=2\pi r^2+\frac{2000}{r},\qquad r>0.$$
+$$A(r)=2\pi r^2+\frac{2.000}{r},\qquad r>0.$$
 
-$$A'(r)=4\pi r-\frac{2000}{r^2}=0\;\Rightarrow\; r=\sqrt[3]{\frac{500}{\pi}}\approx 5{,}42\text{ cm}.$$
+$$A'(r)=4\pi r-\frac{2.000}{r^2}=0\;\Rightarrow\; r=\sqrt[3]{\frac{500}{\pi}}\approx 5{,}42\text{ cm}.$$
 
-Karena $A''(r)=4\pi+4000/r^3>0$ untuk semua $r>0$, titik ini minimum mutlak. Tingginya $h=1000/(\pi r^2)=2r\approx 10{,}84$ cm.
+Karena $A''(r)=4\pi+4.000/r^3>0$ untuk semua $r>0$, titik ini minimum mutlak. Tingginya $h=1.000/(\pi r^2)=2r\approx 10{,}84$ cm.
 
 {{fig:h_c2g}}
 
@@ -65,15 +65,15 @@ $t'(0)<0$ dan $t'(d)>0$, serta $t'$ naik (lihat latihan 70), sehingga ada tepat 
 Prinsip yang sama dipakai pada seismik refraksi untuk penyelidikan lapisan tanah.
 
 @@ C6 | Contoh 6 | Jadwal pengiriman material kayu | biaya | 281–282
-Seorang pengrajin membuat 5 meja per hari. Sekali kirim material berbiaya 5000 dolar, sedangkan penyimpanan 10 dolar per unit per hari (1 unit = material untuk 1 meja). Berapa unit dipesan tiap kali dan setiap berapa hari agar biaya rata-rata harian minimum?
+Seorang pengrajin membuat 5 meja per hari. Sekali kirim material berbiaya 5.000 dolar, sedangkan penyimpanan 10 dolar per unit per hari (1 unit = material untuk 1 meja). Berapa unit dipesan tiap kali dan setiap berapa hari agar biaya rata-rata harian minimum?
 
 {{fig:h_c6}}
 ===
-Jika dikirim tiap $x$ hari, pesanan $5x$ unit dan stok rata-rata $5x/2$. Biaya per siklus $=5000+\frac{5x}{2}\cdot x\cdot 10$. Biaya rata-rata harian:
+Jika dikirim tiap $x$ hari, pesanan $5x$ unit dan stok rata-rata $5x/2$. Biaya per siklus $=5.000+\frac{5x}{2}\cdot x\cdot 10$. Biaya rata-rata harian:
 
-$$c(x)=\frac{5000}{x}+25x,\qquad x>0.$$
+$$c(x)=\frac{5.000}{x}+25x,\qquad x>0.$$
 
-$$c'(x)=-\frac{5000}{x^2}+25=0\;\Rightarrow\;x=\sqrt{200}\approx14{,}14,\qquad c''(x)=\frac{10000}{x^3}>0.$$
+$$c'(x)=-\frac{5.000}{x^2}+25=0\;\Rightarrow\;x=\sqrt{200}\approx14{,}14,\qquad c''(x)=\frac{10.000}{x^3}>0.$$
 
 $c(\sqrt{200})=500\sqrt2\approx 707{,}11$ dolar/hari.
 
@@ -99,7 +99,7 @@ Persegi panjang dilukis di dalam segitiga siku-siku sama kaki dengan sisi miring
 
 {{fig:h_p3}}
 ===
-(a) Garis $AB$ melalui $(1,0)$ dan $(0,1)$: $y=1-x$.
+(a) Garis $AB$ melalui $(1;\,0)$ dan $(0;\,1)$: $y=1-x$.
 
 (b) $A(x)=2x(1-x)$, $0\le x\le1$.
 
@@ -123,11 +123,11 @@ Kotak tanpa tutup dibuat dari karton $24\times45$ cm dengan memotong persegi di 
 ===
 $V(x)=x(24-2x)(45-2x)$, $0\le x\le12$.
 
-$$V'(x)=12x^2-276x+1080=12(x-5)(x-18).$$
+$$V'(x)=12x^2-276x+1.080=12(x-5)(x-18).$$
 
 Hanya $x=5$ di dalam domain; $V(0)=V(12)=0$.
 
-**Jawab:** $35\times14\times5$ cm, volume $2450\ \text{cm}^3$.
+**Jawab:** $35\times14\times5$ cm, volume $2.450\ \text{cm}^3$.
 
 @@ P6 | Latihan 6 | Segitiga pada sudut kuadran pertama | geometri | 282
 Ruas garis sepanjang 20 satuan dari $(a,0)$ ke $(0,b)$ memotong sudut kuadran pertama. Tunjukkan bahwa luas segitiga terbesar saat $a=b$.
@@ -147,7 +147,7 @@ Lahan persegi panjang dibatasi sungai di satu sisi dan pagar listrik tunggal di 
 ===
 $A(x)=x(800-2x)$, $0\le x\le400$. $A'=800-4x=0\Rightarrow x=200$.
 
-**Jawab:** $200$ m (tegak lurus sungai) $\times\,400$ m; luas $80\,000\ \text{m}^2$.
+**Jawab:** $200$ m (tegak lurus sungai) $\times\,400$ m; luas $80.000\ \text{m}^2$.
 
 @@ P8 | Latihan 8 | Pagar terpendek untuk lahan terbagi dua | struktur | 282
 Lahan persegi panjang $216\ \text{m}^2$ dipagari dan dibagi dua sama besar dengan pagar sejajar salah satu sisi. Tentukan dimensi luar dengan total pagar terpendek.
@@ -189,9 +189,9 @@ Poster memuat area cetak $312{,}5\ \text{cm}^2$, margin 10 cm atas dan bawah ser
 ===
 Area cetak lebar $x$, tinggi $312{,}5/x$:
 
-$$A(x)=(x+10)\left(\frac{312{,}5}{x}+20\right)=512{,}5+20x+\frac{3125}{x}.$$
+$$A(x)=(x+10)\left(\frac{312{,}5}{x}+20\right)=512{,}5+20x+\frac{3.125}{x}.$$
 
-$A'=20-\dfrac{3125}{x^2}=0\Rightarrow x=12{,}5$, tinggi cetak $25$.
+$A'=20-\dfrac{3.125}{x^2}=0\Rightarrow x=12{,}5$, tinggi cetak $25$.
 
 **Jawab:** poster $22{,}5\times45$ cm.
 
@@ -216,27 +216,27 @@ $A=\tfrac12ab\sin\theta$, $0<\theta<\pi$. $A'=\tfrac12ab\cos\theta=0\Rightarrow\
 **Jawab:** $\theta=90^\circ$.
 
 @@ P14 | Latihan 14 | Kaleng tanpa tutup paling ringan | volume | 283
-Tentukan dimensi kaleng silinder tanpa tutup paling ringan bervolume $1000\ \text{cm}^3$. Bandingkan dengan Contoh 2.
+Tentukan dimensi kaleng silinder tanpa tutup paling ringan bervolume $1.000\ \text{cm}^3$. Bandingkan dengan Contoh 2.
 ===
-$S=\pi r^2+2\pi rh$ dengan $h=1000/(\pi r^2)$: $S(r)=\pi r^2+\dfrac{2000}{r}$.
+$S=\pi r^2+2\pi rh$ dengan $h=1.000/(\pi r^2)$: $S(r)=\pi r^2+\dfrac{2.000}{r}$.
 
-$$S'=2\pi r-\frac{2000}{r^2}=0\Rightarrow r=\frac{10}{\sqrt[3]{\pi}}\approx6{,}83\text{ cm},\qquad h=r.$$
+$$S'=2\pi r-\frac{2.000}{r^2}=0\Rightarrow r=\frac{10}{\sqrt[3]{\pi}}\approx6{,}83\text{ cm},\qquad h=r.$$
 
 **Jawab:** $r=h\approx6{,}83$ cm. Pada kaleng tertutup $h=2r$; tanpa tutup, kaleng optimal lebih pendek dan lebar.
 
 @@ P15 | Latihan 15 | Kaleng dengan sisa potongan bahan | volume | 283
-Kaleng silinder $1000\ \text{cm}^3$: selimut dipotong tanpa sisa, tetapi tutup dan alas dipotong dari persegi sisi $2r$, sehingga bahan terpakai $A=8r^2+2\pi rh$. Berapa rasio $h:r$ paling hemat?
+Kaleng silinder $1.000\ \text{cm}^3$: selimut dipotong tanpa sisa, tetapi tutup dan alas dipotong dari persegi sisi $2r$, sehingga bahan terpakai $A=8r^2+2\pi rh$. Berapa rasio $h:r$ paling hemat?
 
 {{fig:h_p15}}
 ===
-$A(r)=8r^2+\dfrac{2000}{r}$, $A'=16r-\dfrac{2000}{r^2}=0\Rightarrow r^3=125$, $r=5$ cm.
+$A(r)=8r^2+\dfrac{2.000}{r}$, $A'=16r-\dfrac{2.000}{r^2}=0\Rightarrow r^3=125$, $r=5$ cm.
 
-$h=\dfrac{1000}{25\pi}=\dfrac{40}{\pi}$.
+$h=\dfrac{1.000}{25\pi}=\dfrac{40}{\pi}$.
 
 **Jawab:** $\dfrac{h}{r}=\dfrac{8}{\pi}\approx2{,}55$.
 
 @@ P16 | Latihan 16 | Kotak bertutup dari karton 30 cm × 45 cm | volume | 283
-Dari karton $30\times45$ cm dibuang dua persegi sisi $x$ pada sudut salah satu sisi 30 cm dan dua persegi panjang di sudut lain sehingga terbentuk kotak bertutup. (a) Tulis $V(x)$. (b) Domain dan grafik. (c) Maksimum secara grafis. (d) Konfirmasi analitis.
+Dari karton $30\times45$ cm dibuang dua persegi sisi $x$ pada sudut salah satu sisi 30 cm dan dua persegi panjang di sudut lain sehingga terbentuk kotak bertutup. (a) Tulis $V(x)$. (b) Tentukan domain dan gambarkan grafiknya. (c) Maksimum secara grafis. (d) Konfirmasi analitis.
 
 {{fig:h_p16}}
 ===
@@ -248,26 +248,26 @@ $$V(x)=x(30-2x)\frac{45-2x}{2}=2x^3-75x^2+675x.$$
 
 {{fig:h_p16g}}
 
-(c) Dari grafik, puncak di sekitar $x\approx5{,}9$ dengan $V\approx1780$.
+(c) Dari grafik, puncak di sekitar $x\approx5{,}9$ dengan $V\approx1.780$.
 
 (d) $V'=6x^2-150x+675=0\Rightarrow x=\dfrac{25-5\sqrt7}{2}\approx5{,}89$ cm (akar lain di luar domain).
 
-**Jawab:** $V_{\max}\approx1782{,}6\ \text{cm}^3$.
+**Jawab:** $V_{\max}\approx1.782{,}5\ \text{cm}^3$.
 
 @@ P17 | Latihan 17 | Merancang koper dari karton | volume | 283
-Karton $60\times90$ cm dilipat dua menjadi $60\times45$ cm; empat persegi sisi $x$ dipotong di sudut lipatan, karton dibuka, lalu enam sayap dilipat menjadi koper. (a) $V(x)$. (b) Domain dan grafik. (c)–(d) Volume maksimum. (e) Nilai $x$ untuk $V=17\,500\ \text{cm}^3$. (f) Bahas isu pada (b).
+Karton $60\times90$ cm dilipat dua menjadi $60\times45$ cm; empat persegi sisi $x$ dipotong di sudut lipatan, karton dibuka, lalu enam sayap dilipat menjadi koper. (a) $V(x)$. (b) Tentukan domain dan gambarkan grafiknya. (c)–(d) Volume maksimum. (e) Nilai $x$ untuk $V=17.500\ \text{cm}^3$. (f) Bahas isu pada (b).
 
 {{fig:h_p17}}
 ===
-(a) $V(x)=2x(60-2x)(45-2x)=8x^3-420x^2+5400x$.
+(a) $V(x)=2x(60-2x)(45-2x)=8x^3-420x^2+5.400x$.
 
 (b) Semua ukuran positif: $0<x<22{,}5$.
 
 {{fig:h_p17g}}
 
-(c)–(d) $V'=24(x^2-35x+225)=0\Rightarrow x=\dfrac{35-5\sqrt{13}}{2}\approx8{,}49$ cm, $V_{\max}\approx20\,468\ \text{cm}^3$.
+(c)–(d) $V'=24(x^2-35x+225)=0\Rightarrow x=\dfrac{35-5\sqrt{13}}{2}\approx8{,}49$ cm, $V_{\max}\approx20.468\ \text{cm}^3$.
 
-(e) $8x^3-420x^2+5400x-17500=0$ terfaktor menjadi $4(x-5)(2x^2-95x+875)=0$. Akar dalam domain: $x=5$ cm atau $x=12{,}5$ cm.
+(e) $8x^3-420x^2+5.400x-17.500=0$ terfaktor menjadi $4(x-5)(2x^2-95x+875)=0$. Akar dalam domain: $x=5$ cm atau $x=12{,}5$ cm.
 
 (f) Domain ditentukan sisi terpendek bidang terlipat ($45-2x>0$). Di ujung domain kotak merosot (volume nol), dan satu nilai volume dapat dicapai oleh dua desain berbeda.
 
@@ -293,16 +293,16 @@ $r^2+(h/2)^2=100$, sehingga $V(h)=\pi\left(100-\dfrac{h^2}{4}\right)h$, $0\le h\
 
 $$V'=\pi\left(100-\frac{3h^2}{4}\right)=0\Rightarrow h=\frac{20}{\sqrt3}\approx11{,}55,\quad r=10\sqrt{\tfrac23}\approx8{,}16.$$
 
-**Jawab:** $V_{\max}=\dfrac{4000\pi}{3\sqrt3}\approx2418\ \text{cm}^3$.
+**Jawab:** $V_{\max}=\dfrac{4.000\pi}{3\sqrt3}\approx2.418\ \text{cm}^3$.
 
 @@ P20 | Latihan 20 | Paket pos berujung persegi | volume | 284
-(a) Panjang ditambah lingkar (girth) paket tidak boleh melebihi 276 cm. Dimensi berapa yang memberi volume terbesar untuk kotak berpenampang ujung persegi? (b) Grafikkan volume terhadap panjang dan bandingkan.
+(a) Panjang ditambah lingkar (girth) paket tidak boleh melebihi 276 cm. Dimensi berapa yang memberi volume terbesar untuk kotak berpenampang ujung persegi? (b) Gambarkan grafik volume terhadap panjang dan bandingkan.
 
 {{fig:h_p20}}
 ===
 (a) Penampang $x\times x$, panjang $L=276-4x$: $V=x^2(276-4x)$. $V'=552x-12x^2=0\Rightarrow x=46$.
 
-**Jawab:** $46\times46\times92$ cm, $V=194\,672\ \text{cm}^3$.
+**Jawab:** $46\times46\times92$ cm, $V=194.672\ \text{cm}^3$.
 
 (b) Dalam $L$: $V(L)=L\left(\dfrac{276-L}{4}\right)^2$.
 
@@ -311,13 +311,13 @@ $$V'=\pi\left(100-\frac{3h^2}{4}\right)=0\Rightarrow h=\frac{20}{\sqrt3}\approx1
 Puncak grafik di $L=92$, sesuai bagian (a).
 
 @@ P21 | Latihan 21 | Paket pos bersisi persegi | volume | 284
-(Lanjutan latihan 20.) Kotak berdimensi $h\times h\times w$ dengan lingkar $2h+2w$ dan panjang $h$. (a) Dimensi volume terbesar? (b) Grafikkan $V(h)$.
+(Lanjutan latihan 20.) Kotak berdimensi $h\times h\times w$ dengan lingkar $2h+2w$ dan panjang $h$. (a) Tentukan dimensi kotak agar volumenya maksimum. (b) Gambarkan grafik $V(h)$.
 
 {{fig:h_p21}}
 ===
 (a) $h+(2h+2w)=276\Rightarrow w=138-1{,}5h$. $V=h^2(138-1{,}5h)$, $V'=276h-4{,}5h^2=0\Rightarrow h=\dfrac{184}{3}$.
 
-**Jawab:** $h\approx61{,}33$ cm, $w=46$ cm, $V\approx173\,045\ \text{cm}^3$.
+**Jawab:** $h\approx61{,}33$ cm, $w=46$ cm, $V\approx173.041{,}78\ \text{cm}^3$.
 
 (b)
 
@@ -367,7 +367,7 @@ Salah satu sudut kertas $21{,}6\times28$ cm diletakkan pada tepi panjang di sebe
 
 {{fig:h_p25}}
 ===
-(a) Tempatkan $A=(0,0)$, $P=(x,0)$, $R=(0,y)$. $Q$ adalah bayangan $A$ terhadap garis $PR$, absisnya $\dfrac{2xy^2}{x^2+y^2}=21{,}6$. Diperoleh $y^2=\dfrac{21{,}6x^2}{2x-21{,}6}$, sehingga
+(a) Tempatkan $A=(0;\,0)$, $P=(x;\,0)$, $R=(0;\,y)$. $Q$ adalah bayangan $A$ terhadap garis $PR$, absisnya $\dfrac{2xy^2}{x^2+y^2}=21{,}6$. Diperoleh $y^2=\dfrac{21{,}6x^2}{2x-21{,}6}$, sehingga
 
 $$L^2=x^2+y^2=\frac{2x^3}{2x-21{,}6}.$$
 
@@ -398,7 +398,7 @@ $r^2=3-h^2$, $V=\dfrac{\pi}{3}(3h-h^3)$, $V'=\pi(1-h^2)=0\Rightarrow h=1$.
 **Jawab:** $h=1$ m, $r=\sqrt2$ m, $V=\dfrac{2\pi}{3}\ \text{m}^3$.
 
 @@ P28 | Latihan 28 | Titik pada garis yang terdekat ke titik asal | lintasan | 285
-Cari titik pada garis $\dfrac xa+\dfrac yb=1$ yang paling dekat dengan titik asal.
+Tentukan titik pada garis $\dfrac xa+\dfrac yb=1$ yang paling dekat dengan titik asal.
 
 {{fig:h_p28}}
 ===
@@ -409,14 +409,14 @@ $$D'=2x-\frac{2b^2}{a}\left(1-\frac xa\right)=0\Rightarrow x=\frac{ab^2}{a^2+b^2
 **Jawab:** $\left(\dfrac{ab^2}{a^2+b^2},\ \dfrac{a^2b}{a^2+b^2}\right)$.
 
 @@ P29 | Latihan 29 | Bilangan ditambah kebalikannya | dasar | 285
-Cari bilangan positif yang jumlahnya dengan kebalikannya sekecil mungkin.
+Tentukan bilangan positif yang jumlahnya dengan kebalikannya sekecil mungkin.
 ===
 $f(x)=x+\dfrac1x$, $f'=1-\dfrac1{x^2}=0\Rightarrow x=1$; $f''>0$.
 
 **Jawab:** $x=1$ (jumlah $2$).
 
 @@ P30 | Latihan 30 | Kebalikan ditambah empat kali kuadrat | dasar | 285
-Cari bilangan positif sehingga jumlah kebalikannya dan empat kali kuadratnya minimum.
+Tentukan bilangan positif sehingga jumlah kebalikannya dan empat kali kuadratnya minimum.
 ===
 $f=\dfrac1x+4x^2$, $f'=-\dfrac1{x^2}+8x=0\Rightarrow x=\tfrac12$; $f''>0$.
 
@@ -484,7 +484,7 @@ Nilai $a$ berapa membuat $f(x)=x^2+\dfrac ax$ memiliki (a) minimum lokal di $x=2
 (b) $f''=2+2a/x^3$; $f''(1)=0\Rightarrow a=-1$ (tanda $f''$ berubah di $x=1$).
 
 @@ P38 | Latihan 38 | Parameter polinomial derajat tiga | dasar | 285
-Cari $a,b$ agar $f(x)=x^3+ax^2+bx$ memiliki (a) maksimum lokal di $x=-1$ dan minimum lokal di $x=3$; (b) minimum lokal di $x=4$ dan titik belok di $x=1$.
+Tentukan $a,b$ agar $f(x)=x^3+ax^2+bx$ memiliki (a) maksimum lokal di $x=-1$ dan minimum lokal di $x=3$; (b) minimum lokal di $x=4$ dan titik belok di $x=1$.
 ===
 $f'=3x^2+2ax+b$.
 

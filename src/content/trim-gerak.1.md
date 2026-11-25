@@ -1,5 +1,5 @@
 @@ C29 | Contoh 4.29 | Membaca gerak dari fungsi posisi | gerak | 294–295
-Partikel pada sumbu-$x$: $x(t)=3t^4-32t^3+114t^2-144t+40$, $0\le t\le5$ (m, s). (a) Kecepatan dan laju di $t=\tfrac12$? (b) Kapan percepatan naik? (c) Di $t=2$ kecepatan naik atau turun? (d) Di $t=2$ makin cepat atau melambat? (e) Kecepatan maksimum pada $[0,2]$? (f) Jarak terjauh dari titik asal?
+Partikel pada sumbu-$x$: $x(t)=3t^4-32t^3+114t^2-144t+40$, $0\le t\le5$ (m, s). (a) Kecepatan dan laju di $t=\tfrac12$? (b) Kapan percepatan naik? (c) Di $t=2$ kecepatan naik atau turun? (d) Di $t=2$ makin cepat atau melambat? (e) Kecepatan maksimum pada $[0;\,2]$? (f) Jarak terjauh dari titik asal?
 
 {{fig:t_c29}}
 ===
@@ -34,7 +34,7 @@ Jadi $Mx''+kx=0$ untuk $t\ne t_0$, serta $x(0)=x_0$ dan $x'(0)=0$.
 Ini model dasar **beban impuls pada struktur** (dinamika struktur satu derajat kebebasan).
 
 @@ C31 | Contoh 4.31 | Kecepatan dan percepatan peluncur engkol | gerak | 297–298
-Batang $AB$ berputar berlawanan jarum jam dengan kecepatan sudut tetap $\omega$; ujung $C$ batang $BC$ meluncur pada garis horizontal (offset $e$). Cari kecepatan dan percepatan $C$.
+Batang $AB$ berputar berlawanan jarum jam dengan kecepatan sudut tetap $\omega$; ujung $C$ batang $BC$ meluncur pada garis horizontal (offset $e$). Tentukan kecepatan dan percepatan $C$.
 
 {{fig:t_c31}}
 ===
@@ -76,7 +76,7 @@ $v=3(t-1)(t-5)$, $a=6t-18$. Di $t=2$: $x=5$, $v=-9$. Ke kiri makin cepat sampai 
 @@ P6 | Latihan 6 | Gerak harmonik sederhana | gerak | 298
 Bahas gerak $x(t)=3\cos4t$, $t\ge0$.
 ===
-$v=-12\sin4t$, $a=-48\cos4t=-16x$. Osilasi dengan amplitudo $3$ m dan periode $\pi/2$ s. Laju maksimum $12$ m/s di $x=0$; percepatan maksimum $48$ m/s² di $x=\pm3$.
+$v=-12\sin4t$, $a=-48\cos4t=-16x$. Osilasi dengan amplitudo $3$ m dan periode $\pi/2$ s. Laju maksimum $12$ m/s di $x=0$; besar percepatan maksimum $48$ m/s² di $x=\pm3$ m (percepatan bertanda $a$ maksimum, $+48$ m/s², hanya di $x=-3$ m).
 
 @@ P7 | Latihan 7 | Gerak hiperbolik | gerak | 298
 Bahas gerak $x(t)=1/t$, $t\ge1$.
@@ -108,8 +108,8 @@ $x(t)=t^3-9t^2+24t+1$, $0\le t\le6$. Tentukan (a) laju naik atau turun di $t=1$;
 $v=3(t-2)(t-4)$, $a=6t-18$.
 
 - (a) $v(1)=9>0$, $a(1)=-12<0$: laju **turun**.
-- (b) $v_{\max}=24$ (di $t=0,6$), $v_{\min}=-3$ (di $t=3$).
-- (c) Laju maksimum $24$, minimum $0$ (di $t=2,4$).
+- (b) $v_{\max}=24$ (di $t=0;\,6$), $v_{\min}=-3$ (di $t=3$).
+- (c) Laju maksimum $24$, minimum $0$ (di $t=2;\,4$).
 - (d) $a_{\max}=18$ ($t=6$), $a_{\min}=-18$ ($t=0$).
 - (e) $da/dt=6>0$: selalu naik.
 
@@ -119,13 +119,13 @@ Ulangi latihan 11 untuk $x(t)=2-15t+9t^2-t^3$, $0\le t\le6$.
 $v=-3(t-1)(t-5)$, $a=18-6t$.
 
 - (a) Di $t=1$ laju bernilai $0$ (minimum): turun sebelum $t=1$ dan naik sesudahnya.
-- (b) $v_{\max}=12$ ($t=3$), $v_{\min}=-15$ ($t=0,6$).
-- (c) Laju maksimum $15$, minimum $0$ ($t=1,5$).
+- (b) $v_{\max}=12$ ($t=3$), $v_{\min}=-15$ ($t=0;\,6$).
+- (c) Laju maksimum $15$, minimum $0$ ($t=1;\,5$).
 - (d) $a_{\max}=18$ ($t=0$), $a_{\min}=-18$ ($t=6$).
 - (e) $da/dt=-6<0$: tidak pernah naik.
 
 @@ P13 | Latihan 13 | Akar kecepatan dengan metode Newton | gerak | 298
-$x(t)=t\sin t$, $0\le t\le9$. (a) Grafik. (b) Kapan kecepatan nol? (c) Kapan percepatan sama dengan 1?
+$x(t)=t\sin t$, $0\le t\le9$. (a) Gambarkan grafiknya. (b) Kapan kecepatan nol? (c) Kapan percepatan sama dengan 1?
 ===
 (a) Lihat grafik di bawah.
 
@@ -138,24 +138,24 @@ $x(t)=3t^4-16t^3+18t^2+2$, $0\le t\le4$. Tentukan interval naik/turun kecepatan 
 ===
 $v=12t(t-1)(t-3)$, $a=12(3t^2-8t+3)$; $a=0$ di $t_{1,2}=\dfrac{4\mp\sqrt7}{3}\approx0{,}451;\;2{,}215$.
 
-- (a) $v$ naik pada $[0,t_1]$ dan $[t_2,4]$; turun pada $[t_1,t_2]$.
-- (b) Laju naik pada $(0,t_1)$, $(1,t_2)$, $(3,4)$; turun pada $(t_1,1)$, $(t_2,3)$.
+- (a) $v$ naik pada $[0;\,t_1]$ dan $[t_2;\,4]$; turun pada $[t_1;\,t_2]$.
+- (b) Laju naik pada $(0;\,t_1)$, $(1;\,t_2)$, $(3;\,4)$; turun pada $(t_1;\,1)$, $(t_2;\,3)$.
 - (c) $v_{\max}=144$ ($t=4$), $v_{\min}\approx-25{,}35$ ($t=t_2$).
-- (d) Laju maksimum $144$, minimum $0$ ($t=0,1,3$).
+- (d) Laju maksimum $144$, minimum $0$ ($t=0;\,1;\,3$).
 - (e) Jarak terjauh dari titik asal $34$ m ($t=4$).
 - (f) Jarak terjauh dari $x=5$: $30$ m ($t=3$, $x=-25$).
 
 @@ P15 | Latihan 15 | Interval gerak dengan koefisien pecahan | gerak | 298
 Ulangi latihan 14 untuk $x(t)=\dfrac{14t^3}{45}-\dfrac{101t^2}{45}+\dfrac{132t}{45}+2$, $0\le t\le6$.
 ===
-$v=\dfrac{42t^2-202t+132}{45}$ nol di $t\approx0{,}780;\;4{,}029$; $a=\dfrac{84t-202}{45}$ nol di $t=\dfrac{101}{42}\approx2{,}405$.
+$v=\dfrac{42t^2-202t+132}{45}$ nol di $t\approx0{,}780;\;4{,}030$; $a=\dfrac{84t-202}{45}$ nol di $t=\dfrac{101}{42}\approx2{,}405$.
 
 - (a) $v$ turun pada $[0;\,2{,}405]$, naik pada $[2{,}405;\,6]$.
-- (b) Laju naik pada $(0{,}780;\,2{,}405)$ dan $(4{,}029;\,6)$; turun pada $(0;\,0{,}780)$ dan $(2{,}405;\,4{,}029)$.
+- (b) Laju naik pada $(0{,}780;\,2{,}405)$ dan $(4{,}030;\,6)$; turun pada $(0;\,0{,}780)$ dan $(2{,}405;\,4{,}030)$.
 - (c) $v_{\max}=9{,}6$ ($t=6$), $v_{\min}\approx-2{,}46$.
 - (d) Laju maksimum $9{,}6$, minimum $0$.
 - (e) Jarak terjauh dari titik asal $6$ m ($t=6$).
-- (f) Jarak terjauh dari $x=5$: $\approx7{,}27$ m ($t\approx4{,}03$).
+- (f) Jarak terjauh dari $x=5$: $\approx7{,}27$ m ($t\approx4{,}030$).
 
 @@ P16 | Latihan 16 | Kecepatan dan percepatan nol bersamaan | gerak | 298
 Ciri apa pada grafik posisi yang menandai saat kecepatan dan percepatan sama-sama nol?
@@ -204,7 +204,7 @@ Benar atau salah: jika kecepatan maksimum relatif, laju juga.
 **Tidak selalu.** Benar jika $v(t_0)>0$. Jika $v(t_0)\le0$, laju memiliki minimum relatif.
 
 @@ P24 | Latihan 24 | Posisi peluncur sebagai fungsi sudut | gerak | 299
-(a) Tunjukkan $x=r\cos\theta+\sqrt{L^2-(e+r\sin\theta)^2}$. (b) Plot untuk $L=9$, $r=2$, $e=1$ cm. (c) Perkirakan langkah. (d) Turunkan kecepatan. (e) Plot kecepatan untuk 1 putaran per detik.
+(a) Tunjukkan $x=r\cos\theta+\sqrt{L^2-(e+r\sin\theta)^2}$. (b) Gambarkan grafiknya untuk $L=9$, $r=2$, $e=1$ cm. (c) Perkirakan langkah. (d) Turunkan kecepatan. (e) Gambarkan grafik kecepatan untuk 1 putaran per detik.
 
 {{fig:t_c31}}
 ===
@@ -225,7 +225,7 @@ Benar atau salah: jika kecepatan maksimum relatif, laju juga.
 Kecepatan nol tepat di titik tertinggi dan terendah grafik posisi. Dari grafik, $v_{\max}\approx12{,}6$ cm/s dan $v_{\min}\approx-13{,}3$ cm/s.
 
 @@ P25 | Latihan 25 | Kapan mulai turun pada pendaratan | struktur | 299
-Lintasan pendaratan: tinggi $h$ saat mulai turun, mendarat mulus di $x=0$, laju horizontal tetap $U$, percepatan vertikal tidak melebihi $k$, lintasan polinomial kubik. Kapan penurunan harus dimulai?
+Lintasan pendaratan: tinggi $h$ saat mulai turun, mendarat mulus di $x=0$, laju horizontal tetap $U$, besar percepatan vertikal tidak melebihi $k$, lintasan polinomial kubik. Kapan penurunan harus dimulai?
 
 {{fig:t_p25b}}
 ===

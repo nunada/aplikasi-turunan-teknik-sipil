@@ -9,6 +9,7 @@ jenis: max, min  -> ekstrem mutlak pada [a, b] (diperiksa)
 import math
 
 from shapes import curve
+from svg import ribuan
 
 ENV = {k: getattr(math, k) for k in dir(math) if not k.startswith("_")}
 ENV.update(abs=abs, max=max, min=min, cot=lambda t: 1 / math.tan(t), sec=lambda t: 1 / math.cos(t),
@@ -21,7 +22,7 @@ def num(s):
 
 def fmt(v):
     if abs(v) >= 1000:
-        return f"{v:.0f}"
+        return ribuan(round(v))
     return f"{v:.3g}".replace(".", ",").replace("-", "−")
 
 

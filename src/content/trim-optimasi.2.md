@@ -1,5 +1,5 @@
 @@ P41 | Latihan 41 | Balok terpanjang melewati sudut koridor | struktur | 289
-Dua koridor selebar 3 m dan 6 m bertemu siku. Cari panjang balok terpanjang yang dapat dibawa horizontal melewati sudut (ukuran penampang diabaikan).
+Dua koridor selebar 3 m dan 6 m bertemu siku. Tentukan panjang balok terpanjang yang dapat dibawa horizontal melewati sudut (ukuran penampang diabaikan).
 
 {{fig:t_p41}}
 ===
@@ -16,12 +16,12 @@ Sisi luar balok menyentuh kedua dinding luar, sisi dalam menyentuh sudut:
 
 $$L(\theta)=\frac{3}{\cos\theta}+\frac{6}{\sin\theta}-\frac{1/3}{\sin\theta\cos\theta}.$$
 
-$L'=0$ diselesaikan numerik: $\theta\approx0{,}908$.
+$L'=0$ diselesaikan numerik: $\theta\approx0{,}909$.
 
 **Jawab:** panjang maksimum $\approx11{,}80$ m.
 
 @@ P44 | Latihan 44 | Ekstrem dengan parameter | dasar | 289
-Cari ekstrem mutlak $f(x)=\dfrac{x}{x^2+c}$ pada $0\le x\le c$ dengan $c>1$.
+Tentukan ekstrem mutlak $f(x)=\dfrac{x}{x^2+c}$ pada $0\le x\le c$ dengan $c>1$.
 ===
 $f'=\dfrac{c-x^2}{(x^2+c)^2}$, titik kritis $x=\sqrt c<c$. $f(0)=0$, $f(c)=\dfrac1{c+1}>0$.
 
@@ -44,7 +44,7 @@ $x$ dari $I_1$: $E=k\left(\dfrac{I_1}{x^2}+\dfrac{I_2}{(d-x)^2}\right)$, $E'=0\R
 **Jawab:** $x=\dfrac{d\,\sqrt[3]{I_1}}{\sqrt[3]{I_1}+\sqrt[3]{I_2}}$.
 
 @@ P47 | Latihan 47 | Proporsi jendela dua jenis kaca | struktur | 289
-Jendela persegi panjang beratap setengah lingkaran; kaca berwarna meneruskan setengah cahaya kaca bening; keliling tetap. Cari proporsi terbaik.
+Jendela persegi panjang beratap setengah lingkaran; kaca berwarna meneruskan setengah cahaya kaca bening; keliling tetap. Tentukan proporsi terbaik.
 
 {{fig:t_win}}
 ===
@@ -53,7 +53,7 @@ Jari-jari $r$, tinggi $h$, $P=2r+2h+\pi r$. Cahaya $\propto 2rh+\dfrac{\pi r^2}{
 **Jawab:** $\dfrac{2r}{h}=\dfrac{8}{4+\pi}$.
 
 @@ P48 | Latihan 48 | Tangki 100 m³ dengan biaya material dan las | biaya | 289
-Tangki balok beralas persegi bervolume $100\ \text{m}^3$. (a) Dinding dan atap 1,25 dolar/m², alas 4,75 dolar/m². Cari dimensi termurah. (b) Tambahkan biaya las 7,50 dolar/m pada 12 rusuk.
+Tangki balok beralas persegi bervolume $100\ \text{m}^3$. (a) Dinding dan atap 1,25 dolar/m², alas 4,75 dolar/m². Tentukan dimensi termurah. (b) Tambahkan biaya las 7,50 dolar/m pada 12 rusuk.
 ===
 $h=100/x^2$.
 
@@ -63,9 +63,9 @@ $h=100/x^2$.
 
 (b) 8 rusuk sepanjang $x$ dan 4 sepanjang $h$:
 
-$$C=6x^2+\frac{500}{x}+60x+\frac{3000}{x^2}.$$
+$$C=6x^2+\frac{500}{x}+60x+\frac{3.000}{x^2}.$$
 
-$C'=0\iff3x^4+15x^3-125x-1500=0$, numerik $x\approx4{,}19$.
+$C'=0\iff3x^4+15x^3-125x-1.500=0$, numerik $x\approx4{,}19$.
 
 **Jawab:** $x\approx4{,}19$ m, $h\approx5{,}71$ m.
 
@@ -101,7 +101,7 @@ $T'=0\Rightarrow t=\dfrac{v}{s\sqrt{s^2-v^2}}$, dan nilainya $T=-\dfrac{\sqrt{s^
 **Jawab:** $\dfrac{\sqrt{s^2-v^2}}{sv}$ jam **sebelum** tengah malam.
 
 @@ P52 | Latihan 52 | Kotak kemasan dari karton 1 m × 2 m | volume | 290
-Karton $1\times2$ m dipotong dan dilipat menjadi kotak seperti gambar. Sayap luar atas dan bawah harus bertemu di tengah; sayap dalam tidak harus. Cari kotak bervolume terbesar dan jarak antar sayap dalam.
+Karton $1\times2$ m dipotong dan dilipat menjadi kotak seperti gambar. Sayap luar atas dan bawah harus bertemu di tengah; sayap dalam tidak harus. Tentukan kotak bervolume terbesar dan jarak antar sayap dalam.
 
 {{fig:t_p52a t_p52b}}
 ===
@@ -111,8 +111,8 @@ $$V=lwh=w(1-w)^2,\quad V'=(1-w)(1-3w)=0\Rightarrow w=\tfrac13.$$
 
 **Jawab:** $l=h=\tfrac23$ m, $w=\tfrac13$ m, $V=\tfrac4{27}\ \text{m}^3$; sayap dalam berjarak $l-w=\tfrac13$ m.
 
-@@ P53 | Latihan 53 | Kecepatan kapal paling ekonomis | biaya | 290
-Biaya bahan bakar per jam sebanding dengan pangkat tiga laju, bernilai $B$ dolar pada $b$ km/jam; biaya tetap $A$ dolar/jam. Cari laju paling hemat.
+@@ P53 | Latihan 53 | Laju kapal paling ekonomis | biaya | 290
+Biaya bahan bakar per jam sebanding dengan pangkat tiga laju, bernilai $B$ dolar pada $b$ km/jam; biaya tetap $A$ dolar/jam. Tentukan laju paling hemat.
 ===
 Biaya per km: $c(v)=\dfrac Av+\dfrac{Bv^2}{b^3}$, $c'=0\Rightarrow v^3=\dfrac{Ab^3}{2B}$.
 
@@ -138,8 +138,8 @@ $$\theta=\arctan\frac{4{,}5}{x}-\arctan\frac{3{,}5}{x},\quad\theta'=0\Rightarrow
 
 **Jawab:** $x=\sqrt{15{,}75}\approx3{,}97$ m.
 
-@@ P56 | Latihan 56 | Kecepatan optimum pesawat jet | gerak | 290
-Gaya dorong $F=\tfrac12\rho Av^2\left(0{,}000182+\dfrac{4w^2}{6{,}5\pi\rho^2A^2v^4}\right)$ dengan $A=1600$, $w=150\,000$. Laju optimum meminimumkan $F/v$. (a) $\rho=0{,}0238$; (b) pada 30 000 kaki ($\rho$ dikali 0,375).
+@@ P56 | Latihan 56 | Laju optimum pesawat jet | gerak | 290
+Gaya dorong $F=\tfrac12\rho Av^2\left(0{,}000182+\dfrac{4w^2}{6{,}5\pi\rho^2A^2v^4}\right)$ dengan $A=1.600$, $w=150.000$. Laju optimum meminimumkan $F/v$. (a) $\rho=0{,}0238$; (b) pada 30.000 kaki ($\rho$ dikali 0,375).
 ===
 $F/v=\alpha v+\beta v^{-3}$, turunan nol saat
 
@@ -152,7 +152,7 @@ $$v^4=\frac{3\cdot4w^2}{6{,}5\pi\rho^2A^2(0{,}000182)}.$$
 Catatan: nilai $\rho=0{,}0238$ mengikuti cetakan buku; kerapatan udara standar di permukaan laut adalah sekitar $0{,}00238$ slug/ft³, jadi kemungkinan ada salah cetak atau perbedaan satuan.
 
 @@ P57 | Latihan 57 | Sudut gaya minimum melawan gesekan | gerak | 290
-Gaya minimum untuk menggerakkan benda: $F=\dfrac{\mu mg}{\cos\theta+\mu\sin\theta}$. Cari $\theta$ yang meminimumkan $F$.
+Gaya minimum untuk menggerakkan benda: $F=\dfrac{\mu mg}{\cos\theta+\mu\sin\theta}$. Tentukan $\theta$ yang meminimumkan $F$.
 
 {{fig:t_p57}}
 ===
@@ -165,16 +165,16 @@ Ulangi latihan 20 jika alas $2b$ sedangkan tinggi tetap $2a$.
 ===
 $S=(2a-y)+2\sqrt{b^2+y^2}$, $S'=0\Rightarrow y=\dfrac{b}{\sqrt3}$.
 
-**Jawab:** $y=b/\sqrt3$ bila $b\le2\sqrt3a$; jika lebih besar, $S$ turun pada seluruh $[0,2a]$ sehingga $P=A$ ($y=2a$).
+**Jawab:** $y=b/\sqrt3$ bila $b\le2\sqrt3a$; jika lebih besar, $S$ turun pada seluruh $[0;\,2a]$ sehingga $P=A$ ($y=2a$).
 
 @@ P59 | Latihan 59 | Laju truk berbiaya minimum | biaya | 290
-Untuk $80\le v\le100$ km/jam, konsumsi truk $f(v)=a-bv$ km/L ($b>0$). Upah sopir $w$ per jam, harga bahan bakar $p$ per liter. Cari laju anjuran.
+Untuk $80\le v\le100$ km/jam, konsumsi truk $f(v)=a-bv$ km/L ($b>0$). Upah sopir $w$ per jam, harga bahan bakar $p$ per liter. Tentukan laju anjuran.
 ===
 Biaya per km: $c(v)=\dfrac wv+\dfrac{p}{a-bv}$,
 
 $$c'=-\frac{w}{v^2}+\frac{pb}{(a-bv)^2}=0\Rightarrow v^*=\frac{a\sqrt w}{b\sqrt w+\sqrt{pb}}.$$
 
-**Jawab:** pakai $v^*$ jika di $[80,100]$; jika $v^*<80$ pakai $80$, jika $v^*>100$ pakai $100$.
+**Jawab:** pakai $v^*$ jika di $[80;\,100]$; jika $v^*<80$ pakai $80$, jika $v^*>100$ pakai $100$.
 
 @@ P60 | Latihan 60 | Rumus jarak titik ke garis | dasar | 290
 Buktikan rumus jarak titik $(x_0,y_0)$ ke garis dengan meminimumkan fungsi jarak.
@@ -190,7 +190,7 @@ $$d=|t|\sqrt{A^2+B^2}=\frac{|Ax_0+By_0+C|}{\sqrt{A^2+B^2}}.$$
 Kasus $B=0$ langsung: $d=|x_0+C/A|$. $\blacksquare$
 
 @@ P61 | Latihan 61 | Jendela dengan batas biaya | biaya | 291
-Jendela persegi panjang beratap setengah lingkaran: kaca bening $a$ per satuan luas, kaca berwarna $b$ (meneruskan fraksi $p$ cahaya), rangka lengkung $c$ per satuan panjang. Biaya tak melebihi $A$. Cari dimensi dengan cahaya terbanyak.
+Jendela persegi panjang beratap setengah lingkaran: kaca bening $a$ per satuan luas, kaca berwarna $b$ (meneruskan fraksi $p$ cahaya), rangka lengkung $c$ per satuan panjang. Biaya tak melebihi $A$. Tentukan dimensi dengan cahaya terbanyak.
 
 {{fig:t_win}}
 ===
@@ -206,7 +206,7 @@ $$L(r)=\frac Aa-\frac{\pi c}{a}r-\frac{\pi(b-pa)}{2a}r^2,\qquad 0<r\le r_{\max}$
 **Kesimpulan:** sebagaimana dirumuskan, tidak ada optimum di dalam domain; diperlukan batas lebar minimum atau tinggi maksimum agar desainnya praktis.
 
 @@ P62 | Latihan 62 | Titik elips terdekat | lintasan | 291
-Cari titik pada $4x^2+9y^2=36$ yang terdekat dengan $\left(4,\dfrac{13\sqrt5}{6}\right)$.
+Tentukan titik pada $4x^2+9y^2=36$ yang terdekat dengan $\left(4;\,\dfrac{13\sqrt5}{6}\right)$.
 ===
 $x=3\cos t$, $y=2\sin t$. Syarat turunan nol:
 
@@ -214,7 +214,7 @@ $$-10\sin t\cos t+24\sin t-\frac{26\sqrt5}{3}\cos t=0,$$
 
 dipenuhi oleh $\cos t=\tfrac23$, $\sin t=\tfrac{\sqrt5}{3}$.
 
-**Jawab:** $\left(2,\dfrac{2\sqrt5}{3}\right)$, jarak $\dfrac{\sqrt{61}}{2}$.
+**Jawab:** $\left(2;\,\dfrac{2\sqrt5}{3}\right)$, jarak $\dfrac{\sqrt{61}}{2}$.
 
 @@ P63 | Latihan 63 | Diagonal rangka layang-layang | struktur | 291
 Rangka layang-layang dengan sisi luar $a,a,b,b$ ($b>a$). Berapa panjang diagonal agar luas maksimum?
@@ -226,7 +226,7 @@ Luas $=ab\sin\gamma$ dengan $\gamma$ sudut antara sisi $a$ dan $b$; maksimum di 
 **Jawab:** diagonal sumbu $\sqrt{a^2+b^2}$, diagonal melintang $\dfrac{2ab}{\sqrt{a^2+b^2}}$.
 
 @@ P64 | Latihan 64 | Segitiga terbesar di bawah tali busur parabola | geometri | 291
-Garis $Ax+By+C=0$ memotong parabola $y=ax^2+bx+c$ di $P$ dan $Q$. Cari $R$ pada busur $PQ$ yang memaksimumkan luas segitiga $PQR$.
+Garis $Ax+By+C=0$ memotong parabola $y=ax^2+bx+c$ di $P$ dan $Q$. Tentukan $R$ pada busur $PQ$ yang memaksimumkan luas segitiga $PQR$.
 
 {{fig:t_p64}}
 ===
@@ -235,7 +235,7 @@ Alas $PQ$ tetap, jadi maksimumkan jarak $R$ ke garis, sebanding $|Ax+B(ax^2+bx+c
 **Jawab:** $x_R=-\dfrac{b+A/B}{2a}$, $y_R=ax_R^2+bx_R+c$ (absisnya di tengah $x_P$ dan $x_Q$).
 
 @@ P65 | Latihan 65 | Segitiga singgung terkecil pada kurva akar | geometri | 291
-Garis singgung $y=\sqrt{1-x}$ membentuk segitiga dengan sumbu positif. Cari luas terkecil.
+Garis singgung $y=\sqrt{1-x}$ membentuk segitiga dengan sumbu positif. Tentukan luas terkecil.
 ===
 Titik singgung dengan $u=\sqrt{1-x}$: intersep $x=1+u^2$, $y=\dfrac{1+u^2}{2u}$.
 
@@ -255,7 +255,7 @@ $$P'=r\,[(b-a)(2\pi-8\alpha)-2\pi c]=0\Rightarrow\alpha=\frac\pi4\left(1-\frac{c
 **Jawab:** $r=\dfrac s2\sec\left[\dfrac\pi4\left(1-\dfrac{c}{b-a}\right)\right]$ (diasumsikan air di luar lahan tetap berbiaya).
 
 @@ P67 | Latihan 67 | Segiempat engsel terluas | struktur | 291
-Batang 1 m, 4 m, 2 m, dan 3 m disambung engsel menjadi segiempat. Cari luas terbesar.
+Batang 1 m, 4 m, 2 m, dan 3 m disambung engsel menjadi segiempat. Tentukan luas terbesar.
 
 {{fig:t_p67}}
 ===
@@ -279,7 +279,7 @@ $T'=0\Rightarrow2s\sin\varphi=\sqrt{s^2+r^2-2sr\cos\varphi}$.
 **Jawab:** $\cos\varphi=\dfrac{r+\sqrt{12s^2-3r^2}}{4s}$; ruas semak membuat sudut $30^\circ$ dengan arah radial saat mencapai pantai.
 
 @@ P69 | Latihan 69 | Persegi panjang luar terbesar | geometri | 291
-Cari luas terbesar persegi panjang yang sisinya melalui keempat sudut persegi panjang $w\times L$.
+Tentukan luas terbesar persegi panjang yang sisinya melalui keempat sudut persegi panjang $w\times L$.
 ===
 $A(\theta)=(L\cos\theta+w\sin\theta)(L\sin\theta+w\cos\theta)=Lw+\dfrac{L^2+w^2}{2}\sin2\theta$.
 
@@ -293,7 +293,7 @@ Dengan posisi $a_1\le\dots\le a_n$: $S(x)=\sum|x-a_i|$. Di antara patok, $S'(x)=
 **Jawab:** di **median**: pada patok tengah jika $n$ ganjil; di mana saja antara dua patok tengah jika $n$ genap.
 
 @@ P71 | Latihan 71 | Sudut percabangan pipa dengan hambatan minimum | air | 291–292
-Hambatan aliran laminar (Poiseuille) $R=kL/r^4$. Cabang berjari-jari $r_2<r_1$ keluar dari pipa utama di $D$ menuju $C$. (a) Nyatakan $R(\theta)$. (b)–(c) Cari titik kritis dan jenisnya. (d) Tunjukkan nilainya. (e) Apakah minimum mutlak?
+Hambatan aliran laminar (Poiseuille) $R=kL/r^4$. Cabang berjari-jari $r_2<r_1$ keluar dari pipa utama di $D$ menuju $C$. (a) Nyatakan $R(\theta)$. (b)–(c) Tentukan titik kritis dan jenisnya. (d) Tunjukkan nilainya. (e) Apakah minimum mutlak?
 
 {{fig:t_p71}}
 ===
@@ -307,21 +307,21 @@ $$R=\frac{k}{r_1^4}(X-Y\cot\theta)+\frac{k}{r_2^4}Y\csc\theta.$$
 
 (d) $R(\bar\theta)=\dfrac{kX}{r_1^4}+\dfrac{kY}{r_2^4}\sqrt{1-(r_2/r_1)^8}$, lebih kecil dari $R(\pi/2)=\dfrac{kX}{r_1^4}+\dfrac{kY}{r_2^4}$.
 
-(e) Satu-satunya titik kritis pada $(0,\pi/2)$, jadi minimum mutlak di sana, asalkan $D$ tetap berada di antara $A$ dan $E$, yaitu $X\ge Y\cot\bar\theta$.
+(e) Satu-satunya titik kritis pada $(0;\,\pi/2)$, jadi minimum mutlak di sana, asalkan $D$ tetap berada di antara $A$ dan $E$, yaitu $X\ge Y\cot\bar\theta$.
 
 @@ P72 | Latihan 72 | Silinder berluas permukaan maksimum dalam kerucut | volume | 292
-Kerucut berjari-jari $R$ dan tinggi $H$. Cari jari-jari silinder di dalamnya agar luas total (tutup, alas, selimut) maksimum.
+Kerucut berjari-jari $R$ dan tinggi $H$. Tentukan jari-jari silinder di dalamnya (tinggi positif) agar luas total (tutup, alas, selimut) maksimum.
 
 {{fig:t_p72}}
 ===
-$$S(x)=2\pi x^2+2\pi xH\left(1-\frac xR\right),\qquad0\le x\le R.$$
+$$S(x)=2\pi x^2+2\pi xH\left(1-\frac xR\right),\qquad0<x<R.$$
 
 $S'=0\Rightarrow x=\dfrac{HR}{2(H-R)}$.
 
-**Jawab:** jika $H>2R$, $x=\dfrac{HR}{2(H-R)}$. Jika $H\le2R$, $S$ naik terus dan maksimum di $x=R$ (silinder pipih, $S=2\pi R^2$).
+**Jawab:** jika $H>2R$, maksimum di $x=\dfrac{HR}{2(H-R)}$. Jika $H\le2R$, $S$ naik pada $(0,R)$ dan **mendekati** $2\pi R^2$ ketika $x\to R^-$, tetapi maksimum **tidak tercapai** karena $x=R$ menghasilkan tinggi nol.
 
 @@ P74 | Latihan 74 | Sudut tali pada sistem tiga cincin | struktur | 292
-Tali bercincin di satu ujung dilewatkan pada dua cincin tetap sejajar, lalu ujung lainnya melalui cincin tadi dan diberi massa $m$. Sistem bergerak hingga $m$ sejauh mungkin di bawah garis cincin tetap. Cari $\theta$.
+Tali bercincin di satu ujung dilewatkan pada dua cincin tetap sejajar, lalu ujung lainnya melalui cincin tadi dan diberi massa $m$. Sistem bergerak hingga $m$ sejauh mungkin di bawah garis cincin tetap. Tentukan $\theta$.
 
 {{fig:t_p74}}
 ===
@@ -334,18 +334,18 @@ $y'=D\csc^2\varphi\left(\cos\varphi-\tfrac12\right)=0\Rightarrow\varphi=\dfrac\p
 **Jawab:** $\theta=120^\circ$.
 
 @@ P75 | Latihan 75 | Pagar berbentuk busur lingkaran | struktur | 292
-Jika 1000 m pagar pada Contoh 4.22 dibentuk busur lingkaran (sungai sebagai tali busur), berapa luas maksimumnya?
+Jika 1.000 m pagar pada Contoh 4.22 dibentuk busur lingkaran (sungai sebagai tali busur), berapa luas maksimumnya?
 
 {{fig:t_p75}}
 ===
-Sudut pusat $\alpha$, $R=1000/\alpha$:
+Sudut pusat $\alpha$, $R=1.000/\alpha$:
 
-$$A=\frac{1000^2(\alpha-\sin\alpha)}{2\alpha^2},\quad A'\propto2\sin\alpha-\alpha(1+\cos\alpha)=0\Rightarrow\alpha=\pi.$$
+$$A=\frac{1.000^2(\alpha-\sin\alpha)}{2\alpha^2},\quad A'\propto2\sin\alpha-\alpha(1+\cos\alpha)=0\Rightarrow\alpha=\pi.$$
 
-**Jawab:** setengah lingkaran, $A=\dfrac{1000^2}{2\pi}\approx159\,155\ \text{m}^2$.
+**Jawab:** setengah lingkaran, $A=\dfrac{1.000^2}{2\pi}\approx159.155\ \text{m}^2$.
 
 @@ P76 | Latihan 76 | Lipatan kertas terpendek | geometri | 292
-Sudut kiri atas kertas selebar $a$ dan sepanjang $b>a$ dilipat ke tepi kanan. Cari $x$ agar panjang lipatan $y$ minimum.
+Sudut kiri atas kertas selebar $a$ dan sepanjang $b>a$ dilipat ke tepi kanan. Tentukan $x$ agar panjang lipatan $y$ minimum.
 
 {{fig:t_p76}}
 ===
@@ -358,14 +358,14 @@ Turunan $\propto x^2(4x-3a)=0$.
 **Jawab:** $x=\tfrac34a$, $y=\dfrac{3\sqrt3}{4}a$ (berlaku jika $b\ge\dfrac{3a}{2\sqrt2}$).
 
 @@ P77 | Latihan 77 | Segitiga terbesar pada tali busur elips | geometri | 292
-Garis $y=mx+c$ memotong elips $b^2x^2+a^2y^2=a^2b^2$ di $P,Q$. Cari $R$ pada elips agar luas $PQR$ maksimum.
+Garis $y=mx+c$ memotong elips $b^2x^2+a^2y^2=a^2b^2$ di $P,Q$. Tentukan $R$ pada elips agar luas $PQR$ maksimum.
 ===
 Maksimumkan jarak ke garis: di titik singgung yang sejajar garis, yaitu $-\dfrac{b^2x}{a^2y}=m$.
 
 **Jawab:** untuk $c>0$, $R=\left(\dfrac{a^2m}{\sqrt{a^2m^2+b^2}},\ \dfrac{-b^2}{\sqrt{a^2m^2+b^2}}\right)$; untuk $c<0$ ambil titik berlawanan (untuk $c=0$ keduanya setara).
 
 @@ P78 | Latihan 78 | Talang berpenampang busur | air | 293
-Lembaran selebar $a$ dan panjang $L$ dibentuk talang berpenampang busur lingkaran dengan tutup ujung. Cari jari-jari agar volume maksimum.
+Lembaran selebar $a$ dan panjang $L$ dibentuk talang berpenampang busur lingkaran dengan tutup ujung. Tentukan jari-jari agar volume maksimum.
 
 {{fig:t_p78}}
 ===

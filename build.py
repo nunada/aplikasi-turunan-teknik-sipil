@@ -35,17 +35,38 @@ TOPICS = {
 }
 
 PAGES = [
-    ("hass", "Hass", "Hass, Heil & Weir — Thomas' Calculus: Early Transcendentals (SI), ed. 15",
-     "§4.6 Applied Optimization"),
-    ("stewart", "Stewart", "Stewart, Clegg & Watson — Calculus: Early Transcendentals, ed. 9",
-     "§4.7 Optimization Problems"),
-    ("trim-optimasi", "Trim 4.7", "Trim — Calculus for Engineers, ed. 4",
-     "§4.7 Absolute Maxima and Minima"),
-    ("trim-gerak", "Trim 4.8", "Trim — Calculus for Engineers, ed. 4",
-     "§4.8 Velocity and Acceleration"),
-    ("trim-laju", "Trim 4.9", "Trim — Calculus for Engineers, ed. 4",
-     "§4.9 Related Rates"),
+    ('hass', 'Thomas 4.6',
+     "Hass, Heil & Weir — Thomas' Calculus: Early Transcendentals (SI), ed. 15",
+     '§4.6 Applied Optimization'),
+    ('stewart', 'Stewart 4.7',
+     'Stewart, Clegg & Watson — Calculus: Early Transcendentals, ed. 9',
+     '§4.7 Optimization Problems'),
+    ('larson-optimasi', 'Larson 3.7',
+     'Larson & Edwards — Calculus, ed. 12',
+     '§3.7 Optimization Problems'),
+    ('trim-optimasi', 'Trim 4.7',
+     'Trim — Calculus for Engineers, ed. 4',
+     '§4.7 Absolute Maxima and Minima'),
+    ('thomas-laju', 'Thomas 3.10',
+     "Hass, Heil & Weir — Thomas' Calculus: Early Transcendentals (SI), ed. 15",
+     '§3.10 Related Rates'),
+    ('stewart-laju', 'Stewart 3.9',
+     'Stewart, Clegg & Watson — Calculus: Early Transcendentals, ed. 9',
+     '§3.9 Related Rates'),
+    ('larson-laju', 'Larson 2.6',
+     'Larson & Edwards — Calculus, ed. 12',
+     '§2.6 Related Rates'),
+    ('trim-laju', 'Trim 4.9',
+     'Trim — Calculus for Engineers, ed. 4',
+     '§4.9 Related Rates'),
+    ('trim-gerak', 'Trim 4.8',
+     'Trim — Calculus for Engineers, ed. 4',
+     '§4.8 Velocity and Acceleration'),
 ]
+
+GROUPS = [("Optimisasi Terapan", ["hass", "stewart", "larson-optimasi", "trim-optimasi"]),
+          ("Laju yang Berkaitan (Related Rates)", ["thomas-laju", "stewart-laju", "larson-laju", "trim-laju"]),
+          ("Kecepatan dan Percepatan", ["trim-gerak"])]
 
 MATH = re.compile(r"\$\$.+?\$\$|\$[^$\n]+?\$", re.S)
 
@@ -169,11 +190,19 @@ def shell(title, active, body, scripts=True):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>{html.escape(title)}</title>
+<script>
+(function () {{
+  var t = null;
+  try {{ t = localStorage.getItem("tema"); }} catch (e) {{}}
+  if (t !== "light" && t !== "dark") t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  document.documentElement.dataset.theme = t;
+}})();
+</script>
 <link rel="stylesheet" href="style.css">
 {katex}
 </head>
 <body>
-<header><span class="brand">Aplikasi Turunan · Teknik Sipil</span><nav>{nav}</nav></header>
+<header><span class="brand">Aplikasi Turunan · Teknik Sipil</span><nav>{nav}</nav><button id="tema" type="button" hidden>Mode</button></header>
 <main>
 {body}
 </main>
@@ -238,15 +267,19 @@ def main():
         (OUT / f"{page}.html").write_text(shell(f"{short} — {sec}", page, "\n".join(body)), encoding="utf-8")
 
     intro = render((SRC / "content" / "index.txt").read_text(encoding="utf-8"), used)
-    cards = ""
-    for page, short, book, sec, c in stats:
-        extra = f" · {c['L']} proyek" if c["L"] else ""
-        cards += (f'<a class="buku" href="{page}.html"><b>{sec}</b><span>{html.escape(book)}</span>'
-                  f'<em>{c["C"]} contoh · {c["P"]} latihan{extra}</em></a>')
+    by = {s[0]: s for s in stats}
+    grid = ""
+    for heading, names in GROUPS:
+        cards = ""
+        for page, short, book, sec, c in (by[n] for n in names if n in by):
+            extra = f" · {c['L']} proyek" if c["L"] else ""
+            cards += (f'<a class="buku" href="{page}.html"><b>{sec}</b><span>{html.escape(book)}</span>'
+                      f'<em>{c["C"]} contoh · {c["P"]} latihan{extra}</em></a>')
+        grid += f"<h2>{heading}</h2><div class='grid'>{cards}</div>"
     total = sum(sum(s[4].values()) for s in stats)
     body = (f"<h1>Aplikasi Turunan untuk Mahasiswa S1 Teknik Sipil</h1>"
             f"<p class='book'>{total} soal dengan penyelesaian yang dapat dibuka-tutup.</p>"
-            f"<div class='grid'>{cards}</div>{intro}")
+            f"{grid}{intro}")
     (OUT / "index.html").write_text(shell("Aplikasi Turunan · Teknik Sipil", "index", body), encoding="utf-8")
     (OUT / ".nojekyll").write_text("")
     for name in ("style.css", "app.js"):

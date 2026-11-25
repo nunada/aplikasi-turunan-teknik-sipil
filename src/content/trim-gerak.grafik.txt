@@ -16,7 +16,7 @@ P13 | x*sin(x) ; 0 ; 9 ; t ; x ; pt@2.0288,4.9132,7.9787 ; posisi
 P13 | 2*cos(x)-x*sin(x) ; 0 ; 9 ; t ; a ; pt@0.731,3.853,6.436 ; percepatan (tanda: a = 1)
 P14 | 3*x**4-16*x**3+18*x*x+2 ; 0 ; 4 ; t ; x ; min@3 ; posisi
 P14 | 12*x*(x-1)*(x-3) ; 0 ; 4 ; t ; v ; max@4 ; kecepatan
-P15 | (14*x**3-101*x*x+132*x)/45+2 ; 0 ; 6 ; t ; x ; min@4.029 ; posisi
+P15 | (14*x**3-101*x*x+132*x)/45+2 ; 0 ; 6 ; t ; x ; min@4.0296 ; posisi
 P15 | (42*x*x-202*x+132)/45 ; 0 ; 6 ; t ; v ; max@6 ; kecepatan
 P18 | abs(12*(x-1)*(x-3)*(x-4)) ; 0 ; 2 ; t ; laju ; max@0 ; laju
 P25 | 3*x*x-2*x**3 ; 0 ; 1 ; x/D ; y/h ; pt@0.5 ; lintasan

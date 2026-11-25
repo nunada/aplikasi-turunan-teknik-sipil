@@ -62,7 +62,7 @@ P62 | 120*x*x-15*x**4 ; -3 ; 3 ; x ; m ; max@-2,2
 P63 | sqrt(4*x*x+36/x**2) ; 0.7 ; 5 ; a ; L ; min@sqrt(3)
 P64 | (x*x+4)**2/(4*x) ; 0.4 ; 3 ; a ; A ; min@2/sqrt(3)
 P71 | sqrt((12-2*x)**2*12*(4*x-12)/16) ; 3 ; 6 ; a ; A ; max@4 ; contoh p = 12
-P72 | 400*x+3000*sqrt((6-x)**2+4) ; 0 ; 6.5 ; x ; C ; min@6-0.2690 ; contoh k = 3000
+P72 | 400*x+3000*sqrt((6-x)**2+4) ; 0 ; 6.5 ; x ; C ; min@6-0.2690 ; contoh k = 3.000
 P73 | sqrt(9/cos(x)**2+4/sin(x)**2) ; 0.25 ; 1.3 ; t ; L ; min@atan(sqrt(2/3)) ; contoh a = 3, b = 2
 P74 | 12*sin(x) ; 0 ; pi ; γ ; A ; max@pi/2 ; contoh a = 3, b = 4
 P75 | x+sqrt((5-x)**2+4)+sqrt((5-x)**2+9) ; 0 ; 5 ; x ; L ; min@3.5926
@@ -75,6 +75,6 @@ P84 | atan(3/x)-atan(1/x) ; 0.1 ; 8 ; x ; θ ; max@sqrt(3) ; contoh h = 2, d = 1
 P85 | 12+12.5*sin(2*x) ; 0 ; pi/2 ; θ ; A ; max@pi/4 ; contoh L = 4, W = 3
 P88 | 1/(x*x+25)+1/((10-x)**2+25) ; 0 ; 10 ; x ; I/k ; min@5 ; d = 5
 P88 | 1/(x*x+100)+1/((10-x)**2+100) ; 0 ; 10 ; x ; I/k ; min@0,10 ; d = 10
-L1 | 8*x*x+2000/x ; 2 ; 12 ; r ; A ; min@5 ; contoh V = 1000
-L2 | 4*sqrt(3)*x*x+2000/x ; 2 ; 12 ; r ; A ; min@cbrt(1000/(4*sqrt(3))) ; contoh V = 1000
+L1 | 8*x*x+2000/x ; 2 ; 12 ; r ; A ; min@5 ; contoh V = 1.000
+L2 | 4*sqrt(3)*x*x+2000/x ; 2 ; 12 ; r ; A ; min@cbrt(1000/(4*sqrt(3))) ; contoh V = 1.000
 P86 | (10-4/tan(x))/81+4/sin(x)/16 ; 0.5 ; pi/2 ; θ ; R/C ; min@acos(16/81) ; contoh a=10, b=4, r₁=3, r₂=2

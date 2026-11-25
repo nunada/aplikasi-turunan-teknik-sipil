@@ -8,13 +8,13 @@ Untuk grafik $y=2x+3$ dan $y=\ln x$, tentukan (a) jarak vertikal minimum, (b) ja
 (b) Pada ketinggian $y$: $H(y)=e^y-\dfrac{y-3}{2}$, $H'=e^y-\tfrac12=0\Rightarrow y=-\ln2$. $H_{\min}=\dfrac{4+\ln2}{2}\approx2{,}35$.
 
 @@ P42 | Latihan 42 | Titik dengan kemiringan terbesar | dasar | 285
-Cari titik pada $y=20x^3+60x-3x^5-5x^4$ yang kemiringannya terbesar.
+Tentukan titik pada $y=20x^3+60x-3x^5-5x^4$ yang kemiringannya terbesar.
 ===
 Kemiringan $m=60+60x^2-20x^3-15x^4$ dan $m'=-60x(x+2)(x-1)$.
 
 $m(-2)=220$, $m(0)=60$, $m(1)=85$, dan $m\to-\infty$ untuk $x\to\pm\infty$.
 
-**Jawab:** titik $(-2,-264)$ dengan kemiringan $220$.
+**Jawab:** titik $(-2;\,-264)$ dengan kemiringan $220$.
 
 @@ P43 | Latihan 43 | Segitiga terkecil oleh garis singgung parabola | geometri | 285
 Di antara segitiga di kuadran pertama yang dibentuk sumbu koordinat dan garis singgung $y=3x-x^2$, berapa luas terkecil?
@@ -37,7 +37,7 @@ Garis pelukis $1$, jadi $h=\sqrt{1-r^2}$ dengan $r=1-\dfrac{\theta}{2\pi}$. $V=\
 **Jawab:** $V_{\max}=\dfrac{2\pi}{9\sqrt3}\approx0{,}403\ \text{m}^3$, saat $\theta=2\pi\left(1-\sqrt{2/3}\right)\approx66^\circ$.
 
 @@ P45 | Latihan 45 | Gerak vertikal | gerak | 286
-Tinggi benda $s=-4{,}9t^2+29{,}4t+34{,}3$ (m, s). Cari (a) kecepatan saat $t=0$; (b) tinggi maksimum dan waktunya; (c) kecepatan saat $s=0$.
+Tinggi benda $s=-4{,}9t^2+29{,}4t+34{,}3$ (m, s). Tentukan (a) kecepatan saat $t=0$; (b) tinggi maksimum dan waktunya; (c) kecepatan saat $s=0$.
 ===
 $v=-9{,}8t+29{,}4$.
 
@@ -68,7 +68,7 @@ $$L(\theta)=\frac{2}{\sin\theta}+\frac{5}{\cos\theta},\quad L'=0\Rightarrow\tan^
 **Jawab:** $L_{\min}=\left(2^{2/3}+5^{2/3}\right)^{3/2}\approx9{,}58$ m ($\theta\approx36{,}4^\circ$).
 
 @@ P48 | Latihan 48 | Dua partikel pada satu garis | gerak | 286
-Posisi dua partikel: $s_1=\sin t$, $s_2=\sin(t+\pi/3)$. (a) Kapan bertemu pada $0\le t\le2\pi$? (b) Jarak terjauh? (c) Kapan jarak berubah paling cepat?
+Posisi dua partikel: $s_1=\sin t$, $s_2=\sin(t+\pi/3)$. (a) Kapan bertemu pada $0\le t\le2\pi$? (b) Jarak terjauh? (c) Kapan besar kecepatan relatif kedua partikel maksimum pada $0\le t\le2\pi$?
 ===
 $s_1-s_2=-\cos(t+\pi/6)$.
 
@@ -76,7 +76,9 @@ $s_1-s_2=-\cos(t+\pi/6)$.
 
 (b) Jarak maksimum $1$ m.
 
-(c) Laju perubahan sebesar $|\sin(t+\pi/6)|$, maksimum di $t=\dfrac\pi3,\dfrac{4\pi}{3}$, yaitu saat keduanya berpapasan.
+(c) Kecepatan relatif $v_1-v_2=\dfrac{d}{dt}(s_1-s_2)=\sin(t+\pi/6)$. Besarnya $|\sin(t+\pi/6)|$ maksimum, yaitu $1$ m/s, di $t=\dfrac\pi3;\,\dfrac{4\pi}{3}$, saat keduanya berpapasan.
+
+**Catatan:** jarak $D(t)=|\cos(t+\pi/6)|$ **tidak dapat diturunkan** di kedua waktu itu (grafiknya bersudut). Untuk $D\ne0$ berlaku $|D'(t)|=|\sin(t+\pi/6)|$, yang **mendekati** $1$ saat $t$ mendekati waktu pertemuan.
 
 @@ P49 | Latihan 49 | Penerangan minimum di antara dua lampu | struktur | 286
 Intensitas penerangan sebanding dengan kebalikan kuadrat jarak. Dua lampu berjarak 6 m, satu delapan kali lebih kuat. Seberapa jauh dari lampu kuat penerangan total minimum?
@@ -88,16 +90,16 @@ $$I(x)=\frac{8k}{x^2}+\frac{k}{(6-x)^2},\quad I'=-\frac{16k}{x^3}+\frac{2k}{(6-x
 **Jawab:** $4$ m dari lampu yang kuat.
 
 @@ P50 | Latihan 50 | Jangkauan peluru maksimum | gerak | 286
-Jangkauan peluru $R=\dfrac{v_0^2}{g}\sin2\alpha$. Cari sudut $\alpha$ yang memaksimumkannya.
+Jangkauan peluru $R=\dfrac{v_0^2}{g}\sin2\alpha$. Tentukan sudut $\alpha$ yang memaksimumkannya.
 
 {{fig:h_p50}}
 ===
-$R'(\alpha)=\dfrac{2v_0^2}{g}\cos2\alpha=0\Rightarrow\alpha=\dfrac\pi4$ pada $[0,\pi/2]$.
+$R'(\alpha)=\dfrac{2v_0^2}{g}\cos2\alpha=0\Rightarrow\alpha=\dfrac\pi4$ pada $[0;\,\pi/2]$.
 
 **Jawab:** $45^\circ$.
 
 @@ P51 | Latihan 51 | Balok kayu terkuat dari gelondongan | struktur | 286
-Kekuatan balok persegi panjang $S=kwd^2$. (a) Dimensi balok terkuat dari gelondongan berdiameter 30 cm? (b)–(c) Grafikkan $S$ terhadap $w$ dan $d$ ($k=1$); apa pengaruh $k$?
+Kekuatan balok persegi panjang $S=kwd^2$. (a) Dimensi balok terkuat dari gelondongan berdiameter 30 cm? (b)–(c) Gambarkan grafik $S$ terhadap $w$ dan $d$ ($k=1$); apa pengaruh $k$?
 
 {{fig:h_p51}}
 ===
@@ -129,7 +131,7 @@ $$S'=\frac{kd^2\,(3(900-d^2)-d^2)}{\sqrt{900-d^2}}=0\Rightarrow d^2=675.$$
 Puncak di $w=15$ dan $d\approx26$; nilai $k$ hanya mengubah skala.
 
 @@ P53 | Latihan 53 | Kereta pada pegas | gerak | 286
-Posisi kereta $s=10\cos\pi t$ (cm), $0\le t\le4$. (a) Laju maksimum, kapan, di mana, dan percepatannya? (b) Posisi saat percepatan terbesar dan lajunya?
+Posisi kereta $s=10\cos\pi t$ (cm), $0\le t\le4$. (a) Laju maksimum, kapan, di mana, dan percepatannya? (b) Di mana kereta saat besar percepatan maksimum, dan berapa lajunya saat itu?
 
 {{fig:h_p53}}
 ===
@@ -137,10 +139,10 @@ $v=-10\pi\sin\pi t$, $a=-10\pi^2\cos\pi t$.
 
 (a) $|v|_{\max}=10\pi\approx31{,}4$ cm/s pada $t=0{,}5;\,1{,}5;\,2{,}5;\,3{,}5$ s, di $s=0$, saat itu $a=0$.
 
-(b) $|a|_{\max}=10\pi^2\approx98{,}7$ cm/s² di $s=\pm10$ cm ($t=0,1,2,3,4$); laju nol.
+(b) $|a|_{\max}=10\pi^2\approx98{,}7$ cm/s² di $s=\pm10$ cm ($t=0;\,1;\,2;\,3;\,4$); laju nol.
 
 @@ P54 | Latihan 54 | Dua massa pada pegas | gerak | 287
-$s_1=2\sin t$, $s_2=\sin2t$. (a) Kapan kedua massa berpapasan ($t>0$)? (b) Kapan jarak vertikalnya terbesar pada $[0,2\pi]$ dan berapa?
+$s_1=2\sin t$, $s_2=\sin2t$. (a) Kapan kedua massa berpapasan ($t>0$)? (b) Kapan jarak vertikalnya terbesar pada $[0;\,2\pi]$ dan berapa?
 
 {{fig:h_p54}}
 ===
@@ -151,7 +153,7 @@ $s_1=2\sin t$, $s_2=\sin2t$. (a) Kapan kedua massa berpapasan ($t>0$)? (b) Kapan
 **Jawab:** jarak maksimum $\dfrac{3\sqrt3}{2}\approx2{,}60$ m.
 
 @@ P55 | Latihan 55 | Jarak dua kapal | lintasan | 287
-Pukul 12.00 kapal $A$ berada 12 mil laut di utara kapal $B$. $A$ berlayar ke selatan 12 knot, $B$ ke timur 8 knot. (a) Nyatakan jarak $s(t)$. (b) Laju perubahan jarak pukul 12.00 dan 13.00. (c) Jarak pandang 5 mil laut: apakah mereka saling terlihat? (d) Grafik $s$ dan $ds/dt$. (e) Limit $ds/dt$.
+Pukul 12.00 kapal $A$ berada 12 mil laut di utara kapal $B$. $A$ berlayar ke selatan 12 knot, $B$ ke timur 8 knot. (a) Nyatakan jarak $s(t)$. (b) Laju perubahan jarak pukul 12.00 dan 13.00. (c) Jarak pandang 5 mil laut: apakah mereka saling terlihat? (d) Gambarkan grafik $s$ dan $ds/dt$. (e) Limit $ds/dt$.
 
 {{fig:h_p55}}
 ===
@@ -233,14 +235,14 @@ $D=f-g$ maksimum di titik dalam $c$ dan terdiferensialkan, sehingga $D'(c)=0$, y
 **Jawab:** kedua garis singgung **sejajar**.
 
 @@ P72 | Latihan 72 | Apakah fungsi trigonometri pernah negatif | dasar | 289
-$f(x)=3+4\cos x+\cos2x$. (a) Mengapa cukup meninjau $[0,2\pi]$? (b) Pernahkah $f<0$?
+$f(x)=3+4\cos x+\cos2x$. (a) Mengapa cukup meninjau $[0;\,2\pi]$? (b) Pernahkah $f<0$?
 ===
 (a) $f$ berperiode $2\pi$.
 
 (b) $\cos2x=2\cos^2x-1$, sehingga $f=2(1+\cos x)^2\ge0$. **Tidak pernah negatif**; minimum $0$ di $x=\pi$.
 
 @@ P73 | Latihan 73 | Maksimum mutlak kotangen dan kosekan | dasar | 289
-(a) Cari maksimum mutlak $y=\cot x-\sqrt2\csc x$ pada $0<x<\pi$. (b) Bandingkan dengan grafik.
+(a) Tentukan maksimum mutlak $y=\cot x-\sqrt2\csc x$ pada $0<x<\pi$. (b) Bandingkan dengan grafik.
 ===
 (a) $y'=\csc^2x(\sqrt2\cos x-1)=0\Rightarrow x=\pi/4$; tanda berubah $+$ ke $-$. Maksimum $y=-1$.
 
@@ -249,7 +251,7 @@ $f(x)=3+4\cos x+\cos2x$. (a) Mengapa cukup meninjau $[0,2\pi]$? (b) Pernahkah $f
 {{fig:h_p73}}
 
 @@ P74 | Latihan 74 | Minimum mutlak tangen dan kotangen | dasar | 289
-(a) Cari minimum mutlak $y=\tan x+3\cot x$ pada $0<x<\pi/2$. (b) Bandingkan dengan grafik.
+(a) Tentukan minimum mutlak $y=\tan x+3\cot x$ pada $0<x<\pi/2$. (b) Bandingkan dengan grafik.
 ===
 (a) $y'=\sec^2x-3\csc^2x=0\Rightarrow\tan^2x=3\Rightarrow x=\pi/3$. Minimum $y=2\sqrt3\approx3{,}46$.
 
@@ -258,7 +260,7 @@ $f(x)=3+4\cos x+\cos2x$. (a) Mengapa cukup meninjau $[0,2\pi]$? (b) Pernahkah $f
 {{fig:h_p74}}
 
 @@ P75 | Latihan 75 | Jarak kurva akar ke sebuah titik | lintasan | 289
-(a) Seberapa dekat kurva $y=\sqrt x$ ke titik $(3/2,0)$? (b) Grafikkan fungsi jarak.
+(a) Seberapa dekat kurva $y=\sqrt x$ ke titik $(3/2;\,0)$? (b) Gambarkan grafik fungsi jarak.
 
 {{fig:h_p75}}
 ===
@@ -271,13 +273,13 @@ $f(x)=3+4\cos x+\cos2x$. (a) Mengapa cukup meninjau $[0,2\pi]$? (b) Pernahkah $f
 Minimum $D(x)$ di $x=1$.
 
 @@ P76 | Latihan 76 | Jarak setengah lingkaran ke sebuah titik | lintasan | 289
-(a) Seberapa dekat $y=\sqrt{16-x^2}$ ke titik $(1,\sqrt3)$? (b) Grafikkan fungsi jarak.
+(a) Seberapa dekat $y=\sqrt{16-x^2}$ ke titik $(1;\,\sqrt3)$? (b) Gambarkan grafik fungsi jarak.
 
 {{fig:h_p76}}
 ===
 (a) $D^2=(x-1)^2+(y-\sqrt3)^2=20-2x-2\sqrt3\,y$. Turunan nol saat $1+\sqrt3\,y'=0$ dengan $y'=-x/y$, jadi $y=\sqrt3x$, sehingga $x=2$.
 
-**Jawab:** titik $(2,2\sqrt3)$, jarak minimum $2$.
+**Jawab:** titik $(2;\,2\sqrt3)$, jarak minimum $2$.
 
 (b)
 

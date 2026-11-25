@@ -1,5 +1,5 @@
 @@ P43 | Latihan 43 | Kawat menjadi persegi dan segitiga | geometri | 344
-Kawat 10 m dipotong dua menjadi persegi dan segitiga sama sisi. Bagaimana memotongnya agar total luas (a) maksimum, (b) minimum?
+Kawat 10 m dipotong dua menjadi persegi dan segitiga sama sisi. Kedua potongan harus terbentuk. Bagaimana memotong kawat agar total luas (a) maksimum, (b) minimum?
 ===
 $x$ = bagian persegi:
 
@@ -7,16 +7,20 @@ $$A=\frac{x^2}{16}+\frac{\sqrt3}{36}(10-x)^2,\quad A'=\frac x8-\frac{\sqrt3}{18}
 
 Ujung: $A(0)\approx4{,}81$, $A(10)=6{,}25$.
 
-**Jawab:** (a) maksimum bila seluruh kawat jadi persegi; (b) minimum bila $\approx4{,}35$ m untuk persegi.
+**Jawab:** (a) **maksimum tidak tercapai**, karena kedua potongan harus ada ($0<x<10$). Luas mendekati $6{,}25\ \text{m}^2$ ketika hampir seluruh kawat dipakai untuk persegi ($x\to10^-$). (b) Minimum tercapai bila $\approx4{,}35$ m dipakai untuk persegi.
+
+Jika seluruh kawat diizinkan untuk satu bangun saja ($0\le x\le10$), maksimumnya $6{,}25\ \text{m}^2$ pada $x=10$.
 
 @@ P44 | Latihan 44 | Kawat menjadi persegi dan lingkaran | geometri | 344
-Ulangi latihan 43 untuk persegi dan lingkaran.
+Ulangi latihan 43 (kedua potongan harus terbentuk) untuk persegi dan lingkaran.
 ===
 $A=\dfrac{x^2}{16}+\dfrac{(10-x)^2}{4\pi}$, $A'=0\Rightarrow x=\dfrac{40}{4+\pi}\approx5{,}60$.
 
 $A(0)\approx7{,}96$, $A(10)=6{,}25$.
 
-**Jawab:** (a) seluruhnya lingkaran; (b) $\approx5{,}60$ m untuk persegi.
+**Jawab:** (a) **maksimum tidak tercapai** pada $0<x<10$. Luas mendekati $\dfrac{25}{\pi}\approx7{,}96\ \text{m}^2$ ketika hampir seluruh kawat dipakai untuk lingkaran ($x\to0^+$). (b) Minimum tercapai bila $\approx5{,}60$ m dipakai untuk persegi.
+
+Jika seluruh kawat diizinkan untuk satu bangun saja, maksimumnya $\dfrac{25}{\pi}\ \text{m}^2$ pada $x=0$.
 
 @@ P45 | Latihan 45 | Potongan pizza terbesar | geometri | 344
 Satu juring pizza harus berkeliling 60 cm. Diameter pizza berapa yang memberi juring terluas?
@@ -35,7 +39,7 @@ $$L(\theta)=\frac{2}{\sin\theta}+\frac{1}{\cos\theta},\quad L'=0\Rightarrow\tan^
 **Jawab:** $L_{\min}=\left(1+2^{2/3}\right)^{3/2}\approx4{,}16$ m.
 
 @@ P47 | Latihan 47 | Gelas kerucut dari lingkaran kertas | volume | 344
-Gelas kerucut dibuat dari kertas lingkaran berjari-jari $R$ dengan memotong juring lalu menyambung $CA$ dan $CB$. Cari kapasitas maksimum.
+Gelas kerucut dibuat dari kertas lingkaran berjari-jari $R$ dengan memotong juring lalu menyambung $CA$ dan $CB$. Tentukan kapasitas maksimum.
 
 {{fig:s_p47}}
 ===
@@ -44,7 +48,7 @@ $h=\sqrt{R^2-r^2}$, $V=\dfrac\pi3r^2h$. Dalam $h$: $V=\dfrac\pi3(R^2-h^2)h$, $V'
 **Jawab:** $V_{\max}=\dfrac{2\pi R^3}{9\sqrt3}$.
 
 @@ P48 | Latihan 48 | Gelas kerucut dengan kertas minimum | volume | 345
-Gelas kertas kerucut harus memuat $27\ \text{cm}^3$. Cari tinggi dan jari-jari dengan kertas paling sedikit.
+Gelas kertas kerucut harus memuat $27\ \text{cm}^3$. Tentukan tinggi dan jari-jari dengan kertas paling sedikit.
 ===
 $h=\dfrac{81}{\pi r^2}$, $S^2=\pi^2r^2(r^2+h^2)=\pi^2r^4+\dfrac{81^2}{r^2}$.
 
@@ -135,14 +139,14 @@ $I=\dfrac{3k}{x^2}+\dfrac{k}{(4-x)^2}$, $I'=0\Rightarrow x=\sqrt[3]3\,(4-x)$.
 **Jawab:** $x=\dfrac{4\sqrt[3]3}{1+\sqrt[3]3}\approx2{,}36$ m dari sumber kuat.
 
 @@ P60 | Latihan 60 | Garis yang memotong luas terkecil | geometri | 346
-Cari persamaan garis melalui $(3,5)$ yang memotong luas terkecil dari kuadran pertama.
+Tentukan persamaan garis melalui $(3;\,5)$ yang memotong luas terkecil dari kuadran pertama.
 ===
 Intersep $a,b$: $\dfrac3a+\dfrac5b=1\Rightarrow b=\dfrac{5a}{a-3}$. $A=\dfrac{5a^2}{2(a-3)}$, $A'=0\Rightarrow a=6$, $b=10$.
 
 **Jawab:** $y=-\tfrac53x+10$ (luas $30$).
 
 @@ P61 | Latihan 61 | Ruas garis terpendek melalui (a, b) | geometri | 346
-Cari panjang ruas terpendek yang dipotong kuadran pertama dan melalui $(a,b)$, $a,b>0$.
+Tentukan panjang ruas terpendek yang dipotong kuadran pertama dan melalui $(a,b)$, $a,b>0$.
 ===
 $L(\theta)=\dfrac{a}{\cos\theta}+\dfrac{b}{\sin\theta}$, $L'=0\Rightarrow\tan^3\theta=b/a$.
 
@@ -153,7 +157,7 @@ Di titik mana pada $y=1+40x^3-3x^5$ garis singgung memiliki gradien terbesar?
 ===
 $m=120x^2-15x^4$, $m'=60x(4-x^2)=0$. $m(\pm2)=240$ (maksimum).
 
-**Jawab:** $(2,225)$ dan $(-2,-223)$.
+**Jawab:** $(2;\,225)$ dan $(-2;\,-223)$.
 
 @@ P63 | Latihan 63 | Ruas singgung terpendek hiperbola | geometri | 346
 Berapa panjang terpendek ruas garis singgung $y=3/x$ yang dipotong kuadran pertama?
@@ -222,14 +226,14 @@ Grafik $L'$ memotong nol di $x\approx3{,}59$.
 
 **Jawab:** $L_{\min}\approx9{,}35$ m.
 
-@@ P76 | Latihan 76 | Kecepatan hemat bahan bakar | gerak | 347
-Grafik konsumsi bahan bakar $c(v)$ (liter/jam) terhadap kecepatan diberikan. Perkirakan kecepatan yang meminimumkan konsumsi per kilometer $G$.
+@@ P76 | Latihan 76 | Laju hemat bahan bakar | gerak | 347
+Grafik konsumsi bahan bakar $c(v)$ (liter/jam) terhadap laju diberikan. Perkirakan laju yang meminimumkan konsumsi per kilometer $G$.
 
 {{fig:s_p76}}
 ===
 $G(v)=\dfrac{c(v)}{v}$, sehingga $G'=0\iff c'(v)=\dfrac{c(v)}{v}$: garis dari titik asal **menyinggung** kurva.
 
-**Jawab:** dari grafik, sekitar $v\approx85$ km/jam (perkiraan baca grafik), lebih tinggi daripada kecepatan yang meminimumkan $c$.
+**Jawab:** dari grafik, sekitar $v\approx85$ km/jam (perkiraan baca grafik), lebih tinggi daripada laju yang meminimumkan $c$.
 
 @@ P77 | Latihan 77 | Hukum Snell udara–air | lintasan | 347
 Cahaya dari $A$ (udara, laju $v_1$) ke $B$ (air, laju $v_2$) melalui $C$ dengan waktu minimum. Tunjukkan $\dfrac{\sin\theta_1}{\sin\theta_2}=\dfrac{v_1}{v_2}$.
@@ -284,7 +288,7 @@ Pipa terpanjang = **minimum** $L$: $\tan^3\theta=\tfrac32$.
 **Jawab:** $\left(3^{2/3}+2^{2/3}\right)^{3/2}\approx7{,}02$ m.
 
 @@ P81 | Latihan 81 | Sudut pandang maksimum dua pelari | gerak | 347
-Pengamat berjarak 1 satuan dari lintasan. Dua pelari mulai dari $S$; satu tiga kali lebih cepat. Cari sudut pandang $\theta$ maksimum.
+Pengamat berjarak 1 satuan dari lintasan. Dua pelari mulai dari $S$; satu tiga kali lebih cepat. Tentukan sudut pandang $\theta$ maksimum.
 
 {{fig:s_p81}}
 ===
@@ -326,7 +330,7 @@ $$\theta'=-\frac{h+d}{x^2+(h+d)^2}+\frac{d}{x^2+d^2}=0.$$
 **Jawab:** $x=\sqrt{d(h+d)}$.
 
 @@ P85 | Latihan 85 | Persegi panjang luar terbesar | geometri | 348
-Cari luas maksimum persegi panjang yang mengelilingi persegi panjang $L\times W$ (petunjuk: pakai sudut).
+Tentukan luas maksimum persegi panjang luar yang setiap sisinya melalui satu titik sudut persegi panjang dalam berukuran $L\times W$ (petunjuk: gunakan sudut $\theta$).
 
 {{fig:s_p85}}
 ===
@@ -337,13 +341,13 @@ Maksimum di $\theta=45^\circ$.
 **Jawab:** $\dfrac{(L+W)^2}{2}$.
 
 @@ P88 | Latihan 88 | Penerangan dari dua lampu identik | struktur | 349
-Dua lampu identik berjarak 10 m. Titik $P$ pada garis sejajar sejauh $d$. (a) Tulis $I(x)$. (b) Untuk $d=5$ m, minimum di tengah. (c) Untuk $d=10$ m, minimum bukan di tengah. (d) Cari nilai peralihan $d$.
+Dua lampu identik berjarak 10 m. Titik $P$ berada pada garis sejajar sejauh $d$ meter, dengan posisi $0\le x\le10$. (a) Tulis $I(x)$. (b) Untuk $d=5$ m, minimum di tengah. (c) Untuk $d=10$ m, minimum bukan di tengah. (d) Tentukan nilai peralihan $d$.
 
 {{fig:s_p88}}
 ===
 (a) $I(x)=k\left[\dfrac{1}{x^2+d^2}+\dfrac{1}{(10-x)^2+d^2}\right]$.
 
-(b) $d=5$: $I(5)=0{,}040k<I(0)=0{,}048k$, dan $I'$ berubah tanda hanya di $x=5$.
+(b) $d=5$: titik kritis pada $0\le x\le10$ adalah $x=5$ serta $x\approx0{,}45$ dan $x\approx9{,}55$. Dua titik terakhir merupakan **maksimum lokal** ($I\approx0{,}0483k$). Untuk minimum mutlak, bandingkan titik tengah dengan kedua ujung: $I(5)=0{,}040k<I(0)=I(10)=0{,}048k$, sehingga minimum mutlak di $x=5$.
 
 (c) $d=10$: $I(0)=0{,}015k<I(5)=0{,}016k$; minimum di ujung.
 
@@ -387,7 +391,7 @@ Substitusi $V=\pi r^2h$ dan $q=h/r$ menyederhanakannya menjadi $k(2\pi-q)=r(\pi 
 $$\frac{\sqrt[3]V}{k}=\sqrt[3]{\pi q}\cdot\frac{2\pi-q}{\pi q-4\sqrt3}.\qquad\blacksquare$$
 
 @@ L4 | Proyek Kaleng 4 | Membaca grafik rasio optimum | biaya | 350
-Plot $\sqrt[3]V/k$ sebagai fungsi $x=h/r$ dan jelaskan pengaruh ukuran kaleng serta biaya sambungan.
+Gambarkan grafik $\sqrt[3]V/k$ sebagai fungsi $x=h/r$ dan jelaskan pengaruh ukuran kaleng serta biaya sambungan.
 
 {{fig:s_can4}}
 ===

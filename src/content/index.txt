@@ -4,7 +4,7 @@
 - **Gambar sketsa** dan beri nama variabel.
 - **Susun fungsi tujuan** $Q$, lalu pakai persamaan kendala agar $Q$ menjadi fungsi satu variabel.
 - **Tentukan domain** yang masuk akal secara fisik.
-- **Cari titik kritis:** $Q'(x)=0$ atau $Q'(x)$ tidak ada.
+- **Tentukan titik kritis:** $Q'(x)=0$ atau $Q'(x)$ tidak ada.
 - **Pastikan jenis ekstrem** dengan salah satu uji di bawah.
 - **Jawab dalam konteks soal**, lengkap dengan satuan.
 

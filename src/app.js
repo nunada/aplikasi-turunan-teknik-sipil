@@ -1,4 +1,18 @@
 window.addEventListener("DOMContentLoaded", () => {
+  // Tombol tema dipasang lebih dulu agar tetap berfungsi bila KaTeX gagal dimuat.
+  const root = document.documentElement;
+  const tema = document.getElementById("tema");
+  const label = () => {
+    tema.textContent = root.dataset.theme === "dark" ? "☀️ Mode terang" : "🌙 Mode gelap";
+  };
+  tema.addEventListener("click", () => {
+    root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
+    try { localStorage.setItem("tema", root.dataset.theme); } catch (e) {}
+    label();
+  });
+  label();
+  tema.hidden = false;
+
   renderMathInElement(document.body, {
     delimiters: [
       { left: "$$", right: "$$", display: true },

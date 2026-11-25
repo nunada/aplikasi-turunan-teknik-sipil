@@ -10,6 +10,12 @@ def fig(fn):
     return fn
 
 
+def ribuan(v):
+    """1000 -> 1.000 dan 2.5 -> 2,5."""
+    s = f"{v:,.6f}".rstrip("0").rstrip(".")
+    return s.replace(",", " ").replace(".", ",").replace(" ", ".").replace("-", "−")
+
+
 def register(name, maker):
     FIGS[name] = lambda: maker().svg()
 
@@ -122,12 +128,12 @@ class F:
         self.text((xb, 0), xl, dx=10)
         self.text((0, yb), yl, dy=-12)
         for t in xt:
-            v, lab = t if isinstance(t, tuple) else (t, f"{t:g}")
+            v, lab = t if isinstance(t, tuple) else (t, ribuan(t))
             x, y = self.P((v, 0))
             self.el.append(f'<line class="thin" x1="{x:.1f}" y1="{y - 3:.1f}" x2="{x:.1f}" y2="{y + 3:.1f}"/>')
             self.text((v, 0), lab, dy=14)
         for t in yt:
-            v, lab = t if isinstance(t, tuple) else (t, f"{t:g}")
+            v, lab = t if isinstance(t, tuple) else (t, ribuan(t))
             x, y = self.P((0, v))
             self.el.append(f'<line class="thin" x1="{x - 3:.1f}" y1="{y:.1f}" x2="{x + 3:.1f}" y2="{y:.1f}"/>')
             self.text((0, v), lab, anchor="end", dx=-6)

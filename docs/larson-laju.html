@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Larson 2.6 — §2.6 Related Rates</title>
+<script>
+(function () {
+  var t = null;
+  try { t = localStorage.getItem("tema"); } catch (e) {}
+  if (t !== "light" && t !== "dark") t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  document.documentElement.dataset.theme = t;
+})();
+</script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<header><span class="brand">Aplikasi Turunan · Teknik Sipil</span><nav><a href="index.html">Beranda</a><a href="hass.html">Thomas 4.6</a><a href="stewart.html">Stewart 4.7</a><a href="larson-optimasi.html">Larson 3.7</a><a href="trim-optimasi.html">Trim 4.7</a><a href="thomas-laju.html">Thomas 3.10</a><a href="stewart-laju.html">Stewart 3.9</a><a href="larson-laju.html" class=on>Larson 2.6</a><a href="trim-laju.html">Trim 4.9</a><a href="trim-gerak.html">Trim 4.8</a></nav><button id="tema" type="button" hidden>Mode</button></header>
+<main>
+<h1>§2.6 Related Rates</h1><p class='book'>Larson &amp; Edwards — Calculus, ed. 12</p>
+<div class="bar">
+<input id="q" type="search" placeholder="Cari soal…" aria-label="Cari soal">
+<select id="topik" aria-label="Topik"><option value="">Semua topik</option><option value="dasar">Dasar & Teori</option><option value="geometri">Geometri & Luas</option><option value="volume">Wadah & Volume</option><option value="struktur">Struktur & Konstruksi</option><option value="air">Air & Hidraulika</option><option value="lintasan">Jarak, Lintasan & Waktu</option><option value="gerak">Kinematika & Fisika</option><option value="laju">Laju yang Berkaitan</option></select>
+<select id="jenis" aria-label="Jenis"><option value="">Contoh &amp; latihan</option><option value="contoh">Contoh soal</option><option value="latihan">Soal latihan</option><option value="proyek">Proyek</option></select>
+<button id="buka" type="button">Buka semua</button><button id="tutup" type="button">Tutup semua</button>
+<span id="hitung"></span></div>
+<section><h2>Contoh Soal</h2><div class='chips'><a href="#C1">1</a><a href="#C2">2</a><a href="#C3">3</a><a href="#C4">4</a><a href="#C5">5</a><a href="#C6">6</a></div>
+<article class="soal contoh" id="C1" data-topic="dasar" data-kind="contoh">
+<h3><a href="#C1">Contoh 1</a> Dua laju yang berkaitan</h3>
+<div class="meta"><span class="tag">Dasar & Teori</span><span>hlm. 152 (ed. 11)</span></div>
+<p>$y=x^2+3$ dengan $x,y$ bergantung pada $t$. Tentukan $dy/dt$ saat $x=1$ jika $dx/dt=2$.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$\dot y=2x\dot x=4$.</p>
+
+</div></details>
+</article>
+<article class="soal contoh" id="C2" data-topic="air" data-kind="contoh">
+<h3><a href="#C2">Contoh 2</a> Riak air di kolam</h3>
+<div class="meta"><span class="tag">Air & Hidraulika</span><span>hlm. 153 (ed. 11)</span></div>
+<p>Jari-jari riak terluar bertambah 1 ft/s. Seberapa cepat luas permukaan yang terganggu bertambah saat jari-jari 4 ft?</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$A=\pi r^2$, $\dot A=2\pi r\dot r=8\pi\ \text{ft}^2$/s.</p>
+
+</div></details>
+</article>
+<article class="soal contoh" id="C3" data-topic="volume" data-kind="contoh">
+<h3><a href="#C3">Contoh 3</a> Balon mengembang</h3>
+<div class="meta"><span class="tag">Wadah & Volume</span><span>hlm. 154 (ed. 11)</span></div>
+<p>Balon bola dipompa $4{,}5\ \text{ft}^3$/menit. Tentukan laju jari-jari saat $r=2$ ft.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$\dot r=\dfrac{\dot V}{4\pi r^2}=\dfrac{9}{32\pi}\approx0{,}09$ ft/menit.</p>
+
+</div></details>
+</article>
+<article class="soal contoh" id="C4" data-topic="gerak" data-kind="contoh">
+<h3><a href="#C4">Contoh 4</a> Pesawat dipantau radar</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 155 (ed. 11)</span></div>
+<p>Pesawat terbang setinggi 6 mil menuju titik tepat di atas stasiun radar. Saat jarak $s=10$ mil, $s$ berkurang 400 mil/jam. Berapa laju pesawat?</p>
+<div class="figs"><svg viewBox="0 0 334 230" width="334" height="230" role="img" aria-label="diagram soal"><polyline class="s" points="53.1,179.4 291.3,179.4"/><polyline class="thin" points="64.5,179.4 56.5,185.6"/><polyline class="thin" points="75.9,179.4 67.9,185.6"/><polyline class="thin" points="87.3,179.4 79.3,185.6"/><polyline class="thin" points="98.6,179.4 90.7,185.6"/><polyline class="thin" points="110.0,179.4 102.1,185.6"/><polyline class="thin" points="121.4,179.4 113.5,185.6"/><polyline class="thin" points="132.8,179.4 124.8,185.6"/><polyline class="thin" points="144.2,179.4 136.2,185.6"/><polyline class="thin" points="155.6,179.4 147.6,185.6"/><polyline class="thin" points="167.0,179.4 159.0,185.6"/><polyline class="thin" points="178.4,179.4 170.4,185.6"/><polyline class="thin" points="189.8,179.4 181.8,185.6"/><polyline class="thin" points="201.2,179.4 193.2,185.6"/><polyline class="thin" points="212.6,179.4 204.6,185.6"/><polyline class="thin" points="224.0,179.4 216.0,185.6"/><polyline class="thin" points="235.4,179.4 227.4,185.6"/><polyline class="thin" points="246.8,179.4 238.8,185.6"/><polyline class="thin" points="258.1,179.4 250.2,185.6"/><polyline class="thin" points="269.5,179.4 261.6,185.6"/><polyline class="thin" points="280.9,179.4 273.0,185.6"/><polyline class="d" points="73.8,65.5 239.5,65.5"/><polyline class="d" points="73.8,179.4 73.8,65.5"/><polyline class="a" points="73.8,179.4 239.5,65.5"/><circle class="dot" cx="73.8" cy="179.4" r="3.2"/><circle class="dot" cx="239.5" cy="65.5" r="3.2"/><polyline class="b" points="239.5,65.5 185.6,65.5"/><polygon class="head" points="185.6,65.5 194.6,62.0 194.6,69.0"/><text x="239.5" y="57.0" text-anchor="middle">pesawat</text><text x="69.8" y="171.9" text-anchor="end">radar</text><text x="171.1" y="130.1" text-anchor="middle">s</text><polyline class="thin" points="73.8,42.7 239.5,42.7"/><polygon class="head" points="239.5,42.7 230.5,46.2 230.5,39.2"/><polygon class="head" points="73.8,42.7 82.8,39.2 82.8,46.2"/><text x="156.6" y="38.2" text-anchor="middle">x</text><polyline class="thin" points="48.9,179.4 48.9,65.5"/><polygon class="head" points="48.9,65.5 52.4,74.5 45.4,74.5"/><polygon class="head" points="48.9,179.4 45.4,170.4 52.4,170.4"/><text x="30.9" y="127.0" text-anchor="middle">6 mil</text></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$x^2+36=s^2$, $x=8$: $\dot x=\dfrac{s\dot s}{x}=-500$ mil/jam.</p>
+<p><strong>Jawab:</strong> kecepatannya $-500$ mil/jam, lajunya 500 mil/jam.</p>
+
+</div></details>
+</article>
+<article class="soal contoh" id="C5" data-topic="gerak" data-kind="contoh">
+<h3><a href="#C5">Contoh 5</a> Sudut elevasi kamera roket</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 155 (ed. 11)</span></div>
+<p>Roket naik dengan $s=50t^2$ ft. Kamera di tanah 2.000 ft dari landasan. Tentukan laju sudut elevasi pada $t=10$ s.</p>
+<div class="figs"><svg viewBox="0 0 284 211" width="284" height="211" role="img" aria-label="diagram soal"><polyline class="s" points="75.3,35.3 75.3,153.1 235.3,153.1"/><polyline class="a" points="75.3,53.1 208.7,153.1"/><circle class="dot" cx="75.3" cy="53.1" r="3.2"/><circle class="dot" cx="208.7" cy="153.1" r="3.2"/><polyline class="thin" points="83.1,153.1 83.1,145.3 75.3,145.3"/><text x="142.0" y="172.6" text-anchor="middle">2000 ft</text><text x="68.3" y="107.6" text-anchor="end">s</text><polyline class="thin" points="185.6,135.8 185.1,136.4 184.7,137.0 184.2,137.7 183.8,138.4 183.4,139.0 183.1,139.7 182.7,140.4 182.4,141.1 182.1,141.8 181.8,142.5 181.5,143.2 181.3,144.0 181.0,144.7 180.8,145.5 180.6,146.2 180.4,147.0 180.3,147.7 180.2,148.5 180.0,149.2 179.9,150.0 179.9,150.8 179.8,151.6 179.8,152.3 179.8,153.1"/><text x="167.6" y="143.9" text-anchor="middle">θ</text><text x="75.3" y="43.6" text-anchor="middle">roket</text><text x="214.7" y="145.6" text-anchor="start">kamera</text><polyline class="b" points="86.4,57.6 86.4,28.7"/><polygon class="head" points="86.4,28.7 89.9,37.7 82.9,37.7"/></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$\tan\theta=s/2.000$, $\dot\theta=\dfrac{2.000\,\dot s}{s^2+2.000^2}$ dengan $s=5.000$, $\dot s=1.000$.</p>
+<p><strong>Jawab:</strong> $\dot\theta=\dfrac{2}{29}$ rad/s.</p>
+
+</div></details>
+</article>
+<article class="soal contoh" id="C6" data-topic="gerak" data-kind="contoh">
+<h3><a href="#C6">Contoh 6</a> Kecepatan piston</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 156</span></div>
+<p>Batang penghubung 7 inci dipasang pada engkol berjari-jari 3 inci yang berputar 200 putaran/menit berlawanan jarum jam. Tentukan kecepatan piston saat $\theta=\pi/3$.</p>
+<div class="figs"><svg viewBox="0 0 344 194" width="344" height="194" role="img" aria-label="diagram soal"><ellipse class="d" cx="97.0" cy="97.0" rx="52.5" ry="52.5"/><polyline class="d" points="97.0,97.0 235.9,97.0"/><polyline class="a" points="97.0,97.0 123.2,51.5 235.9,97.0"/><polyline class="thin" points="112.0,97.0 112.0,96.3 111.9,95.7 111.9,95.0 111.8,94.4 111.6,93.8 111.5,93.1 111.3,92.5 111.1,91.9 110.9,91.3 110.6,90.7 110.3,90.1 110.0,89.5 109.7,88.9 109.3,88.4 108.9,87.9 108.5,87.4 108.1,86.9 107.6,86.4 107.1,85.9 106.6,85.5 106.1,85.1 105.6,84.7 105.1,84.3 104.5,84.0"/><text x="116.5" y="90.2" text-anchor="middle">θ</text><polygon class="g" points="230.3,112.0 271.6,112.0 271.6,82.0 230.3,82.0"/><polygon class="s" points="230.3,112.0 271.6,112.0 271.6,82.0 230.3,82.0"/><circle class="dot" cx="97.0" cy="97.0" r="3.2"/><circle class="dot" cx="123.2" cy="51.5" r="3.2"/><circle class="dot" cx="235.9" cy="97.0" r="3.2"/><text x="100.8" y="69.6" text-anchor="middle">3</text><text x="190.8" y="67.8" text-anchor="middle">7</text><polyline class="thin" points="97.0,158.9 235.9,158.9"/><polygon class="head" points="235.9,158.9 226.9,162.4 226.9,155.4"/><polygon class="head" points="97.0,158.9 106.0,155.4 106.0,162.4"/><text x="166.5" y="175.4" text-anchor="middle">x</text></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>Aturan kosinus: $49=9+x^2-6x\cos\theta$. Turunkan dengan $\dot\theta=400\pi$:</p>
+<p>$$\dot x=\frac{6x\sin\theta}{6\cos\theta-2x}\,\dot\theta.$$</p>
+<p>Saat $\theta=\pi/3$, $x=8$.</p>
+<p><strong>Jawab:</strong> $\dot x=-\dfrac{9.600\pi\sqrt3}{13}\approx-4.018$ inci/menit.</p>
+
+</div></details>
+</article>
+</section>
+<section><h2>Soal Latihan</h2><div class='chips'><a href="#P1">1</a><a href="#P2">2</a><a href="#P3">3</a><a href="#P4">4</a><a href="#P5">5</a><a href="#P6">6</a><a href="#P7">7</a><a href="#P8">8</a><a href="#P9">9</a><a href="#P10">10</a><a href="#P11">11</a><a href="#P12">12</a><a href="#P13">13</a><a href="#P14">14</a><a href="#P15">15</a><a href="#P16">16</a><a href="#P17">17</a><a href="#P18">18</a><a href="#P19">19</a><a href="#P20">20</a><a href="#P21">21</a><a href="#P22">22</a><a href="#P23">23</a><a href="#P24">24</a><a href="#P25">25</a><a href="#P26">26</a><a href="#P27">27</a><a href="#P28">28</a><a href="#P29">29</a><a href="#P30">30</a><a href="#P31">31</a><a href="#P32">32</a><a href="#P33">33</a><a href="#P34">34</a><a href="#P35">35</a><a href="#P36">36</a><a href="#P39">39</a><a href="#P40">40</a><a href="#P41">41</a><a href="#P42">42</a><a href="#P43">43</a><a href="#P44">44</a><a href="#P45">45</a><a href="#P46">46</a><a href="#P48">48</a><a href="#P49">49</a><a href="#P50">50</a></div>
+<article class="soal latihan" id="P1" data-topic="dasar" data-kind="latihan">
+<h3><a href="#P1">Latihan 1</a> Persamaan laju berkaitan</h3>
+<div class="meta"><span class="tag">Dasar & Teori</span><span>hlm. 157</span></div>
+<p>Apa yang dimaksud persamaan laju yang berkaitan?</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>Persamaan yang menghubungkan turunan terhadap waktu dari beberapa besaran, diperoleh dengan menurunkan secara implisit persamaan yang menghubungkan besaran-besaran itu.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P2" data-topic="dasar" data-kind="latihan">
+<h3><a href="#P2">Latihan 2</a> Langkah penyelesaian</h3>
+<div class="meta"><span class="tag">Dasar & Teori</span><span>hlm. 157</span></div>
+<p>Sebutkan panduan menyelesaikan soal laju yang berkaitan.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<ul><li>Tentukan yang diketahui dan ditanyakan, lalu buat sketsa berlabel.</li><li>Tulis persamaan yang menghubungkan variabel-variabel yang lajunya diketahui atau dicari.</li><li>Turunkan kedua ruas terhadap $t$ dengan aturan rantai.</li><li>Setelah itu baru substitusikan nilai sesaat, lalu selesaikan laju yang dicari.</li></ul>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P3" data-topic="dasar" data-kind="latihan">
+<h3><a href="#P3">Latihan 3</a> Fungsi akar</h3>
+<div class="meta"><span class="tag">Dasar & Teori</span><span>hlm. 157</span></div>
+<p>$y=\sqrt x$. (a) $\dot y$ saat $x=4$, $\dot x=3$. (b) $\dot x$ saat $x=25$, $\dot y=2$.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$\dot y=\dfrac{\dot x}{2\sqrt x}$. (a) $\tfrac34$. (b) $20$.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P4" data-topic="dasar" data-kind="latihan">
+<h3><a href="#P4">Latihan 4</a> Fungsi kuadrat</h3>
+<div class="meta"><span class="tag">Dasar & Teori</span><span>hlm. 157</span></div>
+<p>$y=3x^2-5x$. (a) $\dot y$ saat $x=3$, $\dot x=2$. (b) $\dot x$ saat $x=2$, $\dot y=4$.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$\dot y=(6x-5)\dot x$. (a) $26$. (b) $\tfrac47$.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P5" data-topic="dasar" data-kind="latihan">
+<h3><a href="#P5">Latihan 5</a> Hiperbola</h3>
+<div class="meta"><span class="tag">Dasar & Teori</span><span>hlm. 157</span></div>
+<p>$xy=4$. (a) $\dot y$ saat $x=8$, $\dot x=10$. (b) $\dot x$ saat $x=1$, $\dot y=-6$.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$y\dot x+x\dot y=0$. (a) $-\tfrac58$. (b) $\tfrac32$.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P6" data-topic="dasar" data-kind="latihan">
+<h3><a href="#P6">Latihan 6</a> Lingkaran</h3>
+<div class="meta"><span class="tag">Dasar & Teori</span><span>hlm. 157</span></div>
+<p>$x^2+y^2=25$. (a) $\dot y$ di $(3;\,4)$, $\dot x=8$. (b) $\dot x$ di $(4;\,3)$, $\dot y=-2$.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$x\dot x+y\dot y=0$. (a) $-6$. (b) $\tfrac32$.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P7" data-topic="gerak" data-kind="latihan">
+<h3><a href="#P7">Latihan 7</a> Titik pada parabola</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 157</span></div>
+<p>$y=2x^2+1$, $\dot x=2$ cm/s. Tentukan $\dot y$ di $x=-1;\,0;\,1$.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$\dot y=4x\dot x=8x$: $-8$, $0$, $8$ cm/s.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P8" data-topic="gerak" data-kind="latihan">
+<h3><a href="#P8">Latihan 8</a> Titik pada kurva rasional</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 157</span></div>
+<p>$y=\dfrac{1}{1+x^2}$, $\dot x=6$ inci/s. Tentukan $\dot y$ di $x=-2;\,0;\,2$.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$\dot y=-\dfrac{12x}{(1+x^2)^2}$: $\tfrac{24}{25}$, $0$, $-\tfrac{24}{25}$ inci/s.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P9" data-topic="gerak" data-kind="latihan">
+<h3><a href="#P9">Latihan 9</a> Titik pada kurva tangen</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 157</span></div>
+<p>$y=\tan x$, $\dot x=3$ ft/s. Tentukan $\dot y$ di $x=-\pi/3;\,-\pi/4;\,0$.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$\dot y=3\sec^2x$: $12$, $6$, $3$ ft/s.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P10" data-topic="gerak" data-kind="latihan">
+<h3><a href="#P10">Latihan 10</a> Titik pada kurva kosinus</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 157</span></div>
+<p>$y=\cos x$, $\dot x=4$ cm/s. Tentukan $\dot y$ di $x=\pi/6;\,\pi/4;\,\pi/3$.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$\dot y=-4\sin x$: $-2$, $-2\sqrt2$, $-2\sqrt3$ cm/s.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P11" data-topic="geometri" data-kind="latihan">
+<h3><a href="#P11">Latihan 11</a> Luas lingkaran</h3>
+<div class="meta"><span class="tag">Geometri & Luas</span><span>hlm. 157</span></div>
+<p>Jari-jari bertambah 4 cm/menit. Tentukan laju luas saat $r=37$ cm.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$\dot A=2\pi(37)(4)=296\pi\ \text{cm}^2$/menit.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P12" data-topic="geometri" data-kind="latihan">
+<h3><a href="#P12">Latihan 12</a> Luas segitiga sama sisi</h3>
+<div class="meta"><span class="tag">Geometri & Luas</span><span>hlm. 157</span></div>
+<p>Sisi bertambah 13 ft/jam. Tentukan laju luas saat $s=41$ ft.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$\dot A=\dfrac{\sqrt3}{2}s\dot s=\dfrac{533\sqrt3}{2}\approx461{,}6\ \text{ft}^2$/jam.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P13" data-topic="volume" data-kind="latihan">
+<h3><a href="#P13">Latihan 13</a> Volume bola</h3>
+<div class="meta"><span class="tag">Wadah & Volume</span><span>hlm. 157</span></div>
+<p>$r$ bertambah 3 inci/menit. (a) Laju volume saat $r=9$ dan $r=36$ inci. (b) Mengapa tidak tetap?</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>(a) $\dot V=12\pi r^2$: $972\pi$ dan $15.552\pi\ \text{inci}^3$/menit.</p>
+<p>(b) $\dot V$ bergantung pada $r^2$, padahal $r$ berubah.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P14" data-topic="volume" data-kind="latihan">
+<h3><a href="#P14">Latihan 14</a> Jari-jari balon</h3>
+<div class="meta"><span class="tag">Wadah & Volume</span><span>hlm. 157</span></div>
+<p>Balon diisi $800\ \text{cm}^3$/menit. (a) Laju jari-jari saat $r=30$ dan 85 cm. (b) Mengapa tidak tetap?</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>(a) $\dot r=\dfrac{200}{\pi r^2}$: $\dfrac{2}{9\pi}\approx0{,}071$ dan $\dfrac{8}{289\pi}\approx0{,}0088$ cm/menit.</p>
+<p>(b) Luas permukaan bertambah, sehingga volume tambahan yang sama menjadi lapisan yang makin tipis.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P15" data-topic="volume" data-kind="latihan">
+<h3><a href="#P15">Latihan 15</a> Volume kubus</h3>
+<div class="meta"><span class="tag">Wadah & Volume</span><span>hlm. 157</span></div>
+<p>Rusuk bertambah 6 cm/s. Tentukan laju volume saat rusuk 2 cm dan 10 cm.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$\dot V=18x^2$: $72$ dan $1.800\ \text{cm}^3$/s.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P16" data-topic="geometri" data-kind="latihan">
+<h3><a href="#P16">Latihan 16</a> Luas permukaan kubus</h3>
+<div class="meta"><span class="tag">Geometri & Luas</span><span>hlm. 157</span></div>
+<p>Seperti latihan 15, tentukan laju luas permukaan.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$\dot S=12x\dot x=72x$: $144$ dan $720\ \text{cm}^2$/s.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P17" data-topic="struktur" data-kind="latihan">
+<h3><a href="#P17">Latihan 17</a> Timbunan pasir dan kerikil</h3>
+<div class="meta"><span class="tag">Struktur & Konstruksi</span><span>hlm. 157</span></div>
+<p>Pasir jatuh $10\ \text{ft}^3$/menit; diameter alas timbunan kerucut sekitar tiga kali tingginya. Tentukan laju tinggi saat 15 ft.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$r=1{,}5h$, $V=0{,}75\pi h^3$, $\dot h=\dfrac{\dot V}{2{,}25\pi h^2}=\dfrac{8}{405\pi}\approx0{,}0063$ ft/menit.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P18" data-topic="volume" data-kind="latihan">
+<h3><a href="#P18">Latihan 18</a> Minyak dalam wadah silinder</h3>
+<div class="meta"><span class="tag">Wadah & Volume</span><span>hlm. 157</span></div>
+<p>Volume minyak bertambah $150\ \text{inci}^3$/s. Tinggi silinder sekitar sepuluh kali jari-jarinya. Tentukan laju tinggi minyak saat 35 inci.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>Soal ini dimaksudkan memakai $r=h/10$, sehingga $V=\dfrac{\pi h^3}{100}$:</p>
+<p>$$\dot h=\frac{100\,\dot V}{3\pi h^2}=\frac{200}{49\pi}\approx1{,}30\ \text{inci/s}.$$</p>
+<p><strong>Catatan:</strong> untuk wadah silinder tegak yang nyata, jari-jari minyak tetap sehingga $\dot h=\dot V/(\pi r^2)$ konstan. Redaksi soal perlu diperjelas bila dipakai sebagai tugas.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P19" data-topic="air" data-kind="latihan">
+<h3><a href="#P19">Latihan 19</a> Mengisi kolam renang berdasar miring</h3>
+<div class="meta"><span class="tag">Air & Hidraulika</span><span>hlm. 157</span></div>
+<p>Kolam panjang 12 m, lebar 6 m, dalam 1 m di ujung dangkal dan 3 m di ujung dalam, diisi $\tfrac14\ \text{m}^3$/menit. Kedalaman air di ujung dalam 1 m. (a) Berapa persen terisi? (b) Laju muka air?</p>
+<div class="figs"><svg viewBox="0 0 364 204" width="364" height="204" role="img" aria-label="penampang memanjang; lebar kolam 6 m"><polygon class="f" points="57.6,110.9 57.6,128.7 164.2,110.9"/><polyline class="a" points="57.6,110.9 164.2,110.9"/><polygon class="s" points="57.6,75.3 270.9,75.3 270.9,93.1 57.6,128.7"/><polyline class="thin" points="39.8,128.7 39.8,75.3"/><polygon class="head" points="39.8,75.3 43.3,84.3 36.3,84.3"/><polygon class="head" points="39.8,128.7 36.3,119.7 43.3,119.7"/><text x="21.8" y="106.5" text-anchor="middle">3 m</text><polyline class="thin" points="288.7,93.1 288.7,75.3"/><polygon class="head" points="288.7,75.3 292.2,84.3 285.2,84.3"/><polygon class="head" points="288.7,93.1 285.2,84.1 292.2,84.1"/><text x="306.7" y="88.7" text-anchor="middle">1 m</text><polyline class="thin" points="57.6,54.0 270.9,54.0"/><polygon class="head" points="270.9,54.0 261.9,57.5 261.9,50.5"/><polygon class="head" points="57.6,54.0 66.6,50.5 66.6,57.5"/><text x="164.2" y="49.5" text-anchor="middle">12 m</text><text class="cap" x="182" y="198" text-anchor="middle">penampang memanjang; lebar kolam 6 m</text></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>Untuk kedalaman $h\le2$, penampang air segitiga dengan panjang $6h$: $V=\tfrac12h(6h)(6)=18h^2$.</p>
+<p>(a) Volume kolam $144\ \text{m}^3$; terisi $18/144=12{,}5\%$.</p>
+<p>(b) $36h\dot h=\tfrac14\Rightarrow\dot h=\dfrac{1}{144}$ m/menit.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P20" data-topic="air" data-kind="latihan">
+<h3><a href="#P20">Latihan 20</a> Palung segitiga</h3>
+<div class="meta"><span class="tag">Air & Hidraulika</span><span>hlm. 158</span></div>
+<p>Palung panjang 12 ft, lebar atas 3 ft, tinggi penampang segitiga 3 ft. (a) Diisi $2\ \text{ft}^3$/menit, laju muka air saat $h=1$ ft? (b) Muka naik $\tfrac38$ inci/menit saat $h=2$ ft, berapa debitnya?</p>
+<div class="figs"><svg viewBox="0 0 334 213" width="334" height="213" role="img" aria-label="diagram soal"><polygon class="f" points="91.1,137.2 129.5,137.2 244.8,87.3 206.4,87.3"/><polygon class="f" points="91.1,137.2 110.3,175.6 129.5,137.2"/><polygon class="s" points="71.9,98.8 148.8,98.8 110.3,175.6"/><polyline class="s" points="71.9,98.8 187.2,48.9 264.0,48.9 148.8,98.8"/><polyline class="s" points="264.0,48.9 225.6,125.7 110.3,175.6"/><polyline class="d" points="187.2,48.9 225.6,125.7"/><polyline class="a" points="91.1,137.2 129.5,137.2"/><polyline class="thin" points="52.7,175.6 52.7,98.8"/><polygon class="head" points="52.7,98.8 56.2,107.8 49.2,107.8"/><polygon class="head" points="52.7,175.6 49.2,166.6 56.2,166.6"/><text x="34.7" y="141.7" text-anchor="middle">3 ft</text><polyline class="thin" points="71.9,79.6 148.8,79.6"/><polygon class="head" points="148.8,79.6 139.8,83.1 139.8,76.1"/><polygon class="head" points="71.9,79.6 80.9,76.1 80.9,83.1"/><text x="110.3" y="75.1" text-anchor="middle">3 ft</text><text x="252.5" y="141.7" text-anchor="middle">12 ft</text><polyline class="thin" points="160.3,175.6 160.3,137.2"/><polygon class="head" points="160.3,137.2 163.8,146.2 156.8,146.2"/><polygon class="head" points="160.3,175.6 156.8,166.6 163.8,166.6"/><text x="170.3" y="160.9" text-anchor="middle">h</text></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>Lebar muka $=h$, $V=6h^2$, $\dot V=12h\dot h$.</p>
+<p>(a) $\dot h=\tfrac16$ ft/menit.</p>
+<p>(b) $\dot h=\tfrac1{32}$ ft/menit, $\dot V=\tfrac34\ \text{ft}^3$/menit.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P21" data-topic="struktur" data-kind="latihan">
+<h3><a href="#P21">Latihan 21</a> Tangga 25 ft</h3>
+<div class="meta"><span class="tag">Struktur & Konstruksi</span><span>hlm. 158</span></div>
+<p>Tangga 25 ft; alasnya ditarik menjauhi dinding 2 ft/s. (a) Laju ujung atas saat alas 7, 15, 24 ft. (b) Laju luas segitiga saat alas 7 ft. (c) Laju sudut tangga terhadap dinding saat itu.</p>
+<div class="figs"><svg viewBox="0 0 284 211" width="284" height="211" role="img" aria-label="diagram soal"><polyline class="s" points="75.3,35.3 75.3,153.1 235.3,153.1"/><polyline class="a" points="75.3,53.1 208.7,153.1"/><circle class="dot" cx="75.3" cy="53.1" r="3.2"/><circle class="dot" cx="208.7" cy="153.1" r="3.2"/><polyline class="thin" points="83.1,153.1 83.1,145.3 75.3,145.3"/><text x="142.0" y="172.6" text-anchor="middle">x</text><text x="68.3" y="107.6" text-anchor="end">y</text><text x="148.0" y="101.6" text-anchor="start">25 ft</text><polyline class="b" points="213.1,142.0 248.7,142.0"/><polygon class="head" points="248.7,142.0 239.7,145.5 239.7,138.5"/></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>(a) $\dot y=-\dfrac{2x}{y}$: $-\tfrac{7}{12}$, $-\tfrac32$, $-\tfrac{48}{7}$ ft/s.</p>
+<p>(b) $\dot A=\tfrac12(\dot xy+x\dot y)=\dfrac{527}{24}\approx21{,}96\ \text{ft}^2$/s.</p>
+<p>(c) $\sin\theta=x/25$, $\dot\theta=\dfrac{\dot x}{y}=\tfrac1{12}$ rad/s.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P22" data-topic="struktur" data-kind="latihan">
+<h3><a href="#P22">Latihan 22</a> Menaikkan papan ke gedung</h3>
+<div class="meta"><span class="tag">Struktur & Konstruksi</span><span>hlm. 158</span></div>
+<p>Papan 5 m ditarik naik sepanjang dinding dengan tali 0,15 m/s; ujung bawah meluncur di tanah. Seberapa cepat ujung bawah meluncur saat 2,5 m dari dinding?</p>
+<div class="figs"><svg viewBox="0 0 284 211" width="284" height="211" role="img" aria-label="diagram soal"><polyline class="s" points="75.3,35.3 75.3,153.1 235.3,153.1"/><polyline class="a" points="75.3,53.1 208.7,153.1"/><circle class="dot" cx="75.3" cy="53.1" r="3.2"/><circle class="dot" cx="208.7" cy="153.1" r="3.2"/><polyline class="thin" points="83.1,153.1 83.1,145.3 75.3,145.3"/><text x="142.0" y="172.6" text-anchor="middle">x</text><text x="68.3" y="107.6" text-anchor="end">y</text><text x="148.0" y="101.6" text-anchor="start">5 m</text><polyline class="b" points="86.4,57.6 86.4,24.2"/><polygon class="head" points="86.4,24.2 89.9,33.2 82.9,33.2"/></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$x^2+y^2=25$, $y=\sqrt{18{,}75}$, $\dot y=0{,}15$:</p>
+<p>$$\dot x=-\frac{y\dot y}{x}\approx-0{,}26\ \text{m/s (menuju dinding)}.$$</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P23" data-topic="struktur" data-kind="latihan">
+<h3><a href="#P23">Latihan 23</a> Menegakkan pipa dengan winch</h3>
+<div class="meta"><span class="tag">Struktur & Konstruksi</span><span>hlm. 158</span></div>
+<p>Winch di puncak gedung 12 m menegakkan pipa 12 m yang berporos di dasar gedung. Tali ditarik dengan $ds/dt=-0{,}2$ m/s. Tentukan laju vertikal dan horizontal ujung pipa saat $y=6$ m.</p>
+<div class="figs"><svg viewBox="0 0 304 218" width="304" height="218" role="img" aria-label="diagram soal"><polyline class="s" points="89.1,173.0 265.2,173.0"/><polyline class="thin" points="98.3,173.0 91.9,178.0"/><polyline class="thin" points="107.5,173.0 101.1,178.0"/><polyline class="thin" points="116.8,173.0 110.3,178.0"/><polyline class="thin" points="126.0,173.0 119.5,178.0"/><polyline class="thin" points="135.2,173.0 128.8,178.0"/><polyline class="thin" points="144.5,173.0 138.0,178.0"/><polyline class="thin" points="153.7,173.0 147.2,178.0"/><polyline class="thin" points="162.9,173.0 156.4,178.0"/><polyline class="thin" points="172.1,173.0 165.7,178.0"/><polyline class="thin" points="181.4,173.0 174.9,178.0"/><polyline class="thin" points="190.6,173.0 184.1,178.0"/><polyline class="thin" points="199.8,173.0 193.3,178.0"/><polyline class="thin" points="209.0,173.0 202.6,178.0"/><polyline class="thin" points="218.3,173.0 211.8,178.0"/><polyline class="thin" points="227.5,173.0 221.0,178.0"/><polyline class="thin" points="236.7,173.0 230.3,178.0"/><polyline class="thin" points="245.9,173.0 239.5,178.0"/><polyline class="thin" points="255.2,173.0 248.7,178.0"/><polyline class="thin" points="264.4,173.0 257.9,178.0"/><polygon class="g" points="57.2,173.0 97.5,173.0 97.5,52.2 57.2,52.2"/><polygon class="s" points="57.2,173.0 97.5,173.0 97.5,52.2 57.2,52.2"/><polyline class="a" points="97.5,173.0 202.2,112.6"/><polyline class="b" points="97.5,52.2 202.2,112.6"/><circle class="dot" cx="97.5" cy="52.2" r="3.2"/><circle class="dot" cx="202.2" cy="112.6" r="3.2"/><polyline class="d" points="202.2,112.6 202.2,173.0"/><text x="210.2" y="117.1" text-anchor="start">(x, y)</text><text x="151.2" y="73.5" text-anchor="middle">s</text><text x="161.2" y="154.0" text-anchor="middle">12 m</text><polyline class="thin" points="43.8,173.0 43.8,52.2"/><polygon class="head" points="43.8,52.2 47.3,61.2 40.3,61.2"/><polygon class="head" points="43.8,173.0 40.3,164.0 47.3,164.0"/><text x="23.8" y="117.1" text-anchor="middle">12 m</text><text x="211.5" y="147.3" text-anchor="middle">y</text><text x="151.2" y="190.9" text-anchor="middle">x</text></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$s^2=x^2+(12-y)^2=288-24y$. Saat $y=6$, $s=12$:</p>
+<p>$$\dot y=-\frac{s\dot s}{12}=0{,}2\ \text{m/s}.$$</p>
+<p>Dari $x^2+y^2=144$: $\dot x=-\dfrac{y\dot y}{x}=-\dfrac{\sqrt3}{15}\approx-0{,}115$ m/s.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P24" data-topic="lintasan" data-kind="latihan">
+<h3><a href="#P24">Latihan 24</a> Winch dan perahu</h3>
+<div class="meta"><span class="tag">Jarak, Lintasan & Waktu</span><span>hlm. 158</span></div>
+<p>Winch 12 ft di atas geladak. (a) Tali ditarik 4 ft/s; laju perahu saat tali 13 ft? Bagaimana saat mendekat? (b) Perahu bergerak tetap 4 ft/s; laju tarik winch saat tali 13 ft?</p>
+<div class="figs"><svg viewBox="0 0 344 205" width="344" height="205" role="img" aria-label="diagram soal"><polygon class="f" points="32.3,175.1 311.7,175.1 311.7,121.3 32.3,121.3"/><polyline class="thin" points="32.3,121.3 249.6,121.3"/><polygon class="g" points="249.6,175.1 274.4,175.1 274.4,84.1 249.6,84.1"/><polygon class="s" points="249.6,175.1 274.4,175.1 274.4,84.1 249.6,84.1"/><polygon class="g" points="57.2,106.8 119.2,106.8 106.8,125.4 69.6,125.4"/><polygon class="s" points="57.2,106.8 119.2,106.8 106.8,125.4 69.6,125.4"/><polyline class="s" points="249.6,84.1 249.6,46.8"/><ellipse class="s" cx="249.6" cy="46.8" rx="5.2" ry="5.2"/><polyline class="a" points="119.2,106.8 249.6,46.8"/><polyline class="d" points="119.2,106.8 249.6,106.8"/><polyline class="d" points="249.6,106.8 249.6,46.8"/><text x="168.9" y="69.9" text-anchor="middle">L</text><polyline class="thin" points="278.6,106.8 278.6,46.8"/><polygon class="head" points="278.6,46.8 282.1,55.8 275.1,55.8"/><polygon class="head" points="278.6,106.8 275.1,97.8 282.1,97.8"/><text x="296.6" y="81.3" text-anchor="middle">12 ft</text><polyline class="thin" points="119.2,148.2 249.6,148.2"/><polygon class="head" points="249.6,148.2 240.6,151.7 240.6,144.7"/><polygon class="head" points="119.2,148.2 128.2,144.7 128.2,151.7"/><text x="184.4" y="164.7" text-anchor="middle">x</text><polyline class="b" points="69.6,88.2 111.0,88.2"/><polygon class="head" points="111.0,88.2 102.0,91.7 102.0,84.7"/></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$x^2+144=L^2$, saat $L=13$, $x=5$.</p>
+<p>(a) $\dot x=\dfrac{L\dot L}{x}=-10{,}4$ ft/s. Laju membesar tanpa batas saat $x\to0$.</p>
+<p>(b) $\dot L=\dfrac{x\dot x}{L}=-\dfrac{20}{13}\approx-1{,}54$ ft/s. Laju tarik mengecil menuju nol.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P25" data-topic="lintasan" data-kind="latihan">
+<h3><a href="#P25">Latihan 25</a> Pengatur lalu lintas udara</h3>
+<div class="meta"><span class="tag">Jarak, Lintasan & Waktu</span><span>hlm. 158</span></div>
+<p>Dua pesawat setinggi sama menuju satu titik pada lintasan tegak lurus: 225 mil dengan 450 mil/jam dan 300 mil dengan 600 mil/jam. (a) Laju berkurangnya jarak? (b) Waktu tersedia untuk mengubah lintasan?</p>
+<div class="figs"><svg viewBox="0 0 294 252" width="294" height="252" role="img" aria-label="diagram soal"><polyline class="thin" points="60.5,195.1 252.8,195.1"/><polygon class="head" points="252.8,195.1 243.8,198.6 243.8,191.6"/><polyline class="thin" points="60.5,195.1 60.5,33.5"/><polygon class="head" points="60.5,33.5 64.0,42.5 57.0,42.5"/><polyline class="a" points="60.5,79.7 147.0,195.1"/><circle class="dot" cx="60.5" cy="79.7" r="4.5"/><circle class="dot" cx="147.0" cy="195.1" r="4.5"/><polyline class="b" points="60.5,79.7 60.5,114.3"/><polygon class="head" points="60.5,114.3 57.0,105.3 64.0,105.3"/><polyline class="b" points="147.0,195.1 114.3,195.1"/><polygon class="head" points="114.3,195.1 123.3,191.6 123.3,198.6"/><text x="114.3" y="134.2" text-anchor="middle">s</text><text x="43.2" y="84.2" text-anchor="middle">300</text><text x="147.0" y="215.0" text-anchor="middle">225</text><text x="191.2" y="228.4" text-anchor="middle">jarak (mil)</text></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>(a) $s=375$, $\dot s=\dfrac{225(-450)+300(-600)}{375}=-750$ mil/jam.</p>
+<p>(b) Keduanya tiba bersamaan dalam $0{,}5$ jam: <strong>30 menit</strong>.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P26" data-topic="gerak" data-kind="latihan">
+<h3><a href="#P26">Latihan 26</a> Pesawat di atas antena radar</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 158</span></div>
+<p>Pesawat setinggi 5 mil. Saat $s=10$ mil, radar mencatat $s$ berubah 240 mil/jam. Berapa laju pesawat?</p>
+<div class="figs"><svg viewBox="0 0 334 230" width="334" height="230" role="img" aria-label="diagram soal"><polyline class="s" points="53.1,179.4 291.3,179.4"/><polyline class="thin" points="64.5,179.4 56.5,185.6"/><polyline class="thin" points="75.9,179.4 67.9,185.6"/><polyline class="thin" points="87.3,179.4 79.3,185.6"/><polyline class="thin" points="98.6,179.4 90.7,185.6"/><polyline class="thin" points="110.0,179.4 102.1,185.6"/><polyline class="thin" points="121.4,179.4 113.5,185.6"/><polyline class="thin" points="132.8,179.4 124.8,185.6"/><polyline class="thin" points="144.2,179.4 136.2,185.6"/><polyline class="thin" points="155.6,179.4 147.6,185.6"/><polyline class="thin" points="167.0,179.4 159.0,185.6"/><polyline class="thin" points="178.4,179.4 170.4,185.6"/><polyline class="thin" points="189.8,179.4 181.8,185.6"/><polyline class="thin" points="201.2,179.4 193.2,185.6"/><polyline class="thin" points="212.6,179.4 204.6,185.6"/><polyline class="thin" points="224.0,179.4 216.0,185.6"/><polyline class="thin" points="235.4,179.4 227.4,185.6"/><polyline class="thin" points="246.8,179.4 238.8,185.6"/><polyline class="thin" points="258.1,179.4 250.2,185.6"/><polyline class="thin" points="269.5,179.4 261.6,185.6"/><polyline class="thin" points="280.9,179.4 273.0,185.6"/><polyline class="d" points="73.8,65.5 239.5,65.5"/><polyline class="d" points="73.8,179.4 73.8,65.5"/><polyline class="a" points="73.8,179.4 239.5,65.5"/><circle class="dot" cx="73.8" cy="179.4" r="3.2"/><circle class="dot" cx="239.5" cy="65.5" r="3.2"/><polyline class="b" points="239.5,65.5 185.6,65.5"/><polygon class="head" points="185.6,65.5 194.6,62.0 194.6,69.0"/><text x="239.5" y="57.0" text-anchor="middle">pesawat</text><text x="69.8" y="171.9" text-anchor="end">radar</text><text x="171.1" y="130.1" text-anchor="middle">s</text><polyline class="thin" points="73.8,42.7 239.5,42.7"/><polygon class="head" points="239.5,42.7 230.5,46.2 230.5,39.2"/><polygon class="head" points="73.8,42.7 82.8,39.2 82.8,46.2"/><text x="156.6" y="38.2" text-anchor="middle">x</text><polyline class="thin" points="48.9,179.4 48.9,65.5"/><polygon class="head" points="48.9,65.5 52.4,74.5 45.4,74.5"/><polygon class="head" points="48.9,179.4 45.4,170.4 52.4,170.4"/><text x="30.9" y="127.0" text-anchor="middle">5 mil</text></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$x=\sqrt{75}$, $\dot x=\dfrac{s\dot s}{x}=160\sqrt3\approx277$ mil/jam.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P27" data-topic="gerak" data-kind="latihan">
+<h3><a href="#P27">Latihan 27</a> Pelari menuju base ketiga</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 159</span></div>
+<p>Lapangan persegi sisi 90 ft. Pelari dari base 2 ke 3 berlaju 25 ft/s; saat 20 ft dari base 3, tentukan laju jaraknya ke home.</p>
+<div class="figs"><svg viewBox="0 0 294 283" width="294" height="283" role="img" aria-label="diagram soal"><polygon class="f" points="147.0,232.7 236.3,143.4 147.0,54.1 57.7,143.4"/><polygon class="s" points="147.0,232.7 236.3,143.4 147.0,54.1 57.7,143.4"/><polygon class="g" points="142.5,237.2 151.5,237.2 151.5,228.3 142.5,228.3"/><polygon class="s" points="142.5,237.2 151.5,237.2 151.5,228.3 142.5,228.3"/><polygon class="g" points="231.8,147.9 240.8,147.9 240.8,139.0 231.8,139.0"/><polygon class="s" points="231.8,147.9 240.8,147.9 240.8,139.0 231.8,139.0"/><polygon class="g" points="142.5,58.6 151.5,58.6 151.5,49.7 142.5,49.7"/><polygon class="s" points="142.5,58.6 151.5,58.6 151.5,49.7 142.5,49.7"/><polygon class="g" points="53.2,147.9 62.2,147.9 62.2,139.0 53.2,139.0"/><polygon class="s" points="53.2,147.9 62.2,147.9 62.2,139.0 53.2,139.0"/><text x="147.0" y="252.2" text-anchor="middle">home</text><text x="266.3" y="147.9" text-anchor="middle">base 1</text><text x="147.0" y="45.6" text-anchor="middle">base 2</text><text x="27.7" y="147.9" text-anchor="middle">base 3</text><text x="86.3" y="92.6" text-anchor="middle">90 ft</text><circle class="dot" cx="111.3" cy="89.9" r="4.5"/><polyline class="b" points="111.3,89.9 86.3,114.9"/><polygon class="head" points="86.3,114.9 90.2,106.0 95.1,111.0"/><polyline class="a" points="147.0,232.7 111.3,89.9"/><text x="136.3" y="147.9" text-anchor="middle">d</text></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$d=\sqrt{90^2+20^2}$, $\dot d=\dfrac{20(-25)}{d}\approx-5{,}42$ ft/s.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P28" data-topic="gerak" data-kind="latihan">
+<h3><a href="#P28">Latihan 28</a> Pelari menuju base kedua</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 159</span></div>
+<p>Pada lapangan latihan 27, pelari dari base 1 ke 2 (25 ft/s), 20 ft dari base 2. Tentukan laju jaraknya ke home.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>Jarak dari base 1 adalah 70 ft: $\dot d=\dfrac{70(25)}{\sqrt{90^2+70^2}}\approx15{,}35$ ft/s.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P29" data-topic="laju" data-kind="latihan">
+<h3><a href="#P29">Latihan 29</a> Bayangan menjauhi lampu</h3>
+<div class="meta"><span class="tag">Laju yang Berkaitan</span><span>hlm. 159</span></div>
+<p>Mahasiswa 6 ft menjauhi lampu 15 ft dengan 5 ft/s. Saat 10 ft dari tiang: (a) laju ujung bayangan; (b) laju panjang bayangan.</p>
+<div class="figs"><svg viewBox="0 0 324 248" width="324" height="248" role="img" aria-label="diagram soal"><polyline class="s" points="49.1,193.6 289.4,193.6"/><polyline class="thin" points="59.9,193.6 52.3,199.9"/><polyline class="thin" points="70.8,193.6 63.2,199.9"/><polyline class="thin" points="81.6,193.6 74.0,199.9"/><polyline class="thin" points="92.5,193.6 84.9,199.9"/><polyline class="thin" points="103.3,193.6 95.7,199.9"/><polyline class="thin" points="114.1,193.6 106.5,199.9"/><polyline class="thin" points="125.0,193.6 117.4,199.9"/><polyline class="thin" points="135.8,193.6 128.2,199.9"/><polyline class="thin" points="146.6,193.6 139.1,199.9"/><polyline class="thin" points="157.5,193.6 149.9,199.9"/><polyline class="thin" points="168.3,193.6 160.7,199.9"/><polyline class="thin" points="179.2,193.6 171.6,199.9"/><polyline class="thin" points="190.0,193.6 182.4,199.9"/><polyline class="thin" points="200.8,193.6 193.3,199.9"/><polyline class="thin" points="211.7,193.6 204.1,199.9"/><polyline class="thin" points="222.5,193.6 214.9,199.9"/><polyline class="thin" points="233.4,193.6 225.8,199.9"/><polyline class="thin" points="244.2,193.6 236.6,199.9"/><polyline class="thin" points="255.0,193.6 247.4,199.9"/><polyline class="thin" points="265.9,193.6 258.3,199.9"/><polyline class="thin" points="276.7,193.6 269.1,199.9"/><polyline class="thin" points="287.5,193.6 280.0,199.9"/><polyline class="s" points="58.1,193.6 58.1,49.1"/><ellipse class="g" cx="58.1" cy="44.6" rx="4.5" ry="4.5"/><ellipse class="s" cx="58.1" cy="44.6" rx="4.5" ry="4.5"/><ellipse class="s" cx="173.7" cy="145.9" rx="6.5" ry="6.5"/><polyline class="s" points="173.7,152.4 173.7,170.9"/><polyline class="s" points="165.1,193.6 173.7,170.9 182.4,193.6"/><polyline class="s" points="164.0,163.8 173.7,155.7 183.5,163.8"/><polyline class="a" points="58.1,49.1 173.7,139.4 243.1,193.6"/><polyline class="thin" points="41.9,193.6 41.9,49.1"/><polygon class="head" points="41.9,49.1 45.4,58.1 38.4,58.1"/><polygon class="head" points="41.9,193.6 38.4,184.6 45.4,184.6"/><text x="25.9" y="125.9" text-anchor="middle">15 ft</text><polyline class="thin" points="155.7,193.6 155.7,139.4"/><polygon class="head" points="155.7,139.4 159.2,148.4 152.2,148.4"/><polygon class="head" points="155.7,193.6 152.2,184.6 159.2,184.6"/><text x="141.7" y="171.0" text-anchor="middle">6 ft</text><polyline class="thin" points="58.1,213.5 173.7,213.5"/><polygon class="head" points="173.7,213.5 164.7,217.0 164.7,210.0"/><polygon class="head" points="58.1,213.5 67.1,210.0 67.1,217.0"/><text x="115.9" y="230.0" text-anchor="middle">x</text><polyline class="thin" points="173.7,213.5 243.1,213.5"/><polygon class="head" points="243.1,213.5 234.1,217.0 234.1,210.0"/><polygon class="head" points="173.7,213.5 182.7,210.0 182.7,217.0"/><text x="208.4" y="230.0" text-anchor="middle">s</text><polyline class="b" points="188.2,177.4 217.1,177.4"/><polygon class="head" points="217.1,177.4 208.1,180.9 208.1,173.9"/></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>Ujung bayangan $X=\tfrac53x$. (a) $\dot X=\tfrac{25}{3}$ ft/s. (b) Panjang $X-x=\tfrac23x$: $\tfrac{10}{3}$ ft/s.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P30" data-topic="laju" data-kind="latihan">
+<h3><a href="#P30">Latihan 30</a> Bayangan mendekati lampu</h3>
+<div class="meta"><span class="tag">Laju yang Berkaitan</span><span>hlm. 159</span></div>
+<p>Ulangi latihan 29 untuk mahasiswa yang mendekati lampu 20 ft.</p>
+<div class="figs"><svg viewBox="0 0 324 248" width="324" height="248" role="img" aria-label="diagram soal"><polyline class="s" points="49.1,193.6 289.4,193.6"/><polyline class="thin" points="59.9,193.6 52.3,199.9"/><polyline class="thin" points="70.8,193.6 63.2,199.9"/><polyline class="thin" points="81.6,193.6 74.0,199.9"/><polyline class="thin" points="92.5,193.6 84.9,199.9"/><polyline class="thin" points="103.3,193.6 95.7,199.9"/><polyline class="thin" points="114.1,193.6 106.5,199.9"/><polyline class="thin" points="125.0,193.6 117.4,199.9"/><polyline class="thin" points="135.8,193.6 128.2,199.9"/><polyline class="thin" points="146.6,193.6 139.1,199.9"/><polyline class="thin" points="157.5,193.6 149.9,199.9"/><polyline class="thin" points="168.3,193.6 160.7,199.9"/><polyline class="thin" points="179.2,193.6 171.6,199.9"/><polyline class="thin" points="190.0,193.6 182.4,199.9"/><polyline class="thin" points="200.8,193.6 193.3,199.9"/><polyline class="thin" points="211.7,193.6 204.1,199.9"/><polyline class="thin" points="222.5,193.6 214.9,199.9"/><polyline class="thin" points="233.4,193.6 225.8,199.9"/><polyline class="thin" points="244.2,193.6 236.6,199.9"/><polyline class="thin" points="255.0,193.6 247.4,199.9"/><polyline class="thin" points="265.9,193.6 258.3,199.9"/><polyline class="thin" points="276.7,193.6 269.1,199.9"/><polyline class="thin" points="287.5,193.6 280.0,199.9"/><polyline class="s" points="58.1,193.6 58.1,49.1"/><ellipse class="g" cx="58.1" cy="44.6" rx="4.5" ry="4.5"/><ellipse class="s" cx="58.1" cy="44.6" rx="4.5" ry="4.5"/><ellipse class="s" cx="173.7" cy="145.9" rx="6.5" ry="6.5"/><polyline class="s" points="173.7,152.4 173.7,170.9"/><polyline class="s" points="165.1,193.6 173.7,170.9 182.4,193.6"/><polyline class="s" points="164.0,163.8 173.7,155.7 183.5,163.8"/><polyline class="a" points="58.1,49.1 173.7,139.4 243.1,193.6"/><polyline class="thin" points="41.9,193.6 41.9,49.1"/><polygon class="head" points="41.9,49.1 45.4,58.1 38.4,58.1"/><polygon class="head" points="41.9,193.6 38.4,184.6 45.4,184.6"/><text x="25.9" y="125.9" text-anchor="middle">20 ft</text><polyline class="thin" points="155.7,193.6 155.7,139.4"/><polygon class="head" points="155.7,139.4 159.2,148.4 152.2,148.4"/><polygon class="head" points="155.7,193.6 152.2,184.6 159.2,184.6"/><text x="141.7" y="171.0" text-anchor="middle">6 ft</text><polyline class="thin" points="58.1,213.5 173.7,213.5"/><polygon class="head" points="173.7,213.5 164.7,217.0 164.7,210.0"/><polygon class="head" points="58.1,213.5 67.1,210.0 67.1,217.0"/><text x="115.9" y="230.0" text-anchor="middle">x</text><polyline class="thin" points="173.7,213.5 243.1,213.5"/><polygon class="head" points="243.1,213.5 234.1,217.0 234.1,210.0"/><polygon class="head" points="173.7,213.5 182.7,210.0 182.7,217.0"/><text x="208.4" y="230.0" text-anchor="middle">s</text><polyline class="b" points="162.9,182.8 134.0,182.8"/><polygon class="head" points="134.0,182.8 143.0,179.3 143.0,186.3"/></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$X=\tfrac{10}{7}x$, $\dot x=-5$. (a) $\dot X=-\tfrac{50}{7}$ ft/s. (b) Panjang $\tfrac37x$: $-\tfrac{15}{7}$ ft/s.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P31" data-topic="gerak" data-kind="latihan">
+<h3><a href="#P31">Latihan 31</a> Batang mesin berpeluncur</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 159</span></div>
+<p>Ujung batang 1 m berada di $(x,0)$ dan $(0,y)$ dengan $x(t)=\tfrac12\sin(\pi t/6)$. (a) Periode? (b) Titik terendah ujung di sumbu-$y$? (c) Laju ujung sumbu-$y$ saat $x=\tfrac14$?</p>
+<div class="figs"><svg viewBox="0 0 274 238" width="274" height="238" role="img" aria-label="diagram soal"><polyline class="thin" points="50.2,183.4 231.8,183.4"/><polygon class="head" points="231.8,183.4 222.8,186.9 222.8,179.9"/><polyline class="thin" points="70.4,193.5 70.4,34.1"/><polygon class="head" points="70.4,34.1 73.9,43.1 66.9,43.1"/><polyline class="a" points="70.4,86.6 143.1,183.4"/><polygon class="g" points="61.3,86.6 79.5,86.6 79.5,58.3 61.3,58.3"/><polygon class="s" points="61.3,86.6 79.5,86.6 79.5,58.3 61.3,58.3"/><polygon class="g" points="143.1,190.5 179.4,190.5 179.4,176.3 143.1,176.3"/><polygon class="s" points="143.1,190.5 179.4,190.5 179.4,176.3 143.1,176.3"/><circle class="dot" cx="143.1" cy="183.4" r="3.2"/><circle class="dot" cx="70.4" cy="86.6" r="3.2"/><text x="82.4" y="91.1" text-anchor="start">(0, y)</text><text x="147.1" y="173.9" text-anchor="start">(x, 0)</text><text x="118.8" y="131.4" text-anchor="middle">1 m</text></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>(a) $12$ s. (b) $y=\sqrt{1-x^2}$ minimum saat $|x|=\tfrac12$: $y=\dfrac{\sqrt3}{2}$.</p>
+<p>(c) $|\dot x|=\dfrac{\pi\sqrt3}{24}$, $|\dot y|=\dfrac{x}{y}|\dot x|=\dfrac{\sqrt5\,\pi}{120}\approx0{,}059$ m/s.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P32" data-topic="gerak" data-kind="latihan">
+<h3><a href="#P32">Latihan 32</a> Batang mesin, gerak lain</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 159</span></div>
+<p>Ulangi latihan 31 untuk $x(t)=\tfrac35\sin\pi t$, bagian (c) di $x=\tfrac3{10}$.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>(a) $2$ s. (b) $y_{\min}=\tfrac45$.</p>
+<p>(c) $|\dot x|=\dfrac{3\sqrt3\,\pi}{10}$, $y=\dfrac{\sqrt{91}}{10}$, $|\dot y|=\dfrac{9\sqrt3\,\pi}{10\sqrt{91}}\approx0{,}51$ m/s.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P33" data-topic="volume" data-kind="latihan">
+<h3><a href="#P33">Latihan 33</a> Tetes hujan menguap</h3>
+<div class="meta"><span class="tag">Wadah & Volume</span><span>hlm. 159</span></div>
+<p>Tetes bola menguap dengan laju sebanding luas permukaannya. Tunjukkan jari-jarinya berkurang dengan laju tetap.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$4\pi r^2\dot r=-k\,4\pi r^2\Rightarrow\dot r=-k$. $\blacksquare$</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P34" data-topic="dasar" data-kind="latihan">
+<h3><a href="#P34">Latihan 34</a> Tanda laju dari grafik</h3>
+<div class="meta"><span class="tag">Dasar & Teori</span><span>hlm. 159</span></div>
+<p>Dari kedua grafik, tentukan (a) tanda $dy/dt$ bila $dx/dt&lt;0$; (b) tanda $dx/dt$ bila $dy/dt&gt;0$.</p>
+<div class="figs"><svg viewBox="0 0 294 272" width="294" height="272" role="img" aria-label="(i)"><polyline class="thin" points="44.5,213.9 261.8,213.9"/><polygon class="head" points="261.8,213.9 252.8,217.4 252.8,210.4"/><polyline class="thin" points="50.7,213.9 50.7,32.9"/><polygon class="head" points="50.7,32.9 54.2,41.9 47.2,41.9"/><text x="271.8" y="218.4" text-anchor="middle">x</text><text x="50.7" y="25.4" text-anchor="middle">y</text><line class="thin" x1="97.3" y1="210.9" x2="97.3" y2="216.9"/><text x="97.3" y="232.4" text-anchor="middle">1</text><line class="thin" x1="143.8" y1="210.9" x2="143.8" y2="216.9"/><text x="143.8" y="232.4" text-anchor="middle">2</text><line class="thin" x1="190.4" y1="210.9" x2="190.4" y2="216.9"/><text x="190.4" y="232.4" text-anchor="middle">3</text><line class="thin" x1="237.0" y1="210.9" x2="237.0" y2="216.9"/><text x="237.0" y="232.4" text-anchor="middle">4</text><line class="thin" x1="47.7" y1="170.8" x2="53.7" y2="170.8"/><text x="44.7" y="175.3" text-anchor="end">1</text><line class="thin" x1="47.7" y1="127.7" x2="53.7" y2="127.7"/><text x="44.7" y="132.2" text-anchor="end">2</text><line class="thin" x1="47.7" y1="41.5" x2="53.7" y2="41.5"/><text x="44.7" y="46.0" text-anchor="end">4</text><polyline class="a" points="60.0,68.4 61.2,73.0 62.4,77.4 63.7,81.5 64.9,85.3 66.1,88.9 67.3,92.4 68.6,95.6 69.8,98.7 71.0,101.6 72.2,104.4 73.5,107.0 74.7,109.5 75.9,111.9 77.1,114.2 78.3,116.4 79.6,118.5 80.8,120.5 82.0,122.4 83.2,124.3 84.5,126.1 85.7,127.8 86.9,129.4 88.1,131.0 89.3,132.5 90.6,134.0 91.8,135.4 93.0,136.8 94.2,138.1 95.5,139.4 96.7,140.6 97.9,141.8 99.1,142.9 100.3,144.1 101.6,145.1 102.8,146.2 104.0,147.2 105.2,148.2 106.5,149.2 107.7,150.1 108.9,151.0 110.1,151.9 111.3,152.7 112.6,153.6 113.8,154.4 115.0,155.2 116.2,155.9 117.5,156.7 118.7,157.4 119.9,158.1 121.1,158.8 122.4,159.5 123.6,160.1 124.8,160.8 126.0,161.4 127.2,162.0 128.5,162.6 129.7,163.2 130.9,163.8 132.1,164.3 133.4,164.9 134.6,165.4 135.8,166.0 137.0,166.5 138.2,167.0 139.5,167.5 140.7,167.9 141.9,168.4 143.1,168.9 144.4,169.3 145.6,169.8 146.8,170.2 148.0,170.6 149.2,171.1 150.5,171.5 151.7,171.9 152.9,172.3 154.1,172.6 155.4,173.0 156.6,173.4 157.8,173.8 159.0,174.1 160.2,174.5 161.5,174.8 162.7,175.2 163.9,175.5 165.1,175.8 166.4,176.2 167.6,176.5 168.8,176.8 170.0,177.1 171.3,177.4 172.5,177.7 173.7,178.0 174.9,178.3 176.1,178.6 177.4,178.8 178.6,179.1 179.8,179.4 181.0,179.7 182.3,179.9 183.5,180.2 184.7,180.4 185.9,180.7 187.1,180.9 188.4,181.2 189.6,181.4 190.8,181.6 192.0,181.9 193.3,182.1 194.5,182.3 195.7,182.6 196.9,182.8 198.1,183.0 199.4,183.2 200.6,183.4 201.8,183.6 203.0,183.8 204.3,184.0 205.5,184.2 206.7,184.4 207.9,184.6 209.2,184.8 210.4,185.0 211.6,185.2 212.8,185.4 214.0,185.6 215.3,185.7 216.5,185.9 217.7,186.1 218.9,186.3 220.2,186.4 221.4,186.6 222.6,186.8 223.8,186.9 225.0,187.1 226.3,187.3 227.5,187.4 228.7,187.6 229.9,187.7 231.2,187.9 232.4,188.0 233.6,188.2 234.8,188.3 236.0,188.5 237.3,188.6 238.5,188.8 239.7,188.9 240.9,189.1 242.2,189.2 243.4,189.3 244.6,189.5 245.8,189.6 247.0,189.7 248.3,189.9 249.5,190.0 250.7,190.1 251.9,190.2 253.2,190.4 254.4,190.5 255.6,190.6"/><text class="cap" x="147" y="266" text-anchor="middle">(i)</text></svg><svg viewBox="0 0 294 272" width="294" height="272" role="img" aria-label="(ii)"><polyline class="thin" points="44.5,213.9 261.8,213.9"/><polygon class="head" points="261.8,213.9 252.8,217.4 252.8,210.4"/><polyline class="thin" points="151.5,213.9 151.5,32.9"/><polygon class="head" points="151.5,32.9 155.0,41.9 148.0,41.9"/><text x="271.8" y="218.4" text-anchor="middle">x</text><text x="151.5" y="25.4" text-anchor="middle">y</text><line class="thin" x1="50.7" y1="210.9" x2="50.7" y2="216.9"/><text x="50.7" y="232.4" text-anchor="middle">−3</text><line class="thin" x1="117.9" y1="210.9" x2="117.9" y2="216.9"/><text x="117.9" y="232.4" text-anchor="middle">−1</text><line class="thin" x1="185.1" y1="210.9" x2="185.1" y2="216.9"/><text x="185.1" y="232.4" text-anchor="middle">1</text><line class="thin" x1="252.2" y1="210.9" x2="252.2" y2="216.9"/><text x="252.2" y="232.4" text-anchor="middle">3</text><line class="thin" x1="148.5" y1="157.3" x2="154.5" y2="157.3"/><text x="145.5" y="161.8" text-anchor="end">2</text><line class="thin" x1="148.5" y1="100.8" x2="154.5" y2="100.8"/><text x="145.5" y="105.2" text-anchor="end">4</text><line class="thin" x1="148.5" y1="44.2" x2="154.5" y2="44.2"/><text x="145.5" y="48.7" text-anchor="end">6</text><polyline class="a" points="50.7,195.3 52.0,195.1 53.2,194.8 54.5,194.5 55.8,194.3 57.1,194.0 58.4,193.7 59.7,193.4 60.9,193.1 62.2,192.8 63.5,192.5 64.8,192.2 66.1,191.9 67.3,191.6 68.6,191.3 69.9,190.9 71.2,190.6 72.5,190.3 73.7,189.9 75.0,189.6 76.3,189.3 77.6,188.9 78.9,188.6 80.1,188.2 81.4,187.8 82.7,187.5 84.0,187.1 85.3,186.7 86.5,186.3 87.8,185.9 89.1,185.5 90.4,185.1 91.7,184.7 93.0,184.3 94.2,183.9 95.5,183.4 96.8,183.0 98.1,182.6 99.4,182.1 100.6,181.7 101.9,181.2 103.2,180.7 104.5,180.3 105.8,179.8 107.0,179.3 108.3,178.8 109.6,178.3 110.9,177.8 112.2,177.3 113.4,176.7 114.7,176.2 116.0,175.7 117.3,175.1 118.6,174.6 119.8,174.0 121.1,173.5 122.4,172.9 123.7,172.3 125.0,171.7 126.3,171.1 127.5,170.5 128.8,169.9 130.1,169.2 131.4,168.6 132.7,168.0 133.9,167.3 135.2,166.6 136.5,166.0 137.8,165.3 139.1,164.6 140.3,163.9 141.6,163.2 142.9,162.4 144.2,161.7 145.5,161.0 146.7,160.2 148.0,159.4 149.3,158.7 150.6,157.9 151.9,157.1 153.1,156.3 154.4,155.4 155.7,154.6 157.0,153.8 158.3,152.9 159.6,152.0 160.8,151.1 162.1,150.3 163.4,149.3 164.7,148.4 166.0,147.5 167.2,146.5 168.5,145.6 169.8,144.6 171.1,143.6 172.4,142.6 173.6,141.6 174.9,140.6 176.2,139.5 177.5,138.5 178.8,137.4 180.0,136.3 181.3,135.2 182.6,134.1 183.9,132.9 185.2,131.8 186.4,130.6 187.7,129.4 189.0,128.2 190.3,127.0 191.6,125.7 192.9,124.5 194.1,123.2 195.4,121.9 196.7,120.6 198.0,119.3 199.3,117.9 200.5,116.6 201.8,115.2 203.1,113.8 204.4,112.3 205.7,110.9 206.9,109.4 208.2,107.9 209.5,106.4 210.8,104.9 212.1,103.3 213.3,101.7 214.6,100.1 215.9,98.5 217.2,96.9 218.5,95.2 219.7,93.5 221.0,91.8 222.3,90.0 223.6,88.3 224.9,86.5 226.1,84.7 227.4,82.8 228.7,81.0 230.0,79.1 231.3,77.1 232.6,75.2 233.8,73.2 235.1,71.2 236.4,69.2 237.7,67.1 239.0,65.0 240.2,62.9 241.5,60.7 242.8,58.5 244.1,56.3 245.4,54.1 246.6,51.8 247.9,49.5 249.2,47.1 250.5,44.8 251.8,42.3 253.0,39.9 254.3,37.4 255.6,34.9"/><text class="cap" x="147" y="266" text-anchor="middle">(ii)</text></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>Berlaku $\dot y=f'(x)\,\dot x$.</p>
+<p>(i) $f$ turun ($f'&lt;0$): (a) $\dot y&gt;0$; (b) $\dot x&lt;0$.</p>
+<p>(ii) $f$ naik ($f'&gt;0$): (a) $\dot y&lt;0$; (b) $\dot x&gt;0$.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P35" data-topic="dasar" data-kind="latihan">
+<h3><a href="#P35">Latihan 35</a> Makna persamaan laju</h3>
+<div class="meta"><span class="tag">Dasar & Teori</span><span>hlm. 159</span></div>
+<p>Jelaskan hubungan $\dot y$ dan $\dot x$ pada (a) $\dot y=3\dot x$ dan (b) $\dot y=x(L-x)\dot x$, $0\le x\le L$ (semua laju positif).</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>(a) $\dot y$ selalu tiga kali $\dot x$.</p>
+<p>(b) Faktor pengali bergantung pada posisi: nol di $x=0$ dan $x=L$, terbesar ($L^2/4$) di $x=L/2$.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P36" data-topic="dasar" data-kind="latihan">
+<h3><a href="#P36">Latihan 36</a> Laju volume kubus</h3>
+<div class="meta"><span class="tag">Dasar & Teori</span><span>hlm. 159</span></div>
+<p>Jika $ds/dt$ tetap, bagaimana $dV/dt$ berubah?</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$\dot V=3s^2\dot s$ tidak tetap; sebanding dengan $s^2$.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P39" data-topic="gerak" data-kind="latihan">
+<h3><a href="#P39">Latihan 39</a> Pesawat menanjak</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 159</span></div>
+<p>Pesawat berlaju udara 275 mil/jam menanjak $18^\circ$ di udara tenang. Tentukan laju pertambahan ketinggian.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$\dot h=275\sin18^\circ\approx85{,}0$ mil/jam.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P40" data-topic="gerak" data-kind="latihan">
+<h3><a href="#P40">Latihan 40</a> Sudut elevasi balon</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 159</span></div>
+<p>Balon naik 4 m/s dari titik 50 m dari pengamat. Tentukan laju sudut elevasi saat tinggi 50 m.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$\dot\theta=\dfrac{50\,\dot h}{50^2+h^2}=\dfrac{200}{5.000}=0{,}04$ rad/s.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P41" data-topic="gerak" data-kind="latihan">
+<h3><a href="#P41">Latihan 41</a> Menggulung tali pancing</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 160</span></div>
+<p>Ujung joran 10 ft di atas air. Tali digulung 1 ft/s. Tentukan laju sudut tali terhadap air saat panjang tali 25 ft.</p>
+<div class="figs"><svg viewBox="0 0 284 181" width="284" height="181" role="img" aria-label="diagram soal"><polyline class="s" points="73.4,34.9 73.4,124.9 236.3,124.9"/><polyline class="a" points="73.4,52.0 210.6,124.9"/><circle class="dot" cx="73.4" cy="52.0" r="3.2"/><circle class="dot" cx="210.6" cy="124.9" r="3.2"/><polyline class="thin" points="80.9,124.9 80.9,117.4 73.4,117.4"/><text x="142.0" y="144.4" text-anchor="middle">permukaan air</text><text x="66.4" y="92.9" text-anchor="end">10 ft</text><text x="148.0" y="86.9" text-anchor="start">x</text><polyline class="thin" points="186.0,111.8 185.7,112.3 185.5,112.8 185.2,113.3 185.0,113.8 184.8,114.4 184.6,114.9 184.4,115.4 184.2,115.9 184.0,116.5 183.8,117.0 183.7,117.6 183.5,118.1 183.4,118.7 183.3,119.2 183.2,119.8 183.1,120.3 183.0,120.9 182.9,121.5 182.9,122.0 182.8,122.6 182.8,123.2 182.7,123.7 182.7,124.3 182.7,124.9"/><text x="170.0" y="119.3" text-anchor="middle">θ</text><text x="73.4" y="42.5" text-anchor="middle">ujung joran</text><text x="216.6" y="117.4" text-anchor="start">ikan</text></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>Laju 1 ft/s dipakai untuk panjang tali $L$. $\sin\theta=10/L$:</p>
+<p>$$\dot\theta=-\frac{10\dot L}{L^2\cos\theta}=\frac{10}{625\cos\theta}\approx0{,}0175\ \text{rad/s}.$$</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P42" data-topic="gerak" data-kind="latihan">
+<h3><a href="#P42">Latihan 42</a> Sudut elevasi pesawat</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 160</span></div>
+<p>Pesawat setinggi 5 mil terbang 600 mil/jam menuju titik di atas pengamat. Tentukan laju sudut saat $\theta=30^\circ,60^\circ,75^\circ$.</p>
+<div class="figs"><svg viewBox="0 0 334 230" width="334" height="230" role="img" aria-label="diagram soal"><polyline class="s" points="53.1,179.4 291.3,179.4"/><polyline class="thin" points="64.5,179.4 56.5,185.6"/><polyline class="thin" points="75.9,179.4 67.9,185.6"/><polyline class="thin" points="87.3,179.4 79.3,185.6"/><polyline class="thin" points="98.6,179.4 90.7,185.6"/><polyline class="thin" points="110.0,179.4 102.1,185.6"/><polyline class="thin" points="121.4,179.4 113.5,185.6"/><polyline class="thin" points="132.8,179.4 124.8,185.6"/><polyline class="thin" points="144.2,179.4 136.2,185.6"/><polyline class="thin" points="155.6,179.4 147.6,185.6"/><polyline class="thin" points="167.0,179.4 159.0,185.6"/><polyline class="thin" points="178.4,179.4 170.4,185.6"/><polyline class="thin" points="189.8,179.4 181.8,185.6"/><polyline class="thin" points="201.2,179.4 193.2,185.6"/><polyline class="thin" points="212.6,179.4 204.6,185.6"/><polyline class="thin" points="224.0,179.4 216.0,185.6"/><polyline class="thin" points="235.4,179.4 227.4,185.6"/><polyline class="thin" points="246.8,179.4 238.8,185.6"/><polyline class="thin" points="258.1,179.4 250.2,185.6"/><polyline class="thin" points="269.5,179.4 261.6,185.6"/><polyline class="thin" points="280.9,179.4 273.0,185.6"/><polyline class="d" points="73.8,65.5 239.5,65.5"/><polyline class="d" points="73.8,179.4 73.8,65.5"/><polyline class="a" points="73.8,179.4 239.5,65.5"/><circle class="dot" cx="73.8" cy="179.4" r="3.2"/><circle class="dot" cx="239.5" cy="65.5" r="3.2"/><polyline class="b" points="239.5,65.5 185.6,65.5"/><polygon class="head" points="185.6,65.5 194.6,62.0 194.6,69.0"/><text x="239.5" y="57.0" text-anchor="middle">pesawat</text><text x="69.8" y="171.9" text-anchor="end">pengamat</text><text x="171.1" y="130.1" text-anchor="middle">s</text><polyline class="thin" points="73.8,42.7 239.5,42.7"/><polygon class="head" points="239.5,42.7 230.5,46.2 230.5,39.2"/><polygon class="head" points="73.8,42.7 82.8,39.2 82.8,46.2"/><text x="156.6" y="38.2" text-anchor="middle">x</text><polyline class="thin" points="48.9,179.4 48.9,65.5"/><polygon class="head" points="48.9,65.5 52.4,74.5 45.4,74.5"/><polygon class="head" points="48.9,179.4 45.4,170.4 52.4,170.4"/><text x="30.9" y="127.0" text-anchor="middle">5 mil</text><polyline class="thin" points="115.2,179.4 115.2,178.4 115.2,177.4 115.1,176.4 115.0,175.3 114.9,174.3 114.8,173.3 114.6,172.3 114.4,171.3 114.2,170.3 114.0,169.3 113.7,168.3 113.4,167.3 113.1,166.3 112.8,165.4 112.4,164.4 112.0,163.5 111.6,162.5 111.2,161.6 110.7,160.7 110.3,159.8 109.8,158.9 109.2,158.0 108.7,157.1 108.1,156.3"/><text x="133.2" y="165.8" text-anchor="middle">θ</text></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$x=5\cot\theta$, $\dot x=-600$, sehingga $\dot\theta=120\sin^2\theta$ rad/jam: $30$, $90$, dan $\approx112$ rad/jam.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P43" data-topic="gerak" data-kind="latihan">
+<h3><a href="#P43">Latihan 43</a> Sorot lampu mobil patroli</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 160</span></div>
+<p>Mobil 50 ft dari gudang panjang; lampunya berputar 30 putaran/menit. Tentukan laju sorot di dinding saat $\theta=30^\circ,60^\circ,70^\circ$.</p>
+<div class="figs"><svg viewBox="0 0 314 221" width="314" height="221" role="img" aria-label="diagram soal"><polygon class="g" points="41.3,187.9 282.4,187.9 282.4,168.6 41.3,168.6"/><polyline class="a" points="41.3,168.6 282.4,168.6"/><polyline class="d" points="99.1,62.5 99.1,168.6"/><polyline class="b" points="99.1,62.5 205.2,168.6"/><polygon class="f" points="77.9,62.5 120.4,62.5 120.4,39.4 77.9,39.4"/><polygon class="s" points="77.9,62.5 120.4,62.5 120.4,39.4 77.9,39.4"/><circle class="dot" cx="99.1" cy="62.5" r="3.2"/><circle class="dot" cx="205.2" cy="168.6" r="3.2"/><polyline class="thin" points="99.1,91.4 100.1,91.4 101.0,91.4 102.0,91.3 102.9,91.2 103.9,91.0 104.8,90.9 105.7,90.7 106.6,90.4 107.5,90.2 108.4,89.9 109.3,89.6 110.2,89.2 111.1,88.8 111.9,88.4 112.8,88.0 113.6,87.6 114.4,87.1 115.2,86.6 116.0,86.0 116.8,85.5 117.5,84.9 118.2,84.2 118.9,83.6 119.6,83.0"/><text x="115.7" y="107.1" text-anchor="middle">θ</text><text x="79.9" y="121.0" text-anchor="middle">50 ft</text><text x="151.2" y="182.7" text-anchor="middle">x</text><text x="230.3" y="161.5" text-anchor="middle">dinding</text><text x="168.6" y="53.5" text-anchor="middle">mobil patroli</text></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$x=50\tan\theta$, $\dot x=50\sec^2\theta\,(60\pi)=\dfrac{3.000\pi}{\cos^2\theta}$ ft/menit: $\approx12.566$; $37.699$; $80.569$ ft/menit.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P44" data-topic="gerak" data-kind="latihan">
+<h3><a href="#P44">Latihan 44</a> Titik pada roda berputar</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 160</span></div>
+<p>Roda berjari-jari 30 cm berputar 10 putaran/s. (a) $dx/dt$ sebagai fungsi $\theta$. (b) Grafik. (c) Kapan $|dx/dt|$ terbesar dan terkecil? (d) Nilai di $30^\circ$ dan $60^\circ$.</p>
+<div class="figs"><svg viewBox="0 0 284 236" width="284" height="236" role="img" aria-label="diagram soal"><ellipse class="s" cx="127.6" cy="118.0" rx="76.8" ry="76.8"/><ellipse class="f" cx="127.6" cy="118.0" rx="51.8" ry="51.8"/><ellipse class="thin" cx="127.6" cy="118.0" rx="51.8" ry="51.8"/><polyline class="thin" points="31.6,118.0 250.5,118.0"/><polygon class="head" points="250.5,118.0 241.5,121.5 241.5,114.5"/><polyline class="b" points="127.6,118.0 85.6,68.0"/><polyline class="d" points="85.6,68.0 85.6,118.0"/><circle class="dot" cx="85.6" cy="68.0" r="3.2"/><circle class="dot" cx="127.6" cy="118.0" r="3.2"/><polyline class="thin" points="115.3,103.3 114.7,103.8 114.2,104.2 113.7,104.7 113.3,105.2 112.8,105.8 112.4,106.3 112.0,106.9 111.6,107.4 111.2,108.0 110.8,108.6 110.5,109.3 110.2,109.9 109.9,110.5 109.7,111.2 109.4,111.8 109.2,112.5 109.0,113.2 108.9,113.8 108.7,114.5 108.6,115.2 108.5,115.9 108.5,116.6 108.4,117.3 108.4,118.0"/><text x="101.5" y="110.3" text-anchor="middle">θ</text><text x="85.6" y="60.5" text-anchor="middle">P</text><text x="137.2" y="86.0" text-anchor="middle">30 cm</text><text x="106.6" y="134.0" text-anchor="middle">x</text><text x="254.3" y="111.0" text-anchor="middle">x</text></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>(a) $x=30\cos\theta$, $\dot\theta=20\pi$: $\dot x=-600\pi\sin\theta$ cm/s (dengan $\theta$ bertambah terhadap waktu).</p>
+<p>(b)</p>
+<div class="figs"><svg viewBox="0 0 364 254" width="364" height="254" role="img" aria-label="diagram soal"><polyline class="thin" points="50.9,123.4 328.9,123.4"/><polygon class="head" points="328.9,123.4 319.9,126.9 319.9,119.9"/><polyline class="thin" points="58.7,213.9 58.7,32.9"/><polygon class="head" points="58.7,32.9 62.2,41.9 55.2,41.9"/><text x="338.9" y="127.9" text-anchor="middle">θ</text><text x="58.7" y="25.4" text-anchor="middle">dx/dt</text><line class="thin" x1="124.3" y1="120.4" x2="124.3" y2="126.4"/><text x="124.3" y="141.9" text-anchor="middle">π/2</text><line class="thin" x1="189.9" y1="120.4" x2="189.9" y2="126.4"/><text x="189.9" y="141.9" text-anchor="middle">π</text><line class="thin" x1="321.0" y1="120.4" x2="321.0" y2="126.4"/><text x="321.0" y="141.9" text-anchor="middle">2π</text><line class="thin" x1="55.7" y1="204.6" x2="61.7" y2="204.6"/><text x="52.7" y="209.1" text-anchor="end">−1.885</text><line class="thin" x1="55.7" y1="42.1" x2="61.7" y2="42.1"/><text x="52.7" y="46.6" text-anchor="end">1.885</text><polyline class="a" points="58.7,123.4 60.4,126.6 62.0,129.8 63.6,132.9 65.3,136.1 66.9,139.2 68.6,142.3 70.2,145.4 71.8,148.5 73.5,151.5 75.1,154.5 76.8,157.4 78.4,160.3 80.0,163.1 81.7,165.8 83.3,168.5 85.0,171.1 86.6,173.7 88.2,176.1 89.9,178.5 91.5,180.8 93.1,183.0 94.8,185.2 96.4,187.2 98.1,189.1 99.7,190.9 101.3,192.7 103.0,194.3 104.6,195.8 106.3,197.2 107.9,198.4 109.5,199.6 111.2,200.7 112.8,201.6 114.5,202.4 116.1,203.1 117.7,203.6 119.4,204.1 121.0,204.4 122.7,204.6 124.3,204.6 125.9,204.6 127.6,204.4 129.2,204.1 130.9,203.6 132.5,203.1 134.1,202.4 135.8,201.6 137.4,200.7 139.0,199.6 140.7,198.4 142.3,197.2 144.0,195.8 145.6,194.3 147.2,192.7 148.9,190.9 150.5,189.1 152.2,187.2 153.8,185.2 155.4,183.0 157.1,180.8 158.7,178.5 160.4,176.1 162.0,173.7 163.6,171.1 165.3,168.5 166.9,165.8 168.6,163.1 170.2,160.3 171.8,157.4 173.5,154.5 175.1,151.5 176.8,148.5 178.4,145.4 180.0,142.3 181.7,139.2 183.3,136.1 185.0,132.9 186.6,129.8 188.2,126.6 189.9,123.4 191.5,120.2 193.1,117.0 194.8,113.8 196.4,110.7 198.1,107.5 199.7,104.4 201.3,101.3 203.0,98.3 204.6,95.3 206.3,92.3 207.9,89.4 209.5,86.5 211.2,83.7 212.8,80.9 214.5,78.2 216.1,75.6 217.7,73.1 219.4,70.6 221.0,68.2 222.7,65.9 224.3,63.7 225.9,61.6 227.6,59.6 229.2,57.6 230.9,55.8 232.5,54.1 234.1,52.5 235.8,51.0 237.4,49.6 239.0,48.3 240.7,47.2 242.3,46.1 244.0,45.2 245.6,44.4 247.2,43.7 248.9,43.1 250.5,42.7 252.2,42.4 253.8,42.2 255.4,42.1 257.1,42.2 258.7,42.4 260.4,42.7 262.0,43.1 263.6,43.7 265.3,44.4 266.9,45.2 268.6,46.1 270.2,47.2 271.8,48.3 273.5,49.6 275.1,51.0 276.8,52.5 278.4,54.1 280.0,55.8 281.7,57.6 283.3,59.6 285.0,61.6 286.6,63.7 288.2,65.9 289.9,68.2 291.5,70.6 293.1,73.1 294.8,75.6 296.4,78.2 298.1,80.9 299.7,83.7 301.3,86.5 303.0,89.4 304.6,92.3 306.3,95.3 307.9,98.3 309.5,101.3 311.2,104.4 312.8,107.5 314.5,110.7 316.1,113.8 317.7,117.0 319.4,120.2 321.0,123.4"/></svg></div>
+<p>(c) Terbesar di $\theta=90^\circ,270^\circ$; terkecil (nol) di $0^\circ,180^\circ$.</p>
+<p>(d) $-300\pi$ dan $-300\sqrt3\,\pi$ cm/s.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P45" data-topic="geometri" data-kind="latihan">
+<h3><a href="#P45">Latihan 45</a> Segitiga sama kaki</h3>
+<div class="meta"><span class="tag">Geometri & Luas</span><span>hlm. 160</span></div>
+<p>Dua sisi sama panjang $s$ dengan sudut apit $\theta$. (a) Tunjukkan $A=\tfrac12s^2\sin\theta$. (b) $\dot\theta=\tfrac12$ rad/menit; laju luas saat $\theta=\pi/6$ dan $\pi/3$.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>(a) Alas $s$, tinggi $s\sin\theta$, jadi $A=\tfrac12s^2\sin\theta$.</p>
+<p>(b) $\dot A=\dfrac{s^2\cos\theta}{4}$: $\dfrac{\sqrt3}{8}s^2$ dan $\dfrac{s^2}{8}$.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P46" data-topic="struktur" data-kind="latihan">
+<h3><a href="#P46">Latihan 46</a> Kamera pengawas koridor</h3>
+<div class="meta"><span class="tag">Struktur & Konstruksi</span><span>hlm. 160</span></div>
+<p>Kamera 50 ft di atas lantai menyapu koridor 100 ft dengan pusat fokus bergerak $|dx/dt|=2$ ft/s. Buat model laju putarnya.</p>
+<div class="figs"><svg viewBox="0 0 334 225" width="334" height="225" role="img" aria-label="diagram soal"><polyline class="s" points="40.1,167.0 293.9,167.0"/><polyline class="thin" points="50.1,167.0 43.1,172.4"/><polyline class="thin" points="60.1,167.0 53.1,172.4"/><polyline class="thin" points="70.0,167.0 63.1,172.4"/><polyline class="thin" points="80.0,167.0 73.0,172.4"/><polyline class="thin" points="90.0,167.0 83.0,172.4"/><polyline class="thin" points="99.9,167.0 93.0,172.4"/><polyline class="thin" points="109.9,167.0 102.9,172.4"/><polyline class="thin" points="119.9,167.0 112.9,172.4"/><polyline class="thin" points="129.8,167.0 122.9,172.4"/><polyline class="thin" points="139.8,167.0 132.8,172.4"/><polyline class="thin" points="149.8,167.0 142.8,172.4"/><polyline class="thin" points="159.7,167.0 152.8,172.4"/><polyline class="thin" points="169.7,167.0 162.7,172.4"/><polyline class="thin" points="179.7,167.0 172.7,172.4"/><polyline class="thin" points="189.7,167.0 182.7,172.4"/><polyline class="thin" points="199.6,167.0 192.6,172.4"/><polyline class="thin" points="209.6,167.0 202.6,172.4"/><polyline class="thin" points="219.6,167.0 212.6,172.4"/><polyline class="thin" points="229.5,167.0 222.6,172.4"/><polyline class="thin" points="239.5,167.0 232.5,172.4"/><polyline class="thin" points="249.5,167.0 242.5,172.4"/><polyline class="thin" points="259.4,167.0 252.5,172.4"/><polyline class="thin" points="269.4,167.0 262.4,172.4"/><polyline class="thin" points="279.4,167.0 272.4,172.4"/><polyline class="thin" points="289.3,167.0 282.4,172.4"/><polyline class="d" points="167.0,58.2 167.0,167.0"/><polyline class="b" points="167.0,58.2 243.1,167.0"/><circle class="dot" cx="167.0" cy="58.2" r="3.2"/><circle class="dot" cx="243.1" cy="167.0" r="3.2"/><polyline class="thin" points="167.0,90.9 167.8,90.9 168.7,90.8 169.5,90.8 170.3,90.7 171.1,90.6 172.0,90.5 172.8,90.4 173.6,90.2 174.4,90.0 175.2,89.8 176.0,89.6 176.8,89.4 177.6,89.1 178.4,88.8 179.2,88.5 179.9,88.2 180.7,87.9 181.4,87.5 182.2,87.1 182.9,86.7 183.6,86.3 184.3,85.9 185.0,85.4 185.7,85.0"/><text x="181.7" y="109.4" text-anchor="middle">θ</text><text x="167.0" y="49.8" text-anchor="middle">kamera</text><text x="145.2" y="117.1" text-anchor="middle">50 ft</text><text x="205.1" y="187.8" text-anchor="middle">x</text><polyline class="thin" points="40.1,197.8 293.9,197.8"/><polygon class="head" points="293.9,197.8 284.9,201.3 284.9,194.3"/><polygon class="head" points="40.1,197.8 49.1,194.3 49.1,201.3"/><text x="167.0" y="214.3" text-anchor="middle">100 ft</text></svg></div>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$x=50\tan\theta$, sehingga $|\dot\theta|=\dfrac{2\cos^2\theta}{50}=\dfrac{\cos^2\theta}{25}=\dfrac{100}{x^2+2.500}$ rad/s, $-50\le x\le50$.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P48" data-topic="gerak" data-kind="latihan">
+<h3><a href="#P48">Latihan 48</a> Bayangan bola dan tiang lampu</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 160</span></div>
+<p>Bola dijatuhkan dari ketinggian 20 m, 12 m dari puncak tiang lampu 20 m. Seberapa cepat bayangannya bergerak 1 s setelah dilepas?</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>$x=\dfrac{12(20)}{4{,}9t^2}$, $\dot x=-\dfrac{480}{4{,}9t^3}\approx-98{,}0$ m/s.</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P49" data-topic="gerak" data-kind="latihan">
+<h3><a href="#P49">Latihan 49</a> Percepatan ujung tangga</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 160</span></div>
+<p>Tentukan percepatan ujung atas tangga latihan 21 saat alas 7 ft dari dinding.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>Turunkan $x\dot x+y\dot y=0$ dengan $\ddot x=0$: $\dot x^2+\dot y^2+y\ddot y=0$.</p>
+<p>$$\ddot y=-\frac{4+49/144}{24}=-\frac{625}{3.456}\approx-0{,}181\ \text{ft/s}^2.$$</p>
+
+</div></details>
+</article>
+<article class="soal latihan" id="P50" data-topic="gerak" data-kind="latihan">
+<h3><a href="#P50">Latihan 50</a> Percepatan perahu</h3>
+<div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 160</span></div>
+<p>Tentukan percepatan perahu latihan 24(a) saat tali 13 ft.</p>
+<details><summary>Penyelesaian</summary><div class="solusi">
+<p>Turunkan $x\dot x=L\dot L$ dengan $\ddot L=0$: $\dot x^2+x\ddot x=\dot L^2$.</p>
+<p>$$\ddot x=\frac{16-108{,}16}{5}\approx-18{,}43\ \text{ft/s}^2.$$</p>
+
+</div></details>
+</article>
+</section>
+<section class='catatan'><h2>Soal yang tidak dimuat</h2><p>Satuan mengikuti buku (kaki/ft, inci, mil, atau meter).</p>
+<p>Halaman 151–155 pada berkas PDF edisi 12 tampil kosong, sehingga Contoh 1–5 diambil dari edisi 11 (2018) di folder yang sama. Contoh 6 edisi 12 sama dengan edisi 11, tetapi Contoh 1–5 sebaiknya dicocokkan dengan buku edisi 12 yang utuh.</p>
+<p>Dilewati karena tidak berkaitan langsung dengan teknik sipil: latihan 37 dan 38 (listrik) serta latihan 47 (data program makan siang sekolah).</p></section>
+</main>
+<footer>Soal diringkas dengan kata-kata sendiri untuk keperluan belajar; penyelesaian dan gambar dibuat ulang.
+Teks asli dan hak cipta tetap milik penulis serta penerbit masing-masing buku.</footer>
+</body>
+</html>

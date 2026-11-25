@@ -7,10 +7,10 @@ from shapes import (curve, box_net, cyl_dims, semicircle_rect, sector_cone, beam
 
 @fig
 def s_c1a():
-    f = F(0, 36, 0, 14, w=360, cap="tiga cara menata 1200 m pagar")
+    f = F(0, 36, 0, 14, w=360, cap="tiga cara menata 1.200 m pagar")
     f.rect(0, 0, 36, 2.4, c=None, fill="f")
-    for x0, w, d, lab, a in ((0.5, 10, 1.6, "100 | 1000", "100 000 m²"), (15, 5.5, 5.5, "400 | 400", "160 000 m²"),
-                             (28, 3, 8, "500 | 200", "100 000 m²")):
+    for x0, w, d, lab, a in ((0.5, 10, 1.6, "100 | 1.000", "100.000 m²"), (15, 5.5, 5.5, "400 | 400", "160.000 m²"),
+                             (28, 3, 8, "500 | 200", "100.000 m²")):
         f.line((x0, 2.4), (x0, 2.4 + d), (x0 + w, 2.4 + d), (x0 + w, 2.4), c="b")
         f.text((x0 + w / 2, 3.4 + d), lab).text((x0 + w / 2, 1.2), a)
     return f

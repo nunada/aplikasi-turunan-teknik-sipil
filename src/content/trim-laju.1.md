@@ -21,7 +21,7 @@ $$15\dot x-5\sqrt7=0.$$
 **Jawab:** $\dot x=\dfrac{\sqrt7}{3}\approx0{,}88$ m/s.
 
 @@ C34 | Contoh 4.34 | Mengisi tangki kerucut | air | 301
-Tangki kerucut (puncak di bawah) setinggi 6 m, jari-jari atas 3 m, diisi 4000 L/menit. Seberapa cepat muka air naik saat kedalaman 3 m?
+Tangki kerucut (puncak di bawah) setinggi 6 m, jari-jari atas 3 m, diisi 4.000 L/menit. Seberapa cepat muka air naik saat kedalaman 3 m?
 
 {{fig:t_c34}}
 ===
@@ -52,7 +52,7 @@ $z^2=x^2+16$ dan panjang tali tetap $L=z+(5-y)$, jadi $\dot y=\dot z=\dfrac{x\do
 **Jawab:** $\dot y=\dfrac3{10}=0{,}3$ m/s.
 
 @@ L6 | Proyek Konsultasi 6 | Laju maksimum peluncur pada mekanisme dua batang | gerak | 304–306
-Batang $OB$ panjang $l$ berputar $\omega$ putaran per detik; batang $AB$ panjang $L>2l$ menggerakkan peluncur $A$ pada sumbu-$x$. Cari laju maksimum $A$.
+Batang $OB$ panjang $l$ berputar $\omega$ putaran per detik; batang $AB$ panjang $L>2l$ menggerakkan peluncur $A$ pada sumbu-$x$. Tentukan laju maksimum $A$.
 
 {{fig:t_l6}}
 ===
@@ -111,7 +111,7 @@ Tangki: silinder berdiameter 3 m setinggi 3 m di atas kerucut (diameter 3 m, tin
 ===
 $\dot V=-0{,}001\ \text{m}^3$/menit dan $\dot h=\dot V/A(h)$.
 
-(a) Di silinder $A=2{,}25\pi$: turun $\dfrac{1}{2250\pi}\approx1{,}41\times10^{-4}$ m/menit.
+(a) Di silinder $A=2{,}25\pi$: turun $\dfrac{1}{2.250\pi}\approx1{,}41\times10^{-4}$ m/menit.
 
 (b) Di kerucut, tinggi dari puncak bawah $0{,}5$ m, jari-jari $0{,}75$ m, $A=0{,}5625\pi$: turun $\approx5{,}66\times10^{-4}$ m/menit.
 
@@ -132,7 +132,7 @@ Dasar turun 2 m sepanjang 20 m. Pada $h=1$ m, panjang muka air $10h=10$ m sehing
 **Jawab:** $1\ \text{m}^3$/menit.
 
 @@ P8 | Latihan 8 | Hukum Boyle | gerak | 306
-Tekanan gas berbanding terbalik dengan volume. Saat $V=10$ L dan $P=50$ N/m², volume bertambah $\tfrac12$ L/s. Cari laju perubahan tekanan.
+Tekanan gas berbanding terbalik dengan volume. Saat $V=10$ L dan $P=50$ N/m², volume bertambah $\tfrac12$ L/s. Tentukan laju perubahan tekanan.
 ===
 $PV=C\Rightarrow\dot P=-\dfrac PV\dot V=-\dfrac{50}{10}\cdot\dfrac12$.
 
@@ -155,7 +155,7 @@ $$\dot z=\frac{150(2)+75(3)}{\sqrt{150^2+75^2}}.$$
 **Jawab:** $\dfrac{7}{\sqrt5}\approx3{,}13$ m/s.
 
 @@ P11 | Latihan 11 | Pemampatan adiabatik | gerak | 306
-Udara memenuhi $PV^{7/5}=$ konstan. Saat $V=100$ L dan $P=40$ N/cm², volume berkurang 1 L/s. Cari laju tekanan.
+Udara memenuhi $PV^{7/5}=$ konstan. Saat $V=100$ L dan $P=40$ N/cm², volume berkurang 1 L/s. Tentukan laju tekanan.
 ===
 $\dot PV^{7/5}+\tfrac75PV^{2/5}\dot V=0\Rightarrow\dot P=-\dfrac{7P}{5V}\dot V$.
 
@@ -171,7 +171,7 @@ Bentuk kerucut puncak tetap (sudut lereng alami), sehingga tambahan volume hanya
 **Jawab:** keduanya $\dfrac{2}{25\pi}\approx0{,}0255$ m/menit.
 
 @@ P13 | Latihan 13 | Balon berbentuk kapsul | laju | 307
-Balon berupa silinder (jari-jari $r$, panjang $l$) dengan setengah bola di tiap ujung diisi 10 mL/s; $l$ bertambah dua kali lebih cepat daripada $r$. Cari $\dot r$ saat $r=8$, $l=20$ cm.
+Balon berupa silinder (jari-jari $r$, panjang $l$) dengan setengah bola di tiap ujung diisi 10 mL/s; $l$ bertambah dua kali lebih cepat daripada $r$. Tentukan $\dot r$ saat $r=8$, $l=20$ cm.
 
 {{fig:t_l13}}
 ===
@@ -186,9 +186,9 @@ Mobil 1 bergerak sepanjang sumbu-$x$ dan melaju tetap 10 m/s pada $CB$. Mobil 2 
 
 {{fig:t_l14}}
 ===
-(a) Pada $(x-50)^2+y^2=2500$ dengan $y<0$:
+(a) Pada $(x-50)^2+y^2=2.500$ dengan $y<0$:
 
-$$\dot y=-\frac{(x-50)\dot x}{y}=\frac{10(x-50)}{\sqrt{2500-(x-50)^2}}.$$
+$$\dot y=-\frac{(x-50)\dot x}{y}=\frac{10(x-50)}{\sqrt{2.500-(x-50)^2}}.$$
 
 (b) Di $E$ ($x=75$): $\dot y=\dfrac{10}{\sqrt3}\approx5{,}77$ m/s.
 
@@ -204,7 +204,7 @@ $$\dot D=\frac{0{,}75(5{,}5)+(-1)(-2{,}598)}{1{,}25}.$$
 **Jawab:** $\approx5{,}38$ km/jam.
 
 @@ P16 | Latihan 16 | Serangga pada piringan berputar | gerak | 307
-Piringan berputar searah jarum jam $\tfrac{100}{3}$ rpm. Serangga berjalan dari pusat ke tepi 1 cm/s. Saat 10 cm dari $O$ dan $\theta=\pi/4$, cari laju perubahan jarak ke titik tetap $Q$ (1 m dari $O$).
+Piringan berputar searah jarum jam $\tfrac{100}{3}$ rpm. Serangga berjalan dari pusat ke tepi 1 cm/s. Saat 10 cm dari $O$ dan $\theta=\pi/4$, tentukan laju perubahan jarak ke titik tetap $Q$ (1 m dari $O$).
 
 {{fig:t_l16}}
 ===
@@ -224,16 +224,16 @@ Delapan peluncur es membentuk "cambuk" berputar. Tunjukkan orang ketujuh bergera
 Anggap orang pertama sebagai poros dan jarak antarorang $d$. Semua berkecepatan sudut sama $\omega$, laju $v=\omega\times$ jarak ke poros: $v_7=6d\omega$, $v_4=3d\omega$. Jadi $v_7=2v_4$. $\blacksquare$
 
 @@ P18 | Latihan 18 | Partikel melingkar | gerak | 307
-Partikel mengelilingi lingkaran berjari-jari 5 cm berlawanan jarum jam 4 putaran per detik. Seberapa cepat ia menjauh dari $(5,6)$ saat di $(-3,4)$?
+Partikel mengelilingi lingkaran berjari-jari 5 cm berlawanan jarum jam 4 putaran per detik. Seberapa cepat ia menjauh dari $(5;\,6)$ saat di $(-3;\,4)$?
 ===
-$\omega=8\pi$, kecepatan $\omega(-y,x)=8\pi(-4,-3)$. Vektor dari $(5,6)$: $(-8,-2)$.
+$\omega=8\pi$, kecepatan $\omega(-y,x)=8\pi(-4;\,-3)$. Vektor dari $(5;\,6)$: $(-8;\,-2)$.
 
 $$\dot D=\frac{(-8)(-32\pi)+(-2)(-24\pi)}{\sqrt{68}}.$$
 
 **Jawab:** $\dfrac{152\pi}{\sqrt{17}}\approx115{,}8$ cm/s.
 
 @@ P19 | Latihan 19 | Tiga orang segaris | laju | 307
-$A$ dan $B$ berjalan di sisi berseberangan jalan 10 m: $A$ ke kanan 1 m/s, $B$ ke kiri 2 m/s. $C$ berjalan di trotoar 5 m dari jalan sehingga $B$ selalu pada garis $AC$. Cari laju $C$.
+$A$ dan $B$ berjalan di sisi berseberangan jalan 10 m: $A$ ke kanan 1 m/s, $B$ ke kiri 2 m/s. $C$ berjalan di trotoar 5 m dari jalan sehingga $B$ selalu pada garis $AC$. Tentukan laju $C$.
 
 {{fig:t_l19}}
 ===
@@ -244,9 +244,9 @@ $$\dot x_C=-\tfrac12(1)+\tfrac32(-2)=-3{,}5.$$
 **Jawab:** $3{,}5$ m/s ke kiri.
 
 @@ P20 | Latihan 20 | Normal hiperbola | laju | 307
-$P(x,y)$ pada $x^2-y^2=1$, $R$ proyeksinya pada sumbu-$x$, $Q(x^*,0)$ potongan garis normal. (a) Tunjukkan $x^*=2x$. (b) $x$ berkurang 3 satuan/waktu; laju luas segitiga $QPR$ saat $x=4$?
+$P(x,y)$ pada $x^2-y^2=1$, $R$ proyeksinya pada sumbu-$x$, dan $Q(x_Q,0)$ titik potong garis normal dengan sumbu-$x$ ($x_Q$ adalah absis titik $Q$). (a) Tunjukkan $x_Q=2x$. (b) $x$ berkurang 3 satuan/waktu; laju luas segitiga $QPR$ saat $x=4$?
 ===
-(a) Gradien singgung $x/y$, normal $-y/x$. Dari $0-y=-\dfrac yx(x^*-x)$ diperoleh $x^*=2x$.
+(a) Gradien singgung $x/y$, normal $-y/x$. Dari $0-y=-\dfrac yx(x_Q-x)$ diperoleh $x_Q=2x$.
 
 (b) $A=\tfrac12(x)(y)=\tfrac12x\sqrt{x^2-1}$, $\dfrac{dA}{dx}=\dfrac{2x^2-1}{2\sqrt{x^2-1}}$.
 
@@ -269,7 +269,7 @@ Kesebangunan: $x=\dfrac{10\cdot25}{4{,}905t^2}=\dfrac{250}{4{,}905t^2}$, $\dot x
 **Jawab:** $\approx101{,}9$ m/s menuju tiang.
 
 @@ P23 | Latihan 23 | Jarak ke titik tetap pada parabola | laju | 307
-Titik pada $y=x^2-3x$ dengan $\dot x=2$ m/s. Seberapa cepat jaraknya ke $(1,2)$ berubah di $(4,4)$?
+Titik pada $y=x^2-3x$ dengan $\dot x=2$ m/s. Seberapa cepat jaraknya ke $(1;\,2)$ berubah di $(4;\,4)$?
 ===
 $\dot y=(2x-3)\dot x=10$. $D=\sqrt{13}$ dan $\dot D=\dfrac{3(2)+2(10)}{\sqrt{13}}$.
 
@@ -291,7 +291,7 @@ Turunkan: $2(x+y)(\dot x+\dot y)=16\dot x\Rightarrow16(2+\dot y)=32\Rightarrow\d
 
 (b) $r=R/5$ dan $h=60R$ (cm): $V=\tfrac13\pi(60R)(1{,}24R^2)=24{,}8\pi R^3$. Dua tahun lagi $R=51$: $\dot V=74{,}4\pi R^2\dot R$.
 
-**Jawab:** $\approx303\,972\ \text{cm}^3$/tahun $\approx0{,}304\ \text{m}^3$/tahun.
+**Jawab:** $\approx303.972\ \text{cm}^3$/tahun $\approx0{,}304\ \text{m}^3$/tahun.
 
 @@ P26 | Latihan 26 | Pasir dua kerucut | struktur | 308
 Wadah kerucut (jari-jari 2 m, tinggi 3 m) diisi pasir $0{,}02\ \text{m}^3$/menit yang membentuk dua kerucut setinggi $h$. (a) Laju puncak timbunan saat rata dengan puncak wadah? (b) Laju pasir naik sepanjang sisi?
@@ -320,16 +320,16 @@ Pesawat terbang ke utara 200 km/jam setinggi 1 km; mobil ke timur 100 km/jam. Sa
 ===
 Saat $t=\tfrac1{60}$: $x=\tfrac{11}{3}$, $y=\tfrac{10}{3}$, $z=1$, $D=\dfrac{\sqrt{230}}{3}$.
 
-$$\dot D=\frac{x(100)+y(200)}{D}=\frac{3100}{\sqrt{230}}.$$
+$$\dot D=\frac{x(100)+y(200)}{D}=\frac{3.100}{\sqrt{230}}.$$
 
 **Jawab:** $\approx204{,}4$ km/jam.
 
 @@ P29 | Latihan 29 | Lemparan di lapangan bisbol | gerak | 308
-Bujur sangkar sisi 27 m. Bola dilempar dari titik 2 m dari base ketiga (pada garis base 2–3) ke base pertama 35 m/s; pelari menuju base pertama 6 m/s. Saat bola di tengah jalan dan pelari tiga perempat jalan, cari laju perubahan jarak.
+Bujur sangkar sisi 27 m. Bola dilempar dari titik 2 m dari base ketiga (pada garis base 2–3) ke base pertama 35 m/s; pelari menuju base pertama 6 m/s. Saat bola di tengah jalan dan pelari tiga perempat jalan, tentukan laju perubahan jarak.
 
 {{fig:t_l29}}
 ===
-Bola di $(14{,}5;\,13{,}5)$, pelari di $(20{,}25;\,0)$. Kecepatan bola $\dfrac{35}{\sqrt{1354}}(25,-27)\approx(23{,}78;\,-25{,}68)$.
+Bola di $(14{,}5;\,13{,}5)$, pelari di $(20{,}25;\,0)$. Kecepatan bola $\dfrac{35}{\sqrt{1.354}}(25;\,-27)\approx(23{,}78;\,-25{,}68)$.
 
 Posisi relatif $(-5{,}75;\,13{,}5)$, kecepatan relatif $(17{,}78;\,-25{,}68)$.
 
@@ -365,7 +365,7 @@ $$\frac{2\dot A}{A}=\frac{1{,}5}{6}+\frac12\left(\frac13+\frac12+1\right)=\frac7
 **Jawab:** $3{,}5\ \text{cm}^2$/menit.
 
 @@ P33 | Latihan 33 | Jarum jam | gerak | 308
-(a) Laju sudut antara jarum menit dan jam? (b) Panjang jarum 10 dan 7,5 cm: laju ujung saling mendekat pukul 3.00? (c) Pukul 8.05?
+(a) Laju sudut antara jarum menit dan jam? (b) Panjang jarum 10 dan 7,5 cm: tentukan laju kedua ujung jarum saling mendekat pukul 3.00. (c) Bagaimana pada pukul 8.05?
 
 {{fig:t_l33}}
 ===
@@ -373,16 +373,16 @@ $$\frac{2\dot A}{A}=\frac{1{,}5}{6}+\frac12\left(\frac13+\frac12+1\right)=\frac7
 
 (b) $z^2=156{,}25-150\cos\theta$, $z\dot z=75\sin\theta\,\dot\theta$. Pukul 3.00: $\theta=90^\circ$ mengecil, $z=12{,}5$. Ujung **mendekat** $\dfrac{11\pi}{60}\approx0{,}576$ cm/menit.
 
-(c) Pukul 8.05: $\theta=147{,}5^\circ$ sedang membesar, $z\approx16{,}82$. $\dot z\approx+0{,}230$ cm/menit, artinya ujung **menjauh** (laju mendekat $-0{,}230$).
+(c) Pukul 8.05: $\theta=147{,}5^\circ$ sedang membesar, $z\approx16{,}82$ cm, $\dot z\approx+0{,}230$ cm/menit. Kedua ujung jarum **saling menjauh** dengan laju $0{,}230$ cm/menit.
 
 @@ P34 | Latihan 34 | Kamera mengikuti pelari | gerak | 309
-Pelari 4 m/s mengelilingi lintasan (lurus 100 m, setengah lingkaran jari-jari 30 m). Kamera di pusat. Cari laju putar kamera saat pelari di (a) $A$ (tepat di atas kamera) dan (b) $B$ (arah $\pi/6$).
+Pelari 4 m/s mengelilingi lintasan (lurus 100 m, setengah lingkaran jari-jari 30 m). Kamera di pusat. Tentukan laju putar kamera saat pelari di (a) $A$ (tepat di atas kamera) dan (b) $B$ (arah $\pi/6$).
 
 {{fig:t_l34}}
 ===
 (a) Gerak tegak lurus garis pandang, jarak 30 m: $\dot\theta=\dfrac{4}{30}=\dfrac2{15}$ rad/s.
 
-(b) $B$ berada di busur kanan. Jarak $\rho$: $\rho^2-100\rho\cos30^\circ+1600=0\Rightarrow\rho\approx59{,}88$ m, $B\approx(51{,}86;\,29{,}94)$. Kecepatan singgung $\approx(-3{,}99;\,0{,}25)$.
+(b) $B$ berada di busur kanan. Jarak $\rho$: $\rho^2-100\rho\cos30^\circ+1.600=0\Rightarrow\rho\approx59{,}88$ m, $B\approx(51{,}86;\,29{,}94)$. Kecepatan singgung $\approx(-3{,}99;\,0{,}25)$.
 
 $$\dot\theta=\frac{x\,v_y-y\,v_x}{\rho^2}\approx0{,}037\text{ rad/s}.$$
 

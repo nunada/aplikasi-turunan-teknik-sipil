@@ -1,13 +1,15 @@
 :root {
+  color-scheme: light;
   --bg: #f6f7f9; --card: #fff; --ink: #1c2430; --muted: #5d6878; --line: #dde2ea;
   --accent: #0b66c3; --accent2: #c2410c; --fill: #0b66c31f; --fill2: #c2410c1f; --sol: #f0f6ff;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #10141a; --card: #181e27; --ink: #e5eaf2; --muted: #9aa6b8; --line: #2b3442;
-    --accent: #6cb0f5; --accent2: #fb9a63; --fill: #6cb0f52b; --fill2: #fb9a632b; --sol: #131e2d;
-  }
+/* Atribut data-theme dipasang oleh skrip di <head> dan tombol tema. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #10141a; --card: #181e27; --ink: #e5eaf2; --muted: #9aa6b8; --line: #2b3442;
+  --accent: #6cb0f5; --accent2: #fb9a63; --fill: #6cb0f52b; --fill2: #fb9a632b; --sol: #131e2d;
 }
+#tema { margin-left: auto; border-radius: 999px; }
 * { box-sizing: border-box; }
 html { scroll-padding-top: 8rem; }
 body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.65;
@@ -75,4 +77,6 @@ footer { max-width: 860px; margin: 2rem auto; padding: 1rem; color: var(--muted)
   border-top: 1px solid var(--line); }
 [hidden] { display: none !important; }
 @media (max-width: 600px) { header { position: static; } html { scroll-padding-top: 0; } }
-@media print { header, .bar, .chips { display: none; } .soal { content-visibility: visible; } }
+@media print { header, .bar, .chips { display: none; } .soal { content-visibility: visible; }
+  :root[data-theme="dark"] { color-scheme: light; --bg: #fff; --card: #fff; --ink: #000; --muted: #444;
+    --line: #ccc; --accent: #0b66c3; --accent2: #c2410c; --sol: #fff; } }

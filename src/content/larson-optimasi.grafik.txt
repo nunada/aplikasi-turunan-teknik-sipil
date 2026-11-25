@@ -1,0 +1,51 @@
+C1 | 27*x-x**3/4 ; 0 ; sqrt(108) ; x ; V ; max@6
+C2 | x**4-3*x*x+4 ; -2.2 ; 2.2 ; x ; d² ; min@-sqrt(1.5),sqrt(1.5)
+C3 | 30+2*x+72/x ; 1.5 ; 20 ; x ; A ; min@6
+C4 | sqrt(x*x+144)+sqrt((30-x)**2+784) ; 0 ; 30 ; x ; W ; min@9
+C5 | ((pi+4)*x*x-8*x+4)/pi ; 0 ; 1 ; x ; A ; max@0
+P3 | x*(110-x) ; 0 ; 110 ; x ; P ; max@55
+P4 | x*(24-2*x)**2 ; 0 ; 12 ; x ; V ; max@4
+P5 | x*(10-x) ; 0 ; 10 ; x ; P ; max@5 ; contoh S = 10
+P6 | x+185/x ; 4 ; 50 ; x ; f ; min@sqrt(185)
+P7 | x+441/x ; 6 ; 70 ; a ; f ; min@21
+P8 | x*(54-x*x) ; 0 ; sqrt(54) ; a ; P ; max@3*sqrt(2)
+P9 | x*(108-2*x) ; 0 ; 54 ; b ; P ; max@27
+P10 | x*(500-x**3) ; 0 ; cbrt(500) ; a ; P ; max@5
+P11 | x*(40-x) ; 0 ; 40 ; x ; A ; max@20
+P13 | 2*x+98/x ; 2 ; 25 ; x ; P ; min@7
+P15 | x*x+(x*x-3)**2 ; -2.2 ; 2.2 ; x ; d² ; min@-sqrt(2.5),sqrt(2.5)
+P16 | x*x+(x*x-1)**2 ; -1.5 ; 1.5 ; x ; d² ; min@-sqrt(0.5),sqrt(0.5)
+P17 | (x-4)**2+x ; 0 ; 7 ; x ; d² ; min@3.5
+P18 | (x-12)**2+x-8 ; 8 ; 15 ; x ; d² ; min@11.5
+P19 | (x+2)*(648/x+4) ; 5 ; 70 ; w ; A ; min@18
+P20 | (x+3)*(36/x+3) ; 1.5 ; 25 ; w ; A ; min@6
+P21 | 405000/x+2*x ; 120 ; 1500 ; y ; F ; min@450
+P22 | x*(337.5-2*x*x)/4 ; 0 ; sqrt(168.75) ; x ; V ; max@7.5
+P23 | x*(16-x-pi*x/2)/2+pi*x*x/8 ; 0 ; 32/(2+pi) ; x ; A ; max@32/(4+pi)
+P24 | x*(6-x)/2 ; 0 ; 6 ; x ; A ; max@3
+P25 | sqrt(x*x+4*x*x/(x-1)**2) ; 1.5 ; 7 ; x ; L ; min@1+cbrt(4)
+P25 | x*x/(x-1) ; 1.25 ; 6 ; x ; A ; min@2
+P26 | sqrt(36-x*x)*(6+x) ; -6 ; 6 ; h ; A ; max@3
+P27 | 2*x*sqrt(25-x*x) ; 0 ; 5 ; x ; A ; max@5/sqrt(2)
+P29 | 2/pi*(100*x-x*x) ; 0 ; 100 ; x ; A ; max@50
+P30 | 2*pi*x*x+44/x ; 0.35 ; 4 ; r ; S ; min@cbrt(11/pi)
+P33 | 28/x+4*pi*x*x/3 ; 0.5 ; cbrt(21/(2*pi)) ; r ; S ; min@cbrt(21/(2*pi))
+P34 | 8000/x+16*pi*x*x/3 ; 2 ; 12 ; r ; C ; min@cbrt(750/pi)
+P35 | sqrt(3)/4*x*x+((10-3*x)/4)**2 ; 0 ; 10/3 ; a ; A ; min@30/(9+4*sqrt(3))
+P37 | x*(400-x*x) ; 0 ; 20 ; w ; S/k ; max@20/sqrt(3)
+P38 | 2*sqrt(9+x*x)+5-x ; 0 ; 5 ; y ; L ; min@sqrt(3) ; contoh x = 3, h = 5
+P39 | 8*cos(x/2)+4*sin(x) ; 0 ; pi ; θ ; P ; max@pi/3
+P40 | (x*x+16)**2/(4*x) ; 0.9 ; 4 ; a ; A ; min@4/sqrt(3)
+P41 | 2*sqrt(x*x+4)+4-x ; 0 ; 4 ; x ; C ; min@2/sqrt(3)
+P42 | x/(x*x+4)**1.5 ; 0 ; 6 ; h ; I/k ; max@sqrt(2)
+P43 | sqrt(x*x+4)/2+sqrt((3-x)**2+1)/4 ; 0 ; 3 ; x ; T ; min@1
+P45 | sqrt(x*x+(2-2*sin(x))**2) ; 0 ; pi/2 ; x ; d ; min@0.7966
+P47 | pi/3*(12-6*x/pi)**2*sqrt(144-(12-6*x/pi)**2) ; 0 ; 2*pi ; θ ; V ; max@2*pi*(1-sqrt(2/3))
+P48 | 64*sin(x)*(1+cos(x)) ; 0 ; pi/2 ; θ ; A ; max@pi/3
+P51 | (4*x-1)**2+(5*x-6)**2+(10*x-3)**2 ; 0 ; 1.2 ; m ; S₁ ; min@64/141
+P52 | abs(4*x-1)+abs(5*x-6)+abs(10*x-3) ; 0 ; 1.4 ; m ; S₂ ; min@0.3
+P53 | (abs(4*x-1)+abs(5*x-6)+abs(10*x-3))/sqrt(x*x+1) ; -1 ; 2 ; m ; S₃ ; min@0.3
+P54 | 8*x*sqrt(1-x*x)-4*(1-x*x) ; 1/sqrt(2) ; 1 ; x/r ; A/r² ; max@cos(atan(2)/2)
+P55 | x*x+4*x+36 ; 0 ; 6 ; x ; d² ; min@0
+L1 | 2*x/5+4*cos(x/2)/2 ; 0 ; pi ; θ ; f ; min@pi ; (e)
+L1 | 2*x/3+4*cos(x/2)/2 ; 0 ; pi ; θ ; f ; min@0 ; (f)
