@@ -244,13 +244,11 @@ $$\dot x_C=-\tfrac12(1)+\tfrac32(-2)=-3{,}5.$$
 **Jawab:** $3{,}5$ m/s ke kiri.
 
 @@ P20 | Latihan 20 | Normal hiperbola | laju | 307
-$P(x,y)$ pada $x^2-y^2=1$, $R$ proyeksinya pada sumbu-$x$, dan $Q(x_Q,0)$ titik potong garis normal dengan sumbu-$x$ ($x_Q$ adalah absis titik $Q$). (a) Tunjukkan $x_Q=2x$ untuk $y\ne0$. (b) $x$ berkurang 3 satuan/waktu; laju luas segitiga $QPR$ saat $x=4$?
+$P(x,y)$ adalah titik pada bagian **kuadran pertama** hiperbola $x^2-y^2=1$, $R$ proyeksinya pada sumbu-$x$, dan $Q(x_Q,0)$ titik potong garis normal di $P$ dengan sumbu-$x$ ($x_Q$ adalah absis titik $Q$). (a) Tunjukkan $x_Q=2x$. (b) Jika $P$ bergerak sepanjang hiperbola dengan $x$ berkurang 3 satuan per satuan waktu, seberapa cepat luas segitiga $QPR$ berubah saat $x=4$?
 ===
-(a) Untuk $y\ne0$: gradien singgung $x/y$, gradien normal $-y/x$. Dari $0-y=-\dfrac yx(x_Q-x)$, setelah dibagi $y\ne0$, diperoleh $x_Q=2x$.
+(a) Di kuadran pertama $x>0$ dan $y>0$: gradien singgung $x/y$, gradien normal $-y/x$. Dari $0-y=-\dfrac yx(x_Q-x)$, setelah dibagi $y$, diperoleh $x_Q=2x$.
 
-Di titik $(\pm1,0)$ garis normal berimpit dengan sumbu-$x$, sehingga titik potong $Q$ tidak tunggal.
-
-(b) Alas $QR=|x_Q-x|=|x|$ dan tinggi $|y|$, sehingga $A=\tfrac12|xy|$, berlaku pada cabang atas maupun bawah. Untuk $x>1$: $A=\tfrac12x\sqrt{x^2-1}$, $\dfrac{dA}{dx}=\dfrac{2x^2-1}{2\sqrt{x^2-1}}$.
+(b) Alas $QR=x_Q-x=x$ dan tinggi $y$, sehingga $A=\tfrac12xy=\tfrac12x\sqrt{x^2-1}$ dan $\dfrac{dA}{dx}=\dfrac{2x^2-1}{2\sqrt{x^2-1}}$.
 
 **Jawab:** $\dot A=-\dfrac{93}{2\sqrt{15}}\approx-12{,}0$.
 
