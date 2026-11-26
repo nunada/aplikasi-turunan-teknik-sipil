@@ -18,18 +18,30 @@ Pesawat terbang setinggi 6 mil menuju titik tepat di atas stasiun radar. Saat ja
 
 {{fig:lr_c4}}
 ===
-$x^2+36=s^2$, $x=8$: $\dot x=\dfrac{s\dot s}{x}=-500$ mil/jam.
+Misalkan $x$ jarak mendatar pesawat ke titik tepat di atas stasiun radar. Maka $x^2+6^2=s^2$, dan saat $s=10$ diperoleh $x=8$. Turunkan terhadap waktu dengan $\dot s=-400$:
 
-**Jawab:** kecepatannya $-500$ mil/jam, lajunya 500 mil/jam.
+$$\begin{aligned}\dot x&=\dfrac{s\thinspace \dot s}{x}=\dfrac{10(-400)}{8}\cr &=-500\ \text{mil/jam}.\end{aligned}$$
+
+Tanda negatif menunjukkan bahwa jarak mendatar $x$ berkurang.
+
+**Jawab:** pesawat mendekati titik tepat di atas stasiun radar dengan laju 500 mil/jam.
 
 @@ C5 | Contoh 5 | Sudut elevasi kamera roket | gerak | 155 (ed. 11)
 Roket naik dengan $s=50t^2$ ft. Kamera di tanah 2.000 ft dari landasan. Tentukan laju sudut elevasi pada $t=10$ s.
 
 {{fig:lr_c5}}
 ===
-$\tan\theta=s/2.000$, $\dot\theta=\dfrac{2.000\thinspace \dot s}{s^2+2.000^2}$ dengan $s=5.000$, $\dot s=1.000$.
+Misalkan $\theta$ sudut elevasi kamera dan $s$ tinggi roket (ft). Kamera, landasan, dan roket membentuk segitiga siku-siku dengan sisi di depan $\theta$ sepanjang $s$ dan sisi di sampingnya $2.000$ ft, sehingga
 
-**Jawab:** $\dot\theta=\dfrac{2}{29}$ rad/s.
+$$\tan\theta=\dfrac{s}{2.000}.$$
+
+Turunkan terhadap waktu, lalu gunakan $\cos^2\theta=\dfrac{2.000^2}{s^2+2.000^2}$:
+
+$$\dot\theta=\dfrac{2.000\thinspace \dot s}{s^2+2.000^2}.$$
+
+Saat $t=10$: $s=50(10)^2=5.000$ ft dan $\dot s=100t=1.000$ ft/s.
+
+**Jawab:** sudut elevasi kamera bertambah dengan laju $\dot\theta=\dfrac{2}{29}\approx0{,}069$ rad/s.
 
 @@ C6 | Contoh 6 | Kecepatan piston | gerak | 156
 Batang penghubung 7 inci dipasang pada engkol berjari-jari 3 inci yang berputar 200 putaran/menit berlawanan jarum jam. Tentukan kecepatan piston saat $\theta=\pi/3$.

@@ -20,7 +20,11 @@
 <script defer src="app.js"></script>
 </head>
 <body>
-<header><span class="brand">Aplikasi Turunan · Teknik Sipil</span><nav><a href="index.html">Beranda</a><a href="hass.html">Thomas 4.6</a><a href="stewart.html">Stewart 4.7</a><a href="larson-optimasi.html">Larson 3.7</a><a href="trim-optimasi.html">Trim 4.7</a><a href="thomas-laju.html" class=on>Thomas 3.10</a><a href="stewart-laju.html">Stewart 3.9</a><a href="larson-laju.html">Larson 2.6</a><a href="trim-laju.html">Trim 4.9</a><a href="trim-gerak.html">Trim 4.8</a></nav><button id="tema" type="button" hidden>Mode</button></header>
+<header><div class="hbar">
+<a class="brand" href="index.html" title="Beranda">Aplikasi Turunan<span> · Teknik Sipil</span></a>
+<nav aria-label="Navigasi utama"><details class="menu"><summary>Optimisasi</summary><ul><li><a href="hass.html">Thomas<span>§4.6</span></a></li><li><a href="stewart.html">Stewart<span>§4.7</span></a></li><li><a href="larson-optimasi.html">Larson<span>§3.7</span></a></li><li><a href="trim-optimasi.html">Trim<span>§4.7</span></a></li></ul></details><details class="menu"><summary class="on">Laju Berkaitan</summary><ul><li><a href="thomas-laju.html" aria-current="page">Thomas<span>§3.10</span></a></li><li><a href="stewart-laju.html">Stewart<span>§3.9</span></a></li><li><a href="larson-laju.html">Larson<span>§2.6</span></a></li><li><a href="trim-laju.html">Trim<span>§4.9</span></a></li></ul></details><a href="trim-gerak.html">Kinematika</a></nav>
+<button id="tema" type="button" hidden></button>
+</div></header>
 <main>
 <h1>§3.10 Related Rates</h1><p class='book'>Hass, Heil &amp; Weir — Thomas&#x27; Calculus: Early Transcendentals (SI), ed. 15</p>
 <div class="bar">
@@ -466,8 +470,11 @@
 <p>Bayangan gedung 24 m panjangnya 18 m. Sudut matahari terhadap tanah bertambah $0{,}27^\circ$/menit. Seberapa cepat bayangan memendek (cm/menit)?</p>
 <div class="figs"><svg viewBox="0 0 284 268" width="284" height="268" role="img" aria-label="diagram soal"><polyline class="s" points="86.0,38.0 86.0,203.3 230.0,203.3"/><polyline class="a" points="86.0,59.3 198.0,203.3"/><circle class="dot" cx="86.0" cy="59.3" r="3.2"/><circle class="dot" cx="198.0" cy="203.3" r="3.2"/><polyline class="thin" points="95.3,203.3 95.3,194.0 86.0,194.0"/><text x="142.0" y="222.8" text-anchor="middle">18 m</text><text x="79.0" y="135.8" text-anchor="end">24 m</text><polyline class="thin" points="176.7,176.0 175.7,176.8 174.7,177.7 173.7,178.6 172.8,179.5 171.9,180.5 171.1,181.5 170.3,182.5 169.5,183.6 168.8,184.7 168.1,185.8 167.5,186.9 166.9,188.1 166.3,189.3 165.8,190.5 165.3,191.7 164.9,193.0 164.5,194.2 164.2,195.5 164.0,196.8 163.7,198.1 163.6,199.4 163.4,200.7 163.4,202.0 163.3,203.3"/><text x="151.3" y="185.0" text-anchor="middle">θ</text><text x="86.0" y="49.8" text-anchor="middle">gedung</text></svg></div>
 <details><summary>Penyelesaian</summary><div class="solusi">
-<p>$x=24\cot\theta$, $\dot x=-24\csc^2\theta\thinspace \dot\theta$ dengan $\csc^2\theta=1+\left(\tfrac{18}{24}\right)^2=\tfrac{25}{16}$ dan $\dot\theta=0{,}27\pi/180$.</p>
-<p><strong>Jawab:</strong> memendek $\approx17{,}7$ cm/menit.</p>
+<p>Misalkan $x$ panjang bayangan (m) dan $\theta$ sudut elevasi Matahari, yaitu sudut sinar Matahari terhadap tanah. Dari segitiga siku-siku, $\tan\theta=24/x$ atau $x=24\cot\theta$. Maka</p>
+<p>$$\dot x=-24\csc^2\theta\thinspace \dot\theta.$$</p>
+<p>Saat $x=18$: $\csc^2\theta=1+\left(\tfrac{18}{24}\right)^2=\tfrac{25}{16}$. Dalam radian, $\dot\theta=0{,}27\pi/180$ rad/menit.</p>
+<p>$$\begin{aligned}\dot x&amp;\approx-0{,}177\ \text{m/menit}\cr &amp;=-17{,}7\ \text{cm/menit}.\end{aligned}$$</p>
+<p><strong>Jawab:</strong> bayangan memendek sekitar $17{,}7$ cm per menit.</p>
 
 </div></details>
 </article>
@@ -519,8 +526,9 @@
 <div class="meta"><span class="tag">Kinematika & Fisika</span><span>hlm. 214</span></div>
 <p>Dengan laju berapa sudut antara jarum menit dan jam berubah pada pukul 16.00?</p>
 <details><summary>Penyelesaian</summary><div class="solusi">
-<p>Jarum menit $\tfrac{2\pi}{60}$ dan jarum jam $\tfrac{2\pi}{720}$ rad/menit. Sudut $120^\circ$ sedang mengecil.</p>
-<p><strong>Jawab:</strong> $-\dfrac{11\pi}{360}$ rad/menit (berkurang $5{,}5^\circ$ per menit).</p>
+<p>Kecepatan sudut jarum menit $\omega_m=\pi/30$ rad/menit dan jarum jam $\omega_j=\pi/360$ rad/menit. Pukul 16.00 jarum menit di angka 12 dan jarum jam di angka 4, bersudut $120^\circ$. Jarum menit mengejar jarum jam, sehingga laju perubahan sudutnya adalah selisih kedua kecepatan sudut:</p>
+<p>$$\begin{aligned}\dfrac{d\theta}{dt}&amp;=\omega_j-\omega_m\cr &amp;=\dfrac{\pi}{360}-\dfrac{\pi}{30}\cr &amp;=-\dfrac{11\pi}{360}\ \text{rad/menit}.\end{aligned}$$</p>
+<p><strong>Jawab:</strong> sudut antara kedua jarum berkurang $5{,}5^\circ$ per menit.</p>
 
 </div></details>
 </article>

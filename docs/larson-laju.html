@@ -20,7 +20,11 @@
 <script defer src="app.js"></script>
 </head>
 <body>
-<header><span class="brand">Aplikasi Turunan · Teknik Sipil</span><nav><a href="index.html">Beranda</a><a href="hass.html">Thomas 4.6</a><a href="stewart.html">Stewart 4.7</a><a href="larson-optimasi.html">Larson 3.7</a><a href="trim-optimasi.html">Trim 4.7</a><a href="thomas-laju.html">Thomas 3.10</a><a href="stewart-laju.html">Stewart 3.9</a><a href="larson-laju.html" class=on>Larson 2.6</a><a href="trim-laju.html">Trim 4.9</a><a href="trim-gerak.html">Trim 4.8</a></nav><button id="tema" type="button" hidden>Mode</button></header>
+<header><div class="hbar">
+<a class="brand" href="index.html" title="Beranda">Aplikasi Turunan<span> · Teknik Sipil</span></a>
+<nav aria-label="Navigasi utama"><details class="menu"><summary>Optimisasi</summary><ul><li><a href="hass.html">Thomas<span>§4.6</span></a></li><li><a href="stewart.html">Stewart<span>§4.7</span></a></li><li><a href="larson-optimasi.html">Larson<span>§3.7</span></a></li><li><a href="trim-optimasi.html">Trim<span>§4.7</span></a></li></ul></details><details class="menu"><summary class="on">Laju Berkaitan</summary><ul><li><a href="thomas-laju.html">Thomas<span>§3.10</span></a></li><li><a href="stewart-laju.html">Stewart<span>§3.9</span></a></li><li><a href="larson-laju.html" aria-current="page">Larson<span>§2.6</span></a></li><li><a href="trim-laju.html">Trim<span>§4.9</span></a></li></ul></details><a href="trim-gerak.html">Kinematika</a></nav>
+<button id="tema" type="button" hidden></button>
+</div></header>
 <main>
 <h1>§2.6 Related Rates</h1><p class='book'>Larson &amp; Edwards — Calculus, ed. 12</p>
 <div class="bar">
@@ -63,8 +67,10 @@
 <p>Pesawat terbang setinggi 6 mil menuju titik tepat di atas stasiun radar. Saat jarak $s=10$ mil, $s$ berkurang 400 mil/jam. Berapa laju pesawat?</p>
 <div class="figs"><svg viewBox="0 0 334 230" width="334" height="230" role="img" aria-label="diagram soal"><polyline class="s" points="53.1,179.4 291.3,179.4"/><polyline class="thin" points="64.5,179.4 56.5,185.6"/><polyline class="thin" points="75.9,179.4 67.9,185.6"/><polyline class="thin" points="87.3,179.4 79.3,185.6"/><polyline class="thin" points="98.6,179.4 90.7,185.6"/><polyline class="thin" points="110.0,179.4 102.1,185.6"/><polyline class="thin" points="121.4,179.4 113.5,185.6"/><polyline class="thin" points="132.8,179.4 124.8,185.6"/><polyline class="thin" points="144.2,179.4 136.2,185.6"/><polyline class="thin" points="155.6,179.4 147.6,185.6"/><polyline class="thin" points="167.0,179.4 159.0,185.6"/><polyline class="thin" points="178.4,179.4 170.4,185.6"/><polyline class="thin" points="189.8,179.4 181.8,185.6"/><polyline class="thin" points="201.2,179.4 193.2,185.6"/><polyline class="thin" points="212.6,179.4 204.6,185.6"/><polyline class="thin" points="224.0,179.4 216.0,185.6"/><polyline class="thin" points="235.4,179.4 227.4,185.6"/><polyline class="thin" points="246.8,179.4 238.8,185.6"/><polyline class="thin" points="258.1,179.4 250.2,185.6"/><polyline class="thin" points="269.5,179.4 261.6,185.6"/><polyline class="thin" points="280.9,179.4 273.0,185.6"/><polyline class="d" points="73.8,65.5 239.5,65.5"/><polyline class="d" points="73.8,179.4 73.8,65.5"/><polyline class="a" points="73.8,179.4 239.5,65.5"/><circle class="dot" cx="73.8" cy="179.4" r="3.2"/><circle class="dot" cx="239.5" cy="65.5" r="3.2"/><polyline class="b" points="239.5,65.5 185.6,65.5"/><polygon class="head" points="185.6,65.5 194.6,62.0 194.6,69.0"/><text x="239.5" y="57.0" text-anchor="middle">pesawat</text><text x="69.8" y="171.9" text-anchor="end">radar</text><text x="171.1" y="130.1" text-anchor="middle">s</text><polyline class="thin" points="73.8,42.7 239.5,42.7"/><polygon class="head" points="239.5,42.7 230.5,46.2 230.5,39.2"/><polygon class="head" points="73.8,42.7 82.8,39.2 82.8,46.2"/><text x="156.6" y="38.2" text-anchor="middle">x</text><polyline class="thin" points="48.9,179.4 48.9,65.5"/><polygon class="head" points="48.9,65.5 52.4,74.5 45.4,74.5"/><polygon class="head" points="48.9,179.4 45.4,170.4 52.4,170.4"/><text x="30.9" y="127.0" text-anchor="middle">6 mil</text></svg></div>
 <details><summary>Penyelesaian</summary><div class="solusi">
-<p>$x^2+36=s^2$, $x=8$: $\dot x=\dfrac{s\dot s}{x}=-500$ mil/jam.</p>
-<p><strong>Jawab:</strong> kecepatannya $-500$ mil/jam, lajunya 500 mil/jam.</p>
+<p>Misalkan $x$ jarak mendatar pesawat ke titik tepat di atas stasiun radar. Maka $x^2+6^2=s^2$, dan saat $s=10$ diperoleh $x=8$. Turunkan terhadap waktu dengan $\dot s=-400$:</p>
+<p>$$\begin{aligned}\dot x&amp;=\dfrac{s\thinspace \dot s}{x}=\dfrac{10(-400)}{8}\cr &amp;=-500\ \text{mil/jam}.\end{aligned}$$</p>
+<p>Tanda negatif menunjukkan bahwa jarak mendatar $x$ berkurang.</p>
+<p><strong>Jawab:</strong> pesawat mendekati titik tepat di atas stasiun radar dengan laju 500 mil/jam.</p>
 
 </div></details>
 </article>
@@ -74,8 +80,12 @@
 <p>Roket naik dengan $s=50t^2$ ft. Kamera di tanah 2.000 ft dari landasan. Tentukan laju sudut elevasi pada $t=10$ s.</p>
 <div class="figs"><svg viewBox="0 0 284 211" width="284" height="211" role="img" aria-label="diagram soal"><polyline class="s" points="75.3,35.3 75.3,153.1 235.3,153.1"/><polyline class="a" points="75.3,53.1 208.7,153.1"/><circle class="dot" cx="75.3" cy="53.1" r="3.2"/><circle class="dot" cx="208.7" cy="153.1" r="3.2"/><polyline class="thin" points="83.1,153.1 83.1,145.3 75.3,145.3"/><text x="142.0" y="172.6" text-anchor="middle">2000 ft</text><text x="68.3" y="107.6" text-anchor="end">s</text><polyline class="thin" points="185.6,135.8 185.1,136.4 184.7,137.0 184.2,137.7 183.8,138.4 183.4,139.0 183.1,139.7 182.7,140.4 182.4,141.1 182.1,141.8 181.8,142.5 181.5,143.2 181.3,144.0 181.0,144.7 180.8,145.5 180.6,146.2 180.4,147.0 180.3,147.7 180.2,148.5 180.0,149.2 179.9,150.0 179.9,150.8 179.8,151.6 179.8,152.3 179.8,153.1"/><text x="167.6" y="143.9" text-anchor="middle">θ</text><text x="75.3" y="43.6" text-anchor="middle">roket</text><text x="214.7" y="145.6" text-anchor="start">kamera</text><polyline class="b" points="86.4,57.6 86.4,28.7"/><polygon class="head" points="86.4,28.7 89.9,37.7 82.9,37.7"/></svg></div>
 <details><summary>Penyelesaian</summary><div class="solusi">
-<p>$\tan\theta=s/2.000$, $\dot\theta=\dfrac{2.000\thinspace \dot s}{s^2+2.000^2}$ dengan $s=5.000$, $\dot s=1.000$.</p>
-<p><strong>Jawab:</strong> $\dot\theta=\dfrac{2}{29}$ rad/s.</p>
+<p>Misalkan $\theta$ sudut elevasi kamera dan $s$ tinggi roket (ft). Kamera, landasan, dan roket membentuk segitiga siku-siku dengan sisi di depan $\theta$ sepanjang $s$ dan sisi di sampingnya $2.000$ ft, sehingga</p>
+<p>$$\tan\theta=\dfrac{s}{2.000}.$$</p>
+<p>Turunkan terhadap waktu, lalu gunakan $\cos^2\theta=\dfrac{2.000^2}{s^2+2.000^2}$:</p>
+<p>$$\dot\theta=\dfrac{2.000\thinspace \dot s}{s^2+2.000^2}.$$</p>
+<p>Saat $t=10$: $s=50(10)^2=5.000$ ft dan $\dot s=100t=1.000$ ft/s.</p>
+<p><strong>Jawab:</strong> sudut elevasi kamera bertambah dengan laju $\dot\theta=\dfrac{2}{29}\approx0{,}069$ rad/s.</p>
 
 </div></details>
 </article>

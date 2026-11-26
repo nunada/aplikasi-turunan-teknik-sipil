@@ -224,7 +224,15 @@ $\dot A=\dfrac{\sqrt3}{2}s\dot s=150\sqrt3\approx259{,}8\ \text{cm}^2$/menit.
 @@ P32 | Latihan 32 | Sudut benang layang-layang | gerak | 253
 Layang-layang 50 m di atas tanah bergerak mendatar 2 m/s. Tentukan laju sudut benang terhadap horizontal saat benang 100 m.
 ===
-$\tan\theta=50/x$, $\dot\theta=-\dfrac{50\dot x}{x^2+2.500}=-\dfrac{100}{10.000}=-0{,}01$ rad/s.
+Misalkan $x$ jarak mendatar layang-layang dari pemegang benang dan $\theta$ sudut benang terhadap horizontal. Maka $\tan\theta=50/x$, sehingga
+
+$$\dot\theta=-\dfrac{50\thinspace \dot x}{x^2+2.500}.$$
+
+Saat panjang benang 100 m, $x^2=100^2-50^2=7.500$, dan $\dot x=2$:
+
+$$\dot\theta=-\dfrac{100}{10.000}=-0{,}01\ \text{rad/s}.$$
+
+**Jawab:** sudut benang terhadap horizontal **berkurang** sebesar $0{,}01$ rad/s.
 
 @@ P33 | Latihan 33 | Mobil dan drone | lintasan | 253
 Mobil ke utara 20 m/s; drone ke timur 6 m/s setinggi 25 m melintas tepat di atas mobil. Tentukan laju jaraknya 5 s kemudian.
@@ -282,9 +290,17 @@ Troli A dan B dihubungkan tali 12 m melalui katrol $P$, 4 m di atas $Q$. A ditar
 
 {{fig:sw_p44}}
 ===
-$PA=5$, $PB=7$, $QB=\sqrt{33}$. $\dfrac{d}{dt}PA=\dfrac{3(0{,}5)}{5}=0{,}3$, sehingga $\dfrac{d}{dt}PB=-0{,}3$.
+Saat A berjarak 3 m dari $Q$: $PA=5$, $PB=12-5=7$, dan $QB=\sqrt{33}$. Dari $PA^2=QA^2+16$:
 
-$$\frac{d}{dt}QB=\frac{PB\cdot(-0{,}3)}{QB}\approx-0{,}37\ \text{m/s}.$$
+$$\dfrac{d}{dt}PA=\dfrac{3(0{,}5)}{5}=0{,}3\ \text{m/s}.$$
+
+Panjang tali tetap, sehingga $\dfrac{d}{dt}PB=-0{,}3$ m/s. Dari $QB^2=PB^2-16$:
+
+$$\begin{aligned}\frac{d}{dt}QB&=\frac{PB\cdot(-0{,}3)}{QB}\cr &\approx-0{,}37\ \text{m/s}.\end{aligned}$$
+
+Tanda negatif berarti jarak troli B ke titik $Q$ berkurang.
+
+**Jawab:** troli B mendekati titik $Q$ dengan laju sekitar $0{,}37$ m/s.
 
 @@ P45 | Latihan 45 | Kamera peluncuran roket | gerak | 253
 Kamera 1.200 m dari landasan; roket naik 200 m/s saat tingginya 900 m. (a) Laju jarak kamera–roket? (b) Laju sudut elevasi?
@@ -321,11 +337,22 @@ $d=t\sqrt{16+4-16\cos45^\circ}$, jadi $\dot d=\sqrt{20-8\sqrt2}\approx2{,}95$ km
 @@ P51 | Latihan 51 | Pelari di lintasan lingkaran | gerak | 254
 Pelari 7 m/s di lintasan berjari-jari 100 m; temannya 200 m dari pusat. Tentukan laju jarak mereka saat berjarak 200 m.
 ===
-$d^2=50.000-40.000\cos\theta$, $\dot\theta=0{,}07$. Saat $d=200$: $\cos\theta=\tfrac14$.
+Misalkan $\theta$ sudut di pusat lintasan, diukur dari arah teman ke posisi pelari. Aturan kosinus:
 
-$$\dot d=\frac{20.000\sin\theta\thinspace \dot\theta}{d}=\pm\frac{7\sqrt{15}}{4}\approx\pm6{,}78\ \text{m/s},$$
+$$d^2=50.000-40.000\cos\theta,$$
 
-tanda bergantung arah lari.
+$$d\thinspace \dot d=20.000\sin\theta\thinspace \dot\theta.$$
+
+Besar laju sudutnya $|\dot\theta|=7/100=0{,}07$ rad/s. Saat $d=200$ diperoleh $\cos\theta=\tfrac14$, sehingga $\sin\theta=\pm\tfrac{\sqrt{15}}{4}$, dan
+
+$$|\dot d|=\frac{7\sqrt{15}}{4}\approx6{,}78\ \text{m/s}.$$
+
+Jarak 200 m terjadi di **dua posisi** pada lintasan, yang simetris terhadap garis dari pusat ke teman ($\theta\approx\pm75{,}5^\circ$).
+
+- $\dot d\approx+6{,}78$ m/s (jarak bertambah) jika pelari sedang bergerak **menjauhi** titik lintasan yang terdekat dengan teman.
+- $\dot d\approx-6{,}78$ m/s (jarak berkurang) jika pelari sedang bergerak **mendekati** titik tersebut.
+
+**Jawab:** jarak keduanya berubah dengan laju $\dfrac{7\sqrt{15}}{4}\approx6{,}78$ m/s; bertambah atau berkurang bergantung pada posisi dan arah lari.
 
 @@ P52 | Latihan 52 | Ujung jarum arloji | gerak | 254
 Jarum menit 8 mm, jarum jam 4 mm. Seberapa cepat jarak kedua ujung berubah pada pukul 01.00?

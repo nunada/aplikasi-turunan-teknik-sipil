@@ -313,9 +313,15 @@ Bayangan gedung 24 m panjangnya 18 m. Sudut matahari terhadap tanah bertambah $0
 
 {{fig:th_p40}}
 ===
-$x=24\cot\theta$, $\dot x=-24\csc^2\theta\thinspace \dot\theta$ dengan $\csc^2\theta=1+\left(\tfrac{18}{24}\right)^2=\tfrac{25}{16}$ dan $\dot\theta=0{,}27\pi/180$.
+Misalkan $x$ panjang bayangan (m) dan $\theta$ sudut elevasi Matahari, yaitu sudut sinar Matahari terhadap tanah. Dari segitiga siku-siku, $\tan\theta=24/x$ atau $x=24\cot\theta$. Maka
 
-**Jawab:** memendek $\approx17{,}7$ cm/menit.
+$$\dot x=-24\csc^2\theta\thinspace \dot\theta.$$
+
+Saat $x=18$: $\csc^2\theta=1+\left(\tfrac{18}{24}\right)^2=\tfrac{25}{16}$. Dalam radian, $\dot\theta=0{,}27\pi/180$ rad/menit.
+
+$$\begin{aligned}\dot x&\approx-0{,}177\ \text{m/menit}\cr &=-17{,}7\ \text{cm/menit}.\end{aligned}$$
+
+**Jawab:** bayangan memendek sekitar $17{,}7$ cm per menit.
 
 @@ P41 | Latihan 41 | Lapisan es mencair | volume | 214
 Bola besi berdiameter 8 cm dilapisi es yang mencair $10\ \text{cm}^3$/menit. Saat tebal es 2 cm, tentukan laju tebal es dan laju luas permukaan luar.
@@ -354,9 +360,11 @@ $$2d\dot d=2a\dot a+2b\dot b+\dot a\thinspace b+a\thinspace \dot b=413.$$
 @@ P45 | Latihan 45 | Sudut jarum jam pukul 4 | gerak | 214
 Dengan laju berapa sudut antara jarum menit dan jam berubah pada pukul 16.00?
 ===
-Jarum menit $\tfrac{2\pi}{60}$ dan jarum jam $\tfrac{2\pi}{720}$ rad/menit. Sudut $120^\circ$ sedang mengecil.
+Kecepatan sudut jarum menit $\omega_m=\pi/30$ rad/menit dan jarum jam $\omega_j=\pi/360$ rad/menit. Pukul 16.00 jarum menit di angka 12 dan jarum jam di angka 4, bersudut $120^\circ$. Jarum menit mengejar jarum jam, sehingga laju perubahan sudutnya adalah selisih kedua kecepatan sudut:
 
-**Jawab:** $-\dfrac{11\pi}{360}$ rad/menit (berkurang $5{,}5^\circ$ per menit).
+$$\begin{aligned}\dfrac{d\theta}{dt}&=\omega_j-\omega_m\cr &=\dfrac{\pi}{360}-\dfrac{\pi}{30}\cr &=-\dfrac{11\pi}{360}\ \text{rad/menit}.\end{aligned}$$
+
+**Jawab:** sudut antara kedua jarum berkurang $5{,}5^\circ$ per menit.
 
 @@ P46 | Latihan 46 | Tumpahan minyak berbentuk elips | air | 214
 Lapisan minyak elips setebal 20 cm; sumbu panjang 2 km bertambah 9 m/jam, sumbu pendek $\tfrac34$ km bertambah 3 m/jam. Berapa debit minyak keluar?

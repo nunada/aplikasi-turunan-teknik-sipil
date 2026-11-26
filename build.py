@@ -64,9 +64,9 @@ PAGES = [
      '§4.8 Velocity and Acceleration'),
 ]
 
-GROUPS = [("Optimisasi Terapan", ["hass", "stewart", "larson-optimasi", "trim-optimasi"]),
-          ("Laju yang Berkaitan (Related Rates)", ["thomas-laju", "stewart-laju", "larson-laju", "trim-laju"]),
-          ("Kecepatan dan Percepatan", ["trim-gerak"])]
+GROUPS = [("Optimisasi Terapan", "Optimisasi", ["hass", "stewart", "larson-optimasi", "trim-optimasi"]),
+          ("Laju yang Berkaitan (Related Rates)", "Laju Berkaitan", ["thomas-laju", "stewart-laju", "larson-laju", "trim-laju"]),
+          ("Kecepatan dan Percepatan", "Kinematika", ["trim-gerak"])]
 
 MATH = re.compile(r"\$\$.+?\$\$|\$[^$\n]+?\$", re.S)
 
@@ -174,11 +174,28 @@ def key(p):
     return ({"C": 0, "P": 1, "L": 2}[m.group(1)], int(m.group(2)))
 
 
+def navigation(active):
+    """Tiga menu ringkas sesuai GROUPS; grup berisi satu halaman jadi tautan langsung."""
+    short = {p: s for p, s, _, _ in PAGES}
+    current = ' aria-current="page"'
+    parts = []
+    for _, label, names in GROUPS:
+        on = " class=\"on\"" if active in names else ""
+        if len(names) == 1:
+            parts.append(f'<a href="{names[0]}.html"{on}{current if on else ""}>{label}</a>')
+            continue
+        items = ""
+        for p in names:
+            book, section = short[p].rsplit(" ", 1)
+            items += (f'<li><a href="{p}.html"{current if p == active else ""}>'
+                      f'{book}<span>§{section}</span></a></li>')
+        parts.append(f'<details class="menu"><summary{on}>{label}</summary><ul>{items}</ul></details>')
+    return "".join(parts)
+
+
 def shell(title, active, body, scripts=True):
-    nav = f'<a href="index.html"{" class=on" if active == "index" else ""}>Beranda</a>'
-    nav += "".join(
-        f'<a href="{p}.html"{" class=on" if p == active else ""}>{short}</a>'
-        for p, short, _, _ in PAGES)
+    nav = navigation(active)
+    home = ' aria-current="page"' if active == "index" else ""
     katex = """<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
@@ -202,7 +219,11 @@ def shell(title, active, body, scripts=True):
 {katex}
 </head>
 <body>
-<header><span class="brand">Aplikasi Turunan · Teknik Sipil</span><nav>{nav}</nav><button id="tema" type="button" hidden>Mode</button></header>
+<header><div class="hbar">
+<a class="brand" href="index.html" title="Beranda"{home}>Aplikasi Turunan<span> · Teknik Sipil</span></a>
+<nav aria-label="Navigasi utama">{nav}</nav>
+<button id="tema" type="button" hidden></button>
+</div></header>
 <main>
 {body}
 </main>
@@ -265,7 +286,7 @@ def main():
     intro = render((SRC / "content" / "index.txt").read_text(encoding="utf-8"), used)
     by = {s[0]: s for s in stats}
     grid = ""
-    for heading, names in GROUPS:
+    for heading, _, names in GROUPS:
         cards = ""
         for page, short, book, sec, c in (by[n] for n in names if n in by):
             extra = f" · {c['L']} proyek" if c["L"] else ""

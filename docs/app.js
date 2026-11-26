@@ -3,7 +3,10 @@ window.addEventListener("DOMContentLoaded", () => {
   const root = document.documentElement;
   const tema = document.getElementById("tema");
   const label = () => {
-    tema.textContent = root.dataset.theme === "dark" ? "☀️ Mode terang" : "🌙 Mode gelap";
+    const gelap = root.dataset.theme === "dark";
+    tema.textContent = gelap ? "☀️" : "🌙";
+    tema.title = gelap ? "Mode terang" : "Mode gelap";
+    tema.setAttribute("aria-label", tema.title);
   };
   tema.addEventListener("click", () => {
     root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
@@ -12,6 +15,17 @@ window.addEventListener("DOMContentLoaded", () => {
   });
   label();
   tema.hidden = false;
+
+  // Menu header: hanya satu terbuka; tutup bila klik di luar atau tekan Escape.
+  const menus = [...document.querySelectorAll("header details")];
+  menus.forEach((m) => m.addEventListener("toggle", () => {
+    if (m.open) menus.forEach((o) => { if (o !== m) o.open = false; });
+  }));
+  document.addEventListener("click", (e) => menus.forEach((m) => { if (!m.contains(e.target)) m.open = false; }));
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Escape") return;
+    menus.filter((m) => m.open).forEach((m) => { m.open = false; m.querySelector("summary").focus(); });
+  });
 
   renderMathInElement(document.body, {
     delimiters: [
